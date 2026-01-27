@@ -14,7 +14,7 @@
  the subject of your email submission is "CS 4820 HWK 2". Also, your
  repo should have this file in it with solutions/answers included.
 
- The group members are:
+ The group members nare:
  ... (put the names of the group members here)
 
 |#
@@ -208,11 +208,11 @@
 
 ;; Use defdata to define the unary operators. Fill in the ...s
 ;; below. If you have questions, ask on Piazza.
-(defdata uoper (enum '- '/))
+(defdata uoper (enum '(- /)))
 
 ;; Use defdata to define boper the binary operators
 
-(defdata boper (enum '+ '- '* '/ '^))
+(defdata boper (enum '(+ - * / ^)))
 
 (check= (boperp '*) t)
 (check= (boperp '^) t)
@@ -315,11 +315,11 @@
 
 
 (definec sadiv (vx :rat-err vy :rat-err) :rat-err
-  (if (equal vy 0) *er* (/ vx vy)))
+  (if (or (erp vx) (erp vy) (equal vy 0)) *er* (/ vx vy)))
 
 
 (definec saexp (vx :rat-err vy :rat-err) :rat-err
-  (if (not (integerp vy)) *er*
+  (if (or (erp vx) (erp vy) (not (integerp vy))) *er*
     (if (and (equal vx 0) (< vy 0)) *er* 
       (expt vx vy))))
 
@@ -328,23 +328,31 @@
   (match e
     (:rational e)
     (:var (lookup e a))
-    (:usaexpr 
-      ((op x)
+    (:usaexpr
+      (('- x) 
         (let ((v (saeval x a)))
           (if (erp v) *er*
-            (match op
-              ('- (- v))
-              ('/ (sadiv 1 v)))))))
+            (- v))))
+      (('/ x) 
+        (let ((v (saeval x a)))
+          (if (erp v) *er*
+              (sadiv 1 v)))))
     (:bsaexpr 
-      ((x op y)
+      ((x '+ y)
         (let ((vx (saeval x a)) (vy (saeval y a)))
-          (if (or (erp vx) (erp vy)) *er*
-            (match op
-              ('+ (+ vx vy))
-              ('- (- vx vy))
-              ('* (* vx vy))
-              ('/ (sadiv vx vy))
-              ('^ (saexp vx vy)))))))))
+          (if (or (erp vx) (erp vy)) *er* (+ vx vy))))
+      ((x '- y)
+        (let ((vx (saeval x a)) (vy (saeval y a)))
+          (if (or (erp vx) (erp vy)) *er* (- vx vy))))
+      ((x '* y)
+        (let ((vx (saeval x a)) (vy (saeval y a)))
+          (if (or (erp vx) (erp vy)) *er* (* vx vy))))
+      ((x '/ y)
+        (let ((vx (saeval x a)) (vy (saeval y a)))
+          (if (or (erp vx) (erp vy)) *er* (sadiv vx vy))))
+      ((x '^ y)
+        (let ((vx (saeval x a)) (vy (saeval y a)))
+          (if (or (erp vx) (erp vy)) *er* (saexp vx vy)))))))
           
 
 (check= (saeval '((x + y) - (- z))
@@ -437,20 +445,31 @@
 
 ;; 4. (1 / (x / y)) = (y / x), for saexpr's x, y,
 
+;; implied from non-zero y
+
 (property (x :saexpr y :saexpr a :assignment)
-  (== (saeval `(1 / (,x / ,y)) a)
-      (saeval `(,y / ,x) a)))
+  (implies (not (== (saeval y a) 0))
+    (== (saeval `(1 / (,x / ,y)) a)
+      (saeval `(,y / ,x) a))))
 
 ;; 5. (0 ^ x) = 0, for saexpr x
 
-(property (x :saexpr y :saexpr a :assignment)
-  (== (saeval `(0 ^ ,x) a) 0))
+;; implied from x is an integer and x > 0
+
+(property (x :saexpr a :assignment)
+  (implies
+    (let ((v (saeval x a))) (and (integerp v) (< 0 v)))
+      (== (saeval `(0 ^ ,x) a) 0)))
 
 ;; 6. (x ^ ((2 * y) / y)) = (x ^ 2), for saexpr's x, y
 
+;; implied from y is not error and y is non-zero
+
 (property (x :saexpr y :saexpr a :assignment)
-  (== (saeval `(,x ^ ((2 * ,y) / ,y)) a)
-      (saeval `(,x ^ 2) a)))
+  (implies
+    (let ((v (saeval y a))) (and (not (erp v)) (not (== v 0))))
+      (== (saeval `(,x ^ ((2 * ,y) / ,y)) a)
+          (saeval `(,x ^ 2) a))))
 
 ;; This part is intentially vague in places. That's an opportunity for
 ;; you to learn. If there is confusion, ask!
@@ -461,9 +480,9 @@
 ;; expt.  Use defdata and call such expressions aaexpr's. Feel free to
 ;; use previous data definitions.
 
-(defdata auoper (enum '- '/))
+(defdata auoper (enum '(- /)))
 
-(defdata boper (enum '+ '- '* '/ 'expt))
+(defdata aboper (enum '(+ - * / expt)))
 
 (defdata
   (aaexpr (or rational  ; or is the same as oneof
@@ -486,14 +505,14 @@
     (:rational e)
     (:var e)
     (:usaexpr
-      ((op x) 
-        (list op (sael->aa x))))
+      (('- x) (list '- (sael->aa x)))
+      (('/ x) (list '/ (sael->aa x))))
     (:bsaexpr
-      ((x op y)
-        (let ((ax (sael->aa x)) (ay (sael->aa y)))
-          (match op
-            ('^ (list 'expt ax ay))
-            (& (list op ax ay)))))))
+      ((x '+ y) (list '+ (sael->aa x) (sael->aa y)))
+      ((x '- y) (list '- (sael->aa x) (sael->aa y)))
+      ((x '* y) (list '* (sael->aa x) (sael->aa y)))
+      ((x '/ y) (list '/ (sael->aa x) (sael->aa y)))
+      ((x '^ y) (list 'expt (sael->aa x) (sael->aa y))))))
 
 
 (definec aa->sael (e :aaexpr) :saexpr
@@ -501,14 +520,14 @@
     (:rational e)
     (:var e)
     (:uaaexpr
-      ((op x) 
-        (list op (aa->sael x))))
+      (('- x) (list '- (aa->sael x)))
+      (('/ x) (list '/ (aa->sael x))))
     (:baaexpr
-      ((op x y)
-        (let ((sx (aa->sael x)) (sy (aa->sael y)))
-          (match op
-            ('expt (list sx '^ sy))
-            (& (list sx op sy)))))))
+      (('+ x y) (list (aa->sael x) '+ (aa->sael y)))
+      (('- x y) (list (aa->sael x) '- (aa->sael y)))
+      (('* x y) (list (aa->sael x) '* (aa->sael y)))
+      (('/ x y) (list (aa->sael x) '/ (aa->sael y)))
+      (('expt x y) (list (aa->sael x) '^ (aa->sael y))))))
 
 
 ;; State the two properties that the above functions are inverses of
@@ -534,38 +553,30 @@
 ;; actually is what ACL2s does in the "core" logic, which you can
 ;; experiment with by issuing the command (set-guard-checking nil). 
 
-(definec aadiv (vx :rat-err vy :rat-err) :rat-err
+(definec aadiv (vx :rational vy :rational) :rational
   (if (equal vy 0) 0 (/ vx vy)))
 
 
-(definec aaexp (vx :rat-err vy :rat-err) :rat-err
+(definec aaexp (vx :rational vy :rational) :rational
   (if (or (not (integerp vy)) (equal vy 0)) 1
     (if (equal vx 0) 0
       (expt vx vy))))
 
 
-(definec aaeval (e :aaexpr a :assignment) :rat-err
+(definec aaeval (e :aaexpr a :assignment) :rational
   (match e
     (:rational e)
     (:var (lookup e a))
     (:uaaexpr 
-      ((op x)
-        (let ((v (aaeval x a)))
-          (if (erp v) *er*
-            (match op
-              ('- (- v))
-              ('/ (aadiv 1 v)))))))
-    (:baasexpr 
-      ((op x y)
-        (let ((vx (aaeval x a)) (vy (aaeval y a)))
-          (if (or (erp vx) (erp vy)) *er*
-            (match op
-              ('+ (+ vx vy))
-              ('- (- vx vy))
-              ('* (* vx vy))
-              ('/ (aadiv vx vy))
-              ('^ (aaexp vx vy)))))))))
-          
+      (('- x) (- (aaeval x a)))
+      (('/ x) (aadiv 1 (aaeval x a))))
+    (:baaexpr 
+      (('+ x y) (+ (aaeval x a) (aaeval y a)))
+      (('- x y) (- (aaeval x a) (aaeval y a)))
+      (('* x y) (* (aaeval x a) (aaeval y a)))
+      (('/ x y) (aadiv (aaeval x a) (aaeval y a)))
+      (('expt x y) (aaexp (aaeval x a) (aaeval y a))))))
+
 
 (check= (aaeval '(- (+ x y) (- z))
                 '((y . 3/2) (z . 1/2)))
