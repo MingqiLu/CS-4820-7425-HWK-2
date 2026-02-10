@@ -487,7 +487,7 @@ Elapsed Run Time: 0.12 seconds
 Form:  ( ADMIT-DEFINITION lookup ... )
 Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( PROVE-FUNCTION-CONTRACT lookup ... )
-Time:  0.07 seconds (prove: 0.05, print: 0.00, other: 0.02)
+Time:  0.06 seconds (prove: 0.05, print: 0.00, other: 0.02)
 Form:  ( PROVE-BODY-CONTRACTS lookup ... )
 Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.01)
 Elapsed Run Time: 0.10 seconds
@@ -570,7 +570,7 @@ Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
 Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
 Form:  ( PROGN (encapsulate nil ...) ...)
-Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
 Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
 Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
  t
@@ -604,7 +604,7 @@ Form:  ( PROVE-FUNCTION-CONTRACT saeval-boper ... )
 Time:  0.09 seconds (prove: 0.04, print: 0.00, other: 0.05)
 Form:  ( PROVE-BODY-CONTRACTS saeval-boper ... )
 Time:  0.05 seconds (prove: 0.01, print: 0.00, other: 0.04)
-Elapsed Run Time: 0.15 seconds
+Elapsed Run Time: 0.16 seconds
 Function Name : SAEVAL-BOPER 
 Termination proven -------- [*] 
 Function Contract proven -- [*] 
@@ -615,14 +615,14 @@ Form:  ( TEST-DEFINITION saeval ... )
 Form:  ( TEST-BODY-CONTRACTS saeval... ) 
 Form:  ( TEST-FUNCTION-CONTRACT saeval ...) 
 Testing: Done 
-Elapsed Run Time: 15.15 seconds
+Elapsed Run Time: 13.97 seconds
 Form:  ( ADMIT-DEFINITION saeval ... )
-Time:  0.92 seconds (prove: 0.90, print: 0.00, other: 0.02)
+Time:  0.79 seconds (prove: 0.78, print: 0.00, other: 0.01)
 Form:  ( PROVE-FUNCTION-CONTRACT saeval ... )
-Time:  6.75 seconds (prove: 6.34, print: 0.00, other: 0.41)
+Time:  6.24 seconds (prove: 5.88, print: 0.00, other: 0.35)
 Form:  ( PROVE-BODY-CONTRACTS saeval ... )
 Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.03)
-Elapsed Run Time: 7.72 seconds
+Elapsed Run Time: 7.07 seconds
 Function Name : SAEVAL 
 Termination proven -------- [*] 
 Function Contract proven -- [*] 
@@ -652,7 +652,7 @@ Proof succeeded.
 Form:  ( ACCEPTED PROPERTY AS THEOREM )
 Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.01)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.02)
+Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.01)
  :empty-encapsulate
 ACL2S !>>
 Form:  ( CONTRACT-CHECKING PROPERTY ...)
@@ -794,7 +794,7 @@ Rules: ((:compound-recognizer assignmentp-implies-tlp)
         (:rewrite acl2::default-plus-2)
         (:rewrite saeval-contract)
         (:type-prescription saexprp))
-Time:  0.05 seconds (prove: 0.03, print: 0.00, other: 0.03)
+Time:  0.05 seconds (prove: 0.03, print: 0.00, other: 0.02)
 
 **Summary of Cgen/testing**
 We tested 500 examples across 1 subgoals, of which 495 (495 unique)
@@ -2576,7 +2576,7 @@ Rules: ((:compound-recognizer assignmentp-implies-tlp)
         (:type-prescription bsaexprp)
         (:type-prescription saexprp)
         (:type-prescription usaexprp))
-Time:  14.54 seconds (prove: 14.51, print: 0.01, other: 0.02)
+Time:  14.27 seconds (prove: 14.24, print: 0.01, other: 0.02)
 
 **Summary of Cgen/testing**
 We tested 500 examples across 1 subgoals, of which 499 (499 unique)
@@ -2590,9 +2590,9 @@ Cases in which the conjecture is true include:
 
 Proof succeeded.
 Form:  ( ACCEPTED PROPERTY AS THEOREM )
-Time:  14.54 seconds (prove: 14.51, print: 0.01, other: 0.03)
+Time:  14.28 seconds (prove: 14.24, print: 0.01, other: 0.03)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  14.67 seconds (prove: 14.63, print: 0.01, other: 0.04)
+Time:  14.41 seconds (prove: 14.37, print: 0.01, other: 0.04)
  :empty-encapsulate
 ACL2S !>> :passed
 ACL2S !>>
@@ -2640,7 +2640,7 @@ Rules: ((:compound-recognizer assignmentp-implies-tlp)
         (:type-prescription saeval-contract-tp)
         (:type-prescription saexprp)
         (:type-prescription usaexprp))
-Time:  0.92 seconds (prove: 0.89, print: 0.00, other: 0.03)
+Time:  0.91 seconds (prove: 0.89, print: 0.00, other: 0.03)
 
 **Summary of Cgen/testing**
 We tested 500 examples across 1 subgoals, of which 235 (235 unique)
@@ -2715,7 +2715,7 @@ Time:  0.09 seconds (prove: 0.06, print: 0.00, other: 0.03)
  :empty-encapsulate
 ACL2S !>>
 Form:  ( CONTRACT-CHECKING PROPERTY ...)
-Time:  0.20 seconds (prove: 0.20, print: 0.00, other: 0.00)
+Time:  0.19 seconds (prove: 0.19, print: 0.00, other: 0.00)
 Form:  ( PROVING PROPERTY )
 
 Q.E.D.
@@ -2766,7 +2766,7 @@ Rules: ((:compound-recognizer assignmentp-implies-tlp)
         (:type-prescription saeval-contract-tp)
         (:type-prescription saexprp)
         (:type-prescription usaexprp))
-Time:  2.11 seconds (prove: 2.08, print: 0.00, other: 0.02)
+Time:  2.09 seconds (prove: 2.07, print: 0.00, other: 0.02)
 
 **Summary of Cgen/testing**
 We tested 500 examples across 1 subgoals, of which 329 (329 unique)
@@ -2780,9 +2780,9 @@ Cases in which the conjecture is true include:
 
 Proof succeeded.
 Form:  ( ACCEPTED PROPERTY AS THEOREM )
-Time:  2.11 seconds (prove: 2.08, print: 0.00, other: 0.02)
+Time:  2.09 seconds (prove: 2.07, print: 0.00, other: 0.02)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  2.31 seconds (prove: 2.28, print: 0.00, other: 0.03)
+Time:  2.29 seconds (prove: 2.26, print: 0.00, other: 0.03)
  :empty-encapsulate
 ACL2S !>>Form:  ( defconst *aoper-values* ...)
  Predicate events...
@@ -2867,7 +2867,7 @@ Form:  ( DEFATTACH (nth-aaexpr/acc nth-aaexpr/acc-builtin) ...)
 Form:  ( table type-metadata-table ...)
 Form:  ( PROGN (local ...) ...)
 Form:  ( ENCAPSULATE NIL (logic) ...)
-Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
 Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
 Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
@@ -2881,9 +2881,9 @@ Form:  ( DEFATTACH (nth-uaaexpr/acc nth-uaaexpr/acc-builtin) ...)
 Form:  ( table type-metadata-table ...)
 Form:  ( PROGN (local ...) ...)
 Form:  ( ENCAPSULATE NIL (logic) ...)
-Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
-Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
 Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
 Form:  ( defun nth-baaexpr ...)
@@ -2895,13 +2895,13 @@ Form:  ( DEFATTACH (nth-baaexpr/acc nth-baaexpr/acc-builtin) ...)
 Form:  ( table type-metadata-table ...)
 Form:  ( PROGN (local ...) ...)
 Form:  ( ENCAPSULATE NIL (logic) ...)
-Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
-Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
 Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
 Form:  ( PROGN (encapsulate nil ...) ...)
-Time:  0.22 seconds (prove: 0.17, print: 0.00, other: 0.04)
+Time:  0.21 seconds (prove: 0.17, print: 0.00, other: 0.04)
 Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
 Time:  0.22 seconds (prove: 0.17, print: 0.00, other: 0.05)
  t
@@ -2910,14 +2910,14 @@ Form:  ( TEST-DEFINITION sael->aa ... )
 Form:  ( TEST-BODY-CONTRACTS sael->aa... ) 
 Form:  ( TEST-FUNCTION-CONTRACT sael->aa ...) 
 Testing: Done 
-Elapsed Run Time: 1.36 seconds
+Elapsed Run Time: 1.32 seconds
 Form:  ( ADMIT-DEFINITION sael->aa ... )
 Time:  0.17 seconds (prove: 0.15, print: 0.00, other: 0.02)
 Form:  ( PROVE-FUNCTION-CONTRACT sael->aa ... )
-Time:  1.41 seconds (prove: 1.39, print: 0.00, other: 0.01)
+Time:  1.40 seconds (prove: 1.39, print: 0.00, other: 0.01)
 Form:  ( PROVE-BODY-CONTRACTS sael->aa ... )
 Time:  0.22 seconds (prove: 0.17, print: 0.00, other: 0.05)
-Elapsed Run Time: 1.81 seconds
+Elapsed Run Time: 1.80 seconds
 Function Name : SAEL->AA 
 Termination proven -------- [*] 
 Function Contract proven -- [*] 
@@ -2928,14 +2928,14 @@ Form:  ( TEST-DEFINITION aa->sael ... )
 Form:  ( TEST-BODY-CONTRACTS aa->sael... ) 
 Form:  ( TEST-FUNCTION-CONTRACT aa->sael ...) 
 Testing: Done 
-Elapsed Run Time: 1.27 seconds
+Elapsed Run Time: 1.26 seconds
 Form:  ( ADMIT-DEFINITION aa->sael ... )
-Time:  0.44 seconds (prove: 0.42, print: 0.00, other: 0.02)
+Time:  0.43 seconds (prove: 0.41, print: 0.00, other: 0.02)
 Form:  ( PROVE-FUNCTION-CONTRACT aa->sael ... )
-Time:  1.18 seconds (prove: 1.17, print: 0.00, other: 0.01)
+Time:  1.17 seconds (prove: 1.16, print: 0.00, other: 0.01)
 Form:  ( PROVE-BODY-CONTRACTS aa->sael ... )
-Time:  0.14 seconds (prove: 0.10, print: 0.00, other: 0.05)
-Elapsed Run Time: 1.78 seconds
+Time:  0.14 seconds (prove: 0.10, print: 0.00, other: 0.04)
+Elapsed Run Time: 1.76 seconds
 Function Name : AA->SAEL 
 Termination proven -------- [*] 
 Function Contract proven -- [*] 
@@ -3294,7 +3294,7 @@ Rules: ((:compound-recognizer var-symbolp)
         (:type-prescription saexprp)
         (:type-prescription uoperp)
         (:type-prescription usaexprp))
-Time:  0.69 seconds (prove: 0.65, print: 0.00, other: 0.04)
+Time:  0.68 seconds (prove: 0.65, print: 0.00, other: 0.04)
 
 **Summary of Cgen/testing**
 We tested 1500 examples across 3 subgoals, of which 1383 (1383 unique)
@@ -3310,7 +3310,7 @@ Proof succeeded.
 Form:  ( ACCEPTED PROPERTY AS THEOREM )
 Time:  0.69 seconds (prove: 0.65, print: 0.00, other: 0.04)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  0.70 seconds (prove: 0.65, print: 0.00, other: 0.04)
+Time:  0.69 seconds (prove: 0.65, print: 0.00, other: 0.04)
  :empty-encapsulate
 ACL2S !>>
 Form:  ( CONTRACT-CHECKING PROPERTY ...)
@@ -3662,7 +3662,7 @@ Proof succeeded.
 Form:  ( ACCEPTED PROPERTY AS THEOREM )
 Time:  0.58 seconds (prove: 0.54, print: 0.00, other: 0.04)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  0.59 seconds (prove: 0.54, print: 0.00, other: 0.04)
+Time:  0.58 seconds (prove: 0.54, print: 0.00, other: 0.04)
  :empty-encapsulate
 ACL2S !>>
 Form:  ( TEST-DEFINITION aaeval-uoper ... )
@@ -3673,7 +3673,7 @@ Elapsed Run Time: 0.11 seconds
 Form:  ( ADMIT-DEFINITION aaeval-uoper ... )
 Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( PROVE-FUNCTION-CONTRACT aaeval-uoper ... )
-Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( PROVE-BODY-CONTRACTS aaeval-uoper ... )
 Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Elapsed Run Time: 0.02 seconds
@@ -3687,7 +3687,7 @@ Form:  ( TEST-DEFINITION aaeval-aoper ... )
 Form:  ( TEST-BODY-CONTRACTS aaeval-aoper... ) 
 Form:  ( TEST-FUNCTION-CONTRACT aaeval-aoper ...) 
 Testing: Done 
-Elapsed Run Time: 0.27 seconds
+Elapsed Run Time: 0.26 seconds
 Form:  ( ADMIT-DEFINITION aaeval-aoper ... )
 Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( PROVE-FUNCTION-CONTRACT aaeval-aoper ... )
@@ -3705,14 +3705,14 @@ Form:  ( TEST-DEFINITION aaeval ... )
 Form:  ( TEST-BODY-CONTRACTS aaeval... ) 
 Form:  ( TEST-FUNCTION-CONTRACT aaeval ...) 
 Testing: Done 
-Elapsed Run Time: 12.57 seconds
+Elapsed Run Time: 12.33 seconds
 Form:  ( ADMIT-DEFINITION aaeval ... )
-Time:  1.06 seconds (prove: 1.05, print: 0.00, other: 0.02)
+Time:  1.07 seconds (prove: 1.05, print: 0.00, other: 0.02)
 Form:  ( PROVE-FUNCTION-CONTRACT aaeval ... )
-Time:  0.55 seconds (prove: 0.41, print: 0.00, other: 0.15)
+Time:  0.55 seconds (prove: 0.41, print: 0.00, other: 0.14)
 Form:  ( PROVE-BODY-CONTRACTS aaeval ... )
 Time:  0.04 seconds (prove: 0.01, print: 0.00, other: 0.03)
-Elapsed Run Time: 1.68 seconds
+Elapsed Run Time: 1.67 seconds
 Function Name : AAEVAL 
 Termination proven -------- [*] 
 Function Contract proven -- [*] 
@@ -4331,7 +4331,7 @@ Rules: ((:compound-recognizer alistp-implies-tlp)
         (:type-prescription saexprp)
         (:type-prescription uoperp)
         (:type-prescription usaexprp))
-Time:  6.60 seconds (prove: 6.52, print: 0.00, other: 0.08)
+Time:  6.62 seconds (prove: 6.53, print: 0.00, other: 0.08)
 
 **Summary of Cgen/testing**
 We tested 1500 examples across 3 subgoals, of which 1215 (1215 unique)
@@ -4345,9 +4345,9 @@ Cases in which the conjecture is true include:
 
 Proof succeeded.
 Form:  ( ACCEPTED PROPERTY AS THEOREM )
-Time:  6.61 seconds (prove: 6.52, print: 0.00, other: 0.08)
+Time:  6.62 seconds (prove: 6.53, print: 0.00, other: 0.09)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  6.61 seconds (prove: 6.52, print: 0.00, other: 0.09)
+Time:  6.63 seconds (prove: 6.53, print: 0.00, other: 0.09)
  :empty-encapsulate
 ACL2S !>>
 Form:  ( CONTRACT-CHECKING PROPERTY ...)
@@ -4878,7 +4878,7 @@ Rules: ((:compound-recognizer alistp-implies-tlp)
         (:type-prescription saexprp)
         (:type-prescription uaaexprp)
         (:type-prescription uoperp))
-Time:  7.70 seconds (prove: 7.61, print: 0.00, other: 0.09)
+Time:  7.76 seconds (prove: 7.67, print: 0.00, other: 0.09)
 
 **Summary of Cgen/testing**
 We tested 1500 examples across 3 subgoals, of which 1110 (1110 unique)
@@ -4892,9 +4892,9 @@ Cases in which the conjecture is true include:
 
 Proof succeeded.
 Form:  ( ACCEPTED PROPERTY AS THEOREM )
-Time:  7.70 seconds (prove: 7.61, print: 0.00, other: 0.09)
+Time:  7.77 seconds (prove: 7.67, print: 0.00, other: 0.09)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  7.71 seconds (prove: 7.61, print: 0.00, other: 0.10)
+Time:  7.77 seconds (prove: 7.67, print: 0.00, other: 0.10)
  :empty-encapsulate
 ACL2S !>>Bye.
  :eof

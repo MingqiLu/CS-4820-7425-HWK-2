@@ -339,9 +339,9 @@ Form:  ( DEFATTACH (nth-saexpr/acc nth-saexpr/acc-builtin) ...)
 Form:  ( table type-metadata-table ...)
 Form:  ( PROGN (local ...) ...)
 Form:  ( ENCAPSULATE NIL (logic) ...)
-Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
 Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
-Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
 Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
 Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
 Form:  ( defun nth-usaexpr ...)
@@ -375,7 +375,7 @@ Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
 Form:  ( PROGN (encapsulate nil ...) ...)
 Time:  0.15 seconds (prove: 0.11, print: 0.00, other: 0.04)
 Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
-Time:  0.16 seconds (prove: 0.11, print: 0.00, other: 0.04)
+Time:  0.16 seconds (prove: 0.11, print: 0.00, other: 0.05)
  t
 ACL2S !>> :passed
 ACL2S !>> :passed
@@ -454,7 +454,7 @@ Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
 Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
 Form:  ( PROGN (encapsulate nil ...) ...)
-Time:  0.11 seconds (prove: 0.08, print: 0.00, other: 0.04)
+Time:  0.12 seconds (prove: 0.08, print: 0.00, other: 0.04)
 Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
 Time:  0.12 seconds (prove: 0.08, print: 0.00, other: 0.04)
  t
@@ -585,10 +585,10 @@ Elapsed Run Time: 0.14 seconds
 Form:  ( ADMIT-DEFINITION eval-^ ... )
 Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( PROVE-FUNCTION-CONTRACT eval-^ ... )
-Time:  0.08 seconds (prove: 0.03, print: 0.00, other: 0.04)
+Time:  0.07 seconds (prove: 0.03, print: 0.00, other: 0.04)
 Form:  ( PROVE-BODY-CONTRACTS eval-^ ... )
 Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
-Elapsed Run Time: 0.12 seconds
+Elapsed Run Time: 0.11 seconds
 Function Name : EVAL-^ 
 Termination proven -------- [*] 
 Function Contract proven -- [*] 
@@ -603,7 +603,7 @@ Elapsed Run Time: 0.22 seconds
 Form:  ( ADMIT-DEFINITION eval-bop ... )
 Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Form:  ( PROVE-FUNCTION-CONTRACT eval-bop ... )
-Time:  0.08 seconds (prove: 0.03, print: 0.00, other: 0.05)
+Time:  0.08 seconds (prove: 0.04, print: 0.00, other: 0.05)
 Form:  ( PROVE-BODY-CONTRACTS eval-bop ... )
 Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
 Elapsed Run Time: 0.10 seconds
@@ -621,10 +621,10 @@ Elapsed Run Time: 0.57 seconds
 Form:  ( ADMIT-DEFINITION saeval ... )
 Time:  0.26 seconds (prove: 0.25, print: 0.00, other: 0.01)
 Form:  ( PROVE-FUNCTION-CONTRACT saeval ... )
-Time:  4.86 seconds (prove: 4.77, print: 0.00, other: 0.09)
+Time:  4.85 seconds (prove: 4.76, print: 0.00, other: 0.09)
 Form:  ( PROVE-BODY-CONTRACTS saeval ... )
 Time:  0.26 seconds (prove: 0.21, print: 0.00, other: 0.05)
-Elapsed Run Time: 5.40 seconds
+Elapsed Run Time: 5.38 seconds
 Function Name : SAEVAL 
 Termination proven -------- [*] 
 Function Contract proven -- [*] 
@@ -716,7 +716,7 @@ exist.
 Form:  ( PROPERTY PASSED TESTING )
 Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  0.05 seconds (prove: 0.01, print: 0.00, other: 0.04)
+Time:  0.05 seconds (prove: 0.01, print: 0.00, other: 0.03)
  :empty-encapsulate
 ACL2S !>>
 
@@ -781,7 +781,7 @@ exist.
 Form:  ( PROPERTY PASSED TESTING )
 Time:  0.14 seconds (prove: 0.10, print: 0.00, other: 0.04)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  0.15 seconds (prove: 0.10, print: 0.00, other: 0.04)
+Time:  0.14 seconds (prove: 0.10, print: 0.00, other: 0.04)
  :empty-encapsulate
 ACL2S !>>
 
@@ -820,9 +820,9 @@ Cases in which the conjecture is true include:
 
 Test? succeeded. No counterexamples were found.
 Form:  ( PROPERTY PASSED TESTING )
-Time:  0.89 seconds (prove: 0.61, print: 0.00, other: 0.28)
+Time:  0.88 seconds (prove: 0.61, print: 0.00, other: 0.27)
 Form:  ( PROPERTY CHECKING SUCCESSFUL )
-Time:  1.06 seconds (prove: 0.74, print: 0.00, other: 0.32)
+Time:  1.06 seconds (prove: 0.74, print: 0.00, other: 0.31)
  :empty-encapsulate
 ACL2S !>>Form:  ( defconst *aboper-values* ...)
  Predicate events...
@@ -954,7 +954,7 @@ Elapsed Run Time: 0.27 seconds
 Form:  ( ADMIT-DEFINITION sael->aa ... )
 Time:  0.04 seconds (prove: 0.04, print: 0.00, other: 0.01)
 Form:  ( PROVE-FUNCTION-CONTRACT sael->aa ... )
-Time:  1.07 seconds (prove: 1.05, print: 0.00, other: 0.01)
+Time:  1.06 seconds (prove: 1.05, print: 0.00, other: 0.01)
 Form:  ( PROVE-BODY-CONTRACTS sael->aa ... )
 Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
 Elapsed Run Time: 1.15 seconds

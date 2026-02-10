@@ -1,5 +1,5 @@
 [INFO] Using ACL2s: /Users/lumingqi/bin/acl2s
-[INFO] Working dir: /Users/lumingqi/Documents/26SpringFormalMethods/Grading
+[INFO] Working dir: /Users/lumingqi/Documents/26SpringFormalMethods/hwk2/Grading
 [INFO] Timeout per file: 120s
 [INFO] LOAD_SOLUTION=0
 

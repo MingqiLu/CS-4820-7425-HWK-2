@@ -443,7 +443,7 @@
 
 ;; 4. (1 / (x / y)) = (y / x), for saexpr's x, y,
 (property (x y :saexpr a :assignment)
-  :h (not (and (!= 0 (saeval x a)) (== 0 (saeval y a))))
+  :h (or (!= 0 (saeval y a)) (or (== 0 (saeval x a)) (erp (saeval x a)))) 
   :b (== (saeval `(1 / (,x / ,y)) a)
          (saeval `(,y / ,x) a)))
 

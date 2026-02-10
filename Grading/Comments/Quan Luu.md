@@ -2,4 +2,4 @@
 
 100
 
-In `4. (1 / (x / y)) = (y / x), for saexpr's x, y`, we do not need the hypothesis not error. This is because when any of them is error, the whole term will be error. The hypothesis can be `(not (and (!= 0 (saeval x a)) (== 0 (saeval y a))))`.
+In `4. (1 / (x / y)) = (y / x), for saexpr's x, y`, we do not need the hypothesis not error. This is because when any of them is error, the whole term will be error. The only case this property does NOT hold is when x is non-zero rational and y=0.

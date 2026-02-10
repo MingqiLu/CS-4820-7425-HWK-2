@@ -4,4 +4,6 @@
 
 Your understanding of how to apply exponential is wrong. Pay attention to `given an expression of the form (x ^ y), we return an error if (1) y is not an integer or (2) x=0 and y<0.`
 
+In `4. (1 / (x / y)) = (y / x), for saexpr's x, y`, the property holds when x=0 and y=0. The only case this property does NOT hold is when x is non-zero rational and y=0.
+
 In `5. (0 ^ x) = 0, for saexpr x`, (0^x) is not always error.
