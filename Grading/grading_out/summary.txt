@@ -1,0 +1,62 @@
+[INFO] Using ACL2s: /Users/lumingqi/bin/acl2s
+[INFO] Working dir: /Users/lumingqi/Documents/26SpringFormalMethods/Grading
+[INFO] Timeout per file: 120s
+[INFO] LOAD_SOLUTION=0
+
+===== HWK2_Anagha.lisp =====
+[INFO] log -> grading_out/logs/HWK2_Anagha.txt
+[OK] exit=0
+
+===== HWK2_Angelina.lisp =====
+[INFO] log -> grading_out/logs/HWK2_Angelina.txt
+[OK] exit=0
+
+===== HWK2_Christopher_Wangyuan.lisp =====
+[INFO] log -> grading_out/logs/HWK2_Christopher_Wangyuan.txt
+[OK] exit=0
+
+===== HWK2_Grant.lisp =====
+[INFO] log -> grading_out/logs/HWK2_Grant.txt
+[OK] exit=0
+
+===== HWK2_Lingxiao.lisp =====
+[INFO] log -> grading_out/logs/HWK2_Lingxiao.txt
+[WARN] exit=0 but found FAILED checks
+  78:ACL2S !>>>(set-defunc-termination-strictp t)
+  482:Termination proven -------- [*] 
+  576:satisfied the hypotheses, and found 0 counterexamples and 236 witnesses.
+  602:Termination proven -------- [*] 
+  620:Termination proven -------- [*] 
+  638:Termination proven -------- [*] 
+  654:satisfied the hypotheses, and found 0 counterexamples and 255 witnesses.
+  679:satisfied the hypotheses, and found 0 counterexamples and 485 witnesses.
+  704:satisfied the hypotheses, and found 0 counterexamples and 500 witnesses.
+  729:satisfied the hypotheses, and found 0 counterexamples and 492 witnesses.
+  772:satisfied the hypotheses, and found 0 counterexamples and 260 witnesses.
+  818:satisfied the hypotheses, and found 0 counterexamples and 498 witnesses.
+  1466:satisfied the hypotheses, and found 0 counterexamples and 500 witnesses.
+  1612:satisfied the hypotheses, and found 0 counterexamples and 394 witnesses.
+  1660:satisfied the hypotheses, and found 0 counterexamples and 500 witnesses.
+  1722:satisfied the hypotheses, and found 0 counterexamples and 499 witnesses.
+  1871:Termination proven -------- [*] 
+  1889:Termination proven -------- [*] 
+  2222:satisfied the hypotheses, and found 0 counterexamples and 1307 witnesses.
+  2565:satisfied the hypotheses, and found 0 counterexamples and 1326 witnesses.
+  2580:Masking guard violations but still checking guards except for self-
+  2581:recursive calls.  To avoid guard checking entirely, :SET-GUARD-CHECKING
+  2582::NONE.  See :DOC set-guard-checking.
+  2598:Termination proven -------- [*] 
+  2616:Termination proven -------- [*] 
+
+===== HWK2_Quan.lisp =====
+[INFO] log -> grading_out/logs/HWK2_Quan.txt
+[OK] exit=0
+
+===== HWK2_Reilly.lisp =====
+[INFO] log -> grading_out/logs/HWK2_Reilly.txt
+[OK] exit=0
+
+===== HWK2_Solution.lisp =====
+[INFO] log -> grading_out/logs/HWK2_Solution.txt
+[OK] exit=0
+

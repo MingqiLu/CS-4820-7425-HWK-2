@@ -1,0 +1,1226 @@
+
+ACL2s Version 1.3.1.
+Build date: january 12, 2026  00:21:40.
+Copyright (C) 2022, Northeastern University.
+ACL2s is an extension of ACL2 Version 8.6.
+ACL2s comes with ABSOLUTELY NO WARRANTY.
+This is free software with certain restrictions.
+See the LICENSE files distributed with ACL2s and ACL2.
+
+Project-dir-alist:
+((:system . "/Users/lumingqi/acl2-work/acl2/books/")).
+Type :help for help.
+Type (quit) to quit completely out of ACL2.
+
+ACL2S !> "ACL2S"
+ACL2S !>
+Project-dir-alist:
+((:system . "/Users/lumingqi/acl2-work/acl2/books/")).
+Type :help for help.
+Type (quit) to quit completely out of ACL2.
+
+ACL2S !>> "ACL2S"
+ACL2S !>>
+
+ACL2S !>>>(acl2s-defaults :set testing-enabled t)
+
+
+ACL2S !>>>(value-triple :redundant)
+
+
+ACL2S !>>>(table acl2s-defaults-table
+            ':testing-enabled
+            '(acl2s-param-info% t
+                                (member-eq value *testing-enabled-values*)
+                                set-acl2s-random-testing-enabled))
+
+The event ( table acl2s-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+:redundant
+
+
+ACL2S !>>>(set-defunc-skip-admissibilityp nil)
+
+The event ( table defunc-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-defunc-skip-function-contractp nil)
+
+The event ( table defunc-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-defunc-skip-body-contractsp nil)
+
+The event ( table defunc-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-defunc-termination-strictp nil)
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+defunc-defaults-table
+
+
+ACL2S !>>>(set-defunc-function-contract-strictp nil)
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+defunc-defaults-table
+
+
+ACL2S !>>>(set-defunc-body-contracts-strictp nil)
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+defunc-defaults-table
+
+
+ACL2S !>>>(set-acl2s-property-table-test-contracts? t)
+
+The event ( table acl2s-property-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-acl2s-property-table-check-contracts? nil)
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+acl2s-property-table
+
+
+ACL2S !>>>(set-acl2s-property-table-proofs? nil)
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+acl2s-property-table
+
+
+ACL2S !>>>(set-acl2s-property-table-testing? t)
+
+The event ( table acl2s-property-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(modeling-set-parms 4 2 10 10 10)
+
+
+ACL2S !>>>(acl2s-defaults :set cgen-timeout 4)
+
+
+ACL2S !>>>(table acl2s-defaults-table
+            ':cgen-timeout
+            '(acl2s-param-info% 4 (and (rationalp value) (<= 0 value))
+                                nil))
+
+
+ACL2S !>>>(value-triple '4)
+4
+
+
+ACL2S !>>>(acl2s-defaults :set cgen-local-timeout 2)
+
+
+ACL2S !>>>(table acl2s-defaults-table
+            ':cgen-local-timeout
+            '(acl2s-param-info% 2 (and (rationalp value) (<= 0 value))
+                                nil))
+
+
+ACL2S !>>>(value-triple '2)
+2
+
+
+ACL2S !>>>(set-defunc-timeout 10)
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+defunc-defaults-table
+
+
+ACL2S !>>>(set-acl2s-property-table-proof-timeout 10)
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+acl2s-property-table
+
+
+ACL2S !>>>(set-acl2s-property-table-testing-timeout 10)
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+acl2s-property-table
+
+Summary
+Form:  ( PROGN (acl2s-defaults :set ...) ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+acl2s-property-table
+
+Summary
+Form:  ( PROGN (acl2s-defaults ... t) ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ acl2s-property-table
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>>Form:  ( defconst *uoper-values* ...)
+ Predicate events...
+Form:  ( defun uoperp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: uoperp relatively complete for Tau.
+Form:  ( defthm def=>uoper ...)
+Form:  ( defthm uoper=>def ...)
+ Enumerator events...
+Form:  ( defun nth-uoper-builtin ...)
+Form:  ( defun nth-uoper/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ Registering type...
+Form:  ( defun nth-uoper ...)
+Form:  ( ENCAPSULATE (((nth-uoper * ...) ...) ...) ...)
+Form:  ( defun nth-uoper/acc ...)
+Form:  ( ENCAPSULATE (((nth-uoper/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-uoper nth-uoper-builtin) ...)
+Form:  ( DEFATTACH (nth-uoper/acc nth-uoper/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ t
+ACL2S !>>Form:  ( defconst *boper-values* ...)
+ Predicate events...
+Form:  ( defun boperp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: boperp relatively complete for Tau.
+Form:  ( defthm def=>boper ...)
+Form:  ( defthm boper=>def ...)
+ Enumerator events...
+Form:  ( defun nth-boper-builtin ...)
+Form:  ( defun nth-boper/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ Registering type...
+Form:  ( defun nth-boper ...)
+Form:  ( ENCAPSULATE (((nth-boper * ...) ...) ...) ...)
+Form:  ( defun nth-boper/acc ...)
+Form:  ( ENCAPSULATE (((nth-boper/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-boper nth-boper-builtin) ...)
+Form:  ( DEFATTACH (nth-boper/acc nth-boper/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+ t
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> Predicate events...
+Form:  ( MUTUAL-RECURSION ( DEFUN saexprp ...) ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: saexprp relatively complete for Tau.
+Form:  ( defthm def=>saexpr ...)
+Form:  ( defthm saexpr=>def ...)
+ (usaexprp acl2::v1) <= body -- not complete. 
+Reasons: 
+("Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+ (usaexprp acl2::v1) => body -- not complete. 
+Reasons: 
+("The formula fails to fit any of the forms for acceptable :TAU-SYSTEM rules."
+ "Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+Form:  ( defthm usaexpr=>def ...)
+ (bsaexprp acl2::v1) <= body -- not complete. 
+Reasons: 
+("Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+ (bsaexprp acl2::v1) => body -- not complete. 
+Reasons: 
+("The formula fails to fit any of the forms for acceptable :TAU-SYSTEM rules."
+ "Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+Form:  ( defthm bsaexpr=>def ...)
+ Enumerator events...
+Form:  ( MUTUAL-RECURSION ( DEFUN nth-saexpr-builtin ...) ...)
+Form:  ( MUTUAL-RECURSION ( DEFUN nth-saexpr/acc-builtin ...) ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.13 seconds (prove: 0.11, print: 0.00, other: 0.02)
+ Registering type...
+Form:  ( defun nth-saexpr ...)
+Form:  ( ENCAPSULATE (((nth-saexpr * ...) ...) ...) ...)
+Form:  ( defun nth-saexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-saexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-saexpr nth-saexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-saexpr/acc nth-saexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( defun nth-usaexpr ...)
+Form:  ( ENCAPSULATE (((nth-usaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-usaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-usaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-usaexpr nth-usaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-usaexpr/acc nth-usaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( defun nth-bsaexpr ...)
+Form:  ( ENCAPSULATE (((nth-bsaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-bsaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-bsaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-bsaexpr nth-bsaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-bsaexpr/acc nth-bsaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.15 seconds (prove: 0.11, print: 0.00, other: 0.04)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.16 seconds (prove: 0.11, print: 0.00, other: 0.04)
+ t
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> Predicate events...
+Form:  ( defun assignmentp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Alistof theory events...
+Form:  ( defthm assignmentp-implies-alistp ...)
+Form:  ( defthm assignmentp-implies-tlp ...)
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: assignmentp relatively complete for Tau.
+Form:  ( defthm def=>assignment ...)
+Form:  ( defthm assignment=>def ...)
+ Polymorphic sig instantiation events...
+Form:  ( defthm append-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm app-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm rev-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm fix-true-list-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm last-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm nthcdr-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm remove-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm remove1-equal-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm remove-duplicates-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm cdr-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm revappend-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm reverse-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm set-difference$-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm first-n-ac-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm take-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm subseq-list-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm subseq-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm put-assoc-equal-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+ Enumerator events...
+Form:  ( defun nth-assignment-builtin ...)
+Form:  ( defun nth-assignment/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.11 seconds (prove: 0.08, print: 0.00, other: 0.03)
+ Registering type...
+Form:  ( defun nth-assignment ...)
+Form:  ( ENCAPSULATE (((nth-assignment * ...) ...) ...) ...)
+Form:  ( defun nth-assignment/acc ...)
+Form:  ( ENCAPSULATE (((nth-assignment/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-assignment nth-assignment-builtin) ...)
+Form:  ( DEFATTACH (nth-assignment/acc nth-assignment/acc-builtin)
+...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.11 seconds (prove: 0.08, print: 0.00, other: 0.04)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.12 seconds (prove: 0.08, print: 0.00, other: 0.04)
+ t
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>>
+Form:  ( TEST-DEFINITION lookup ... )
+Form:  ( TEST-BODY-CONTRACTS lookup... ) 
+Form:  ( TEST-FUNCTION-CONTRACT lookup ...) 
+Testing: Done 
+Elapsed Run Time: 0.13 seconds
+Form:  ( ADMIT-DEFINITION lookup ... )
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROVE-FUNCTION-CONTRACT lookup ... )
+Time:  0.03 seconds (prove: 0.02, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS lookup ... )
+Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
+Elapsed Run Time: 0.08 seconds
+Function Name : LOOKUP 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> Predicate events...
+Form:  ( defun erp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: erp relatively complete for Tau.
+Form:  ( defthm acl2::def=>er ...)
+Form:  ( defthm acl2::er=>def ...)
+ Enumerator events...
+Form:  ( defun nth-er-builtin ...)
+Form:  ( defun nth-er/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ Registering type...
+Form:  ( defun nth-er ...)
+Form:  ( ENCAPSULATE (((nth-er * ...) ...) ...) ...)
+Form:  ( defun nth-er/acc ...)
+Form:  ( ENCAPSULATE (((nth-er/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-er nth-er-builtin) ...)
+Form:  ( DEFATTACH (nth-er/acc nth-er/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ t
+ACL2S !>>
+Summary
+Form:  ( defconst *er* ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ *er*
+ACL2S !>> Predicate events...
+Form:  ( defun rat-errp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: rat-errp relatively complete for Tau.
+Form:  ( defthm def=>rat-err ...)
+Form:  ( defthm rat-err=>def ...)
+ Enumerator events...
+Form:  ( defun nth-rat-err-builtin ...)
+Form:  ( defun nth-rat-err/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ Registering type...
+Form:  ( defun nth-rat-err ...)
+Form:  ( ENCAPSULATE (((nth-rat-err * ...) ...) ...) ...)
+Form:  ( defun nth-rat-err/acc ...)
+Form:  ( ENCAPSULATE (((nth-rat-err/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-rat-err nth-rat-err-builtin) ...)
+Form:  ( DEFATTACH (nth-rat-err/acc nth-rat-err/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION eval-uop ... )
+Form:  ( TEST-BODY-CONTRACTS eval-uop... ) 
+Form:  ( TEST-FUNCTION-CONTRACT eval-uop ...) 
+Testing: Done 
+Elapsed Run Time: 0.09 seconds
+Form:  ( ADMIT-DEFINITION eval-uop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-FUNCTION-CONTRACT eval-uop ... )
+Time:  0.07 seconds (prove: 0.03, print: 0.00, other: 0.04)
+Form:  ( PROVE-BODY-CONTRACTS eval-uop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Elapsed Run Time: 0.08 seconds
+Function Name : EVAL-UOP 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION eval-^ ... )
+Form:  ( TEST-BODY-CONTRACTS eval-^... ) 
+Form:  ( TEST-FUNCTION-CONTRACT eval-^ ...) 
+Testing: Done 
+Elapsed Run Time: 0.14 seconds
+Form:  ( ADMIT-DEFINITION eval-^ ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-FUNCTION-CONTRACT eval-^ ... )
+Time:  0.08 seconds (prove: 0.03, print: 0.00, other: 0.04)
+Form:  ( PROVE-BODY-CONTRACTS eval-^ ... )
+Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
+Elapsed Run Time: 0.12 seconds
+Function Name : EVAL-^ 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION eval-bop ... )
+Form:  ( TEST-BODY-CONTRACTS eval-bop... ) 
+Form:  ( TEST-FUNCTION-CONTRACT eval-bop ...) 
+Testing: Done 
+Elapsed Run Time: 0.22 seconds
+Form:  ( ADMIT-DEFINITION eval-bop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-FUNCTION-CONTRACT eval-bop ... )
+Time:  0.08 seconds (prove: 0.03, print: 0.00, other: 0.05)
+Form:  ( PROVE-BODY-CONTRACTS eval-bop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Elapsed Run Time: 0.10 seconds
+Function Name : EVAL-BOP 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION saeval ... )
+Form:  ( TEST-BODY-CONTRACTS saeval... ) 
+Form:  ( TEST-FUNCTION-CONTRACT saeval ...) 
+Testing: Done 
+Elapsed Run Time: 0.57 seconds
+Form:  ( ADMIT-DEFINITION saeval ... )
+Time:  0.26 seconds (prove: 0.25, print: 0.00, other: 0.01)
+Form:  ( PROVE-FUNCTION-CONTRACT saeval ... )
+Time:  4.86 seconds (prove: 4.77, print: 0.00, other: 0.09)
+Form:  ( PROVE-BODY-CONTRACTS saeval ... )
+Time:  0.26 seconds (prove: 0.21, print: 0.00, other: 0.05)
+Elapsed Run Time: 5.40 seconds
+Function Name : SAEVAL 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>> :passed
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 1000 examples across 2 subgoals, of which 519 (519 unique)
+satisfied the hypotheses, and found 0 counterexamples and 519 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a '((yyxx . -1) (x . 0))))
+ -- ((a '((x . 0))))
+ -- ((a nil))
+
+Test? proved the conjecture under consideration. Therefore, no counterexamples
+exist. 
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.03 seconds (prove: 0.00, print: 0.00, other: 0.02)
+ :empty-encapsulate
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( PROVING PROPERTY )
+
+Q.E.D.
+Rules: ((:fake-rune-for-type-set nil))
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 226 (226 unique)
+satisfied the hypotheses, and found 0 counterexamples and 226 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a '((x . 0))))
+ -- ((a '((yx . 0))))
+ -- ((a nil))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ :empty-encapsulate
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 1000 examples across 2 subgoals, of which 975 (975 unique)
+satisfied the hypotheses, and found 0 counterexamples and 975 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a nil) (x 'xynnl))
+ -- ((a nil) (x 'a))
+ -- ((a nil) (x 'lxnln))
+
+Test? proved the conjecture under consideration. Therefore, no counterexamples
+exist. 
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.06 seconds (prove: 0.01, print: 0.00, other: 0.05)
+ :empty-encapsulate
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 1000 examples across 2 subgoals, of which 456 (456 unique)
+satisfied the hypotheses, and found 0 counterexamples and 456 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a '((x . 0))))
+ -- ((a nil))
+ -- ((a '((yx . 0))))
+
+Test? proved the conjecture under consideration. Therefore, no counterexamples
+exist. 
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.05 seconds (prove: 0.01, print: 0.00, other: 0.04)
+ :empty-encapsulate
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 1000 examples across 2 subgoals, of which 994 (994 unique)
+satisfied the hypotheses, and found 0 counterexamples and 994 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a nil) (y 'c) (x 'kmea))
+ -- ((a nil) (y 'kj) (x 'xyx))
+ -- ((a '((nxx . 2))) (y 'yyy) (x '|-1|))
+
+Test? proved the conjecture under consideration. Therefore, no counterexamples
+exist. 
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.04 seconds (prove: 0.01, print: 0.00, other: 0.03)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.09 seconds (prove: 0.02, print: 0.00, other: 0.07)
+ :empty-encapsulate
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 1000 examples across 2 subgoals, of which 661 (661 unique)
+satisfied the hypotheses, and found 0 counterexamples and 661 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a nil) (z '(- (- 0))) (y '((0 * x) * -1)) (x -1/3))
+ -- ((a '((x . 0) (x . 0))) (z -2/3) (y 'swi6) (x 'e1))
+ -- ((a '((yx . 0) (yx . 0))) (z 'nxyl) (y -3/4) (x '(0 + 0)))
+
+Test? proved the conjecture under consideration. Therefore, no counterexamples
+exist. 
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.46 seconds (prove: 0.42, print: 0.00, other: 0.04)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.46 seconds (prove: 0.42, print: 0.00, other: 0.04)
+ :empty-encapsulate
+ACL2S !>> :passed
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 1000 examples across 2 subgoals, of which 459 (459 unique)
+satisfied the hypotheses, and found 0 counterexamples and 459 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a nil) (y 'yx) (x '(- (x + 0))))
+ -- ((a nil) (y -1) (x 649/938))
+ -- 
+((a '((yx . -1/2) (yx . 0))) (y '(4/15 ^ (0 + 0))) (x '(((- 0) + x) ^ 0)))
+
+Test? proved the conjecture under consideration. Therefore, no counterexamples
+exist. 
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.14 seconds (prove: 0.10, print: 0.00, other: 0.04)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.15 seconds (prove: 0.10, print: 0.00, other: 0.04)
+ :empty-encapsulate
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 1000 examples across 2 subgoals, of which 361 (361 unique)
+satisfied the hypotheses, and found 0 counterexamples and 361 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a nil) (x 'e))
+ -- ((a nil) (x 'xlyxl))
+ -- ((a '((yxxyx . -1/3))) (x 'xmky))
+
+Test? proved the conjecture under consideration. Therefore, no counterexamples
+exist. 
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.06 seconds (prove: 0.01, print: 0.00, other: 0.04)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.06 seconds (prove: 0.01, print: 0.00, other: 0.05)
+ :empty-encapsulate
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 9000 examples across 18 subgoals, of which 552 (552 unique)
+satisfied the hypotheses, and found 0 counterexamples and 552 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a nil) (y 'h) (x -29/59))
+ -- ((a nil) (y 'nxynj) (x -10/27))
+ -- ((a nil) (y -1) (x '((x + 0) + 0)))
+
+Test? succeeded. No counterexamples were found.
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.89 seconds (prove: 0.61, print: 0.00, other: 0.28)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  1.06 seconds (prove: 0.74, print: 0.00, other: 0.32)
+ :empty-encapsulate
+ACL2S !>>Form:  ( defconst *aboper-values* ...)
+ Predicate events...
+Form:  ( defun aboperp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: aboperp relatively complete for Tau.
+Form:  ( defthm def=>aboper ...)
+Form:  ( defthm aboper=>def ...)
+ Enumerator events...
+Form:  ( defun nth-aboper-builtin ...)
+Form:  ( defun nth-aboper/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ Registering type...
+Form:  ( defun nth-aboper ...)
+Form:  ( ENCAPSULATE (((nth-aboper * ...) ...) ...) ...)
+Form:  ( defun nth-aboper/acc ...)
+Form:  ( ENCAPSULATE (((nth-aboper/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-aboper nth-aboper-builtin) ...)
+Form:  ( DEFATTACH (nth-aboper/acc nth-aboper/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+ t
+ACL2S !>> Predicate events...
+Form:  ( MUTUAL-RECURSION ( DEFUN aaexprp ...) ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: aaexprp relatively complete for Tau.
+Form:  ( defthm def=>aaexpr ...)
+Form:  ( defthm aaexpr=>def ...)
+ (uaaexprp acl2::v1) <= body -- not complete. 
+Reasons: 
+("Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+ (uaaexprp acl2::v1) => body -- not complete. 
+Reasons: 
+("The formula fails to fit any of the forms for acceptable :TAU-SYSTEM rules."
+ "Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+Form:  ( defthm uaaexpr=>def ...)
+ (baaexprp acl2::v1) <= body -- not complete. 
+Reasons: 
+("Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+ (baaexprp acl2::v1) => body -- not complete. 
+Reasons: 
+("The formula fails to fit any of the forms for acceptable :TAU-SYSTEM rules."
+ "Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+Form:  ( defthm baaexpr=>def ...)
+ Enumerator events...
+Form:  ( MUTUAL-RECURSION ( DEFUN nth-aaexpr-builtin ...) ...)
+Form:  ( MUTUAL-RECURSION ( DEFUN nth-aaexpr/acc-builtin ...) ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.19 seconds (prove: 0.17, print: 0.00, other: 0.02)
+ Registering type...
+Form:  ( defun nth-aaexpr ...)
+Form:  ( ENCAPSULATE (((nth-aaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-aaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-aaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-aaexpr nth-aaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-aaexpr/acc nth-aaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( defun nth-uaaexpr ...)
+Form:  ( ENCAPSULATE (((nth-uaaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-uaaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-uaaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-uaaexpr nth-uaaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-uaaexpr/acc nth-uaaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( defun nth-baaexpr ...)
+Form:  ( ENCAPSULATE (((nth-baaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-baaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-baaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-baaexpr nth-baaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-baaexpr/acc nth-baaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.21 seconds (prove: 0.17, print: 0.00, other: 0.04)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.21 seconds (prove: 0.17, print: 0.00, other: 0.05)
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION sael->aa ... )
+Form:  ( TEST-BODY-CONTRACTS sael->aa... ) 
+Form:  ( TEST-FUNCTION-CONTRACT sael->aa ...) 
+Testing: Done 
+Elapsed Run Time: 0.27 seconds
+Form:  ( ADMIT-DEFINITION sael->aa ... )
+Time:  0.04 seconds (prove: 0.04, print: 0.00, other: 0.01)
+Form:  ( PROVE-FUNCTION-CONTRACT sael->aa ... )
+Time:  1.07 seconds (prove: 1.05, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS sael->aa ... )
+Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
+Elapsed Run Time: 1.15 seconds
+Function Name : SAEL->AA 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION aa->sael ... )
+Form:  ( TEST-BODY-CONTRACTS aa->sael... ) 
+Form:  ( TEST-FUNCTION-CONTRACT aa->sael ...) 
+Testing: Done 
+Elapsed Run Time: 0.27 seconds
+Form:  ( ADMIT-DEFINITION aa->sael ... )
+Time:  0.05 seconds (prove: 0.04, print: 0.00, other: 0.01)
+Form:  ( PROVE-FUNCTION-CONTRACT aa->sael ... )
+Time:  1.49 seconds (prove: 1.48, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS aa->sael ... )
+Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
+Elapsed Run Time: 1.58 seconds
+Function Name : AA->SAEL 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 2000 examples across 4 subgoals, of which 1894 (1894 unique)
+satisfied the hypotheses, and found 0 counterexamples and 1894 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((s '(i - (- 0))))
+ -- ((s 256/287))
+ -- ((s 'xyx))
+
+Test? succeeded. No counterexamples were found.
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.08 seconds (prove: 0.04, print: 0.00, other: 0.04)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.08 seconds (prove: 0.04, print: 0.00, other: 0.04)
+ :empty-encapsulate
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 2000 examples across 4 subgoals, of which 1786 (1786 unique)
+satisfied the hypotheses, and found 0 counterexamples and 1786 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a 'xyx))
+ -- ((a '(- 0)))
+ -- ((a 0))
+
+Test? succeeded. No counterexamples were found.
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.08 seconds (prove: 0.04, print: 0.00, other: 0.04)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.08 seconds (prove: 0.04, print: 0.00, other: 0.04)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( TEST-DEFINITION eval-auop ... )
+Form:  ( TEST-BODY-CONTRACTS eval-auop... ) 
+Form:  ( TEST-FUNCTION-CONTRACT eval-auop ...) 
+Testing: Done 
+Elapsed Run Time: 0.10 seconds
+Form:  ( ADMIT-DEFINITION eval-auop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-FUNCTION-CONTRACT eval-auop ... )
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-BODY-CONTRACTS eval-auop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Elapsed Run Time: 0.02 seconds
+Function Name : EVAL-AUOP 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION eval-expt ... )
+Form:  ( TEST-BODY-CONTRACTS eval-expt... ) 
+Form:  ( TEST-FUNCTION-CONTRACT eval-expt ...) 
+Testing: Done 
+Elapsed Run Time: 0.13 seconds
+Form:  ( ADMIT-DEFINITION eval-expt ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-FUNCTION-CONTRACT eval-expt ... )
+Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS eval-expt ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Elapsed Run Time: 0.04 seconds
+Function Name : EVAL-EXPT 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION eval-abop ... )
+Form:  ( TEST-BODY-CONTRACTS eval-abop... ) 
+Form:  ( TEST-FUNCTION-CONTRACT eval-abop ...) 
+Testing: Done 
+Elapsed Run Time: 0.22 seconds
+Form:  ( ADMIT-DEFINITION eval-abop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-FUNCTION-CONTRACT eval-abop ... )
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-BODY-CONTRACTS eval-abop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Elapsed Run Time: 0.03 seconds
+Function Name : EVAL-ABOP 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION aaeval ... )
+Form:  ( TEST-BODY-CONTRACTS aaeval... ) 
+Form:  ( TEST-FUNCTION-CONTRACT aaeval ...) 
+Testing: Done 
+Elapsed Run Time: 0.38 seconds
+Form:  ( ADMIT-DEFINITION aaeval ... )
+Time:  0.40 seconds (prove: 0.39, print: 0.00, other: 0.01)
+Form:  ( PROVE-FUNCTION-CONTRACT aaeval ... )
+Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS aaeval ... )
+Time:  0.05 seconds (prove: 0.01, print: 0.00, other: 0.03)
+Elapsed Run Time: 0.48 seconds
+Function Name : AAEVAL 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 2000 examples across 4 subgoals, of which 1619 (1619 unique)
+satisfied the hypotheses, and found 0 counterexamples and 1619 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((a nil) (s '(yyxx * 0)))
+ -- ((a '((ia . -1/2))) (s '(- x)))
+ -- ((a nil) (s 'b))
+
+Test? succeeded. No counterexamples were found.
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.13 seconds (prove: 0.06, print: 0.00, other: 0.06)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.13 seconds (prove: 0.06, print: 0.00, other: 0.06)
+ :empty-encapsulate
+ACL2S !>>
+
+Form:  ( TESTING PROPERTY CONTRACTS ...)Form:  ( TESTING PROPERTY )
+
+**Summary of Cgen/testing**
+We tested 2000 examples across 4 subgoals, of which 1592 (1592 unique)
+satisfied the hypotheses, and found 0 counterexamples and 1592 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "top"]
+ -- ((ass nil) (a -1))
+ -- ((ass '((xn . -1/3))) (a 'lyxxn))
+ -- ((ass nil) (a 7/10))
+
+Test? succeeded. No counterexamples were found.
+Form:  ( PROPERTY PASSED TESTING )
+Time:  0.14 seconds (prove: 0.07, print: 0.00, other: 0.06)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.14 seconds (prove: 0.07, print: 0.00, other: 0.07)
+ :empty-encapsulate
+ACL2S !>>Bye.
+ :eof
+ACL2S !>
+Project-dir-alist:
+((:system . "/Users/lumingqi/acl2-work/acl2/books/")).
+Type :help for help.
+Type (quit) to quit completely out of ACL2.
+
+ACL2S !>> "ACL2S"
+ACL2S !>>
+Summary
+Form:  ( defmacro check-er ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ check-er
+ACL2S !>>
+Summary
+Form:  ( defmacro check-rat ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ check-rat
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>>
+
+ACL2 Error in acl2::acl2-interface:  A floating-point input, which
+CLTL displays as 0.5, has been encountered.  To permit floating-point
+input, which ACL2 treats as a rational number, use the prefix #d or
+#D; see :DOC df).
+
+***********************************************
+************ ABORTING from raw Lisp ***********
+********** (see :DOC raw-lisp-error) **********
+Error:  ACL2 Halted
+***********************************************
+
+The message above might explain the error.  If not, and
+if you didn't cause an explicit interrupt (Control-C),
+then it may help to see :DOC raw-lisp-error.
+
+To enable breaks into the debugger (also see :DOC acl2-customization):
+(SET-DEBUGGER-ENABLE T)
+ (:stop-ld 1)
+ACL2S !>

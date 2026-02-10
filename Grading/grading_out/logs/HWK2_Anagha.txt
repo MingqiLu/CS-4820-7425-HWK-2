@@ -1,0 +1,5113 @@
+
+ACL2s Version 1.3.1.
+Build date: january 12, 2026  00:21:40.
+Copyright (C) 2022, Northeastern University.
+ACL2s is an extension of ACL2 Version 8.6.
+ACL2s comes with ABSOLUTELY NO WARRANTY.
+This is free software with certain restrictions.
+See the LICENSE files distributed with ACL2s and ACL2.
+
+Project-dir-alist:
+((:system . "/Users/lumingqi/acl2-work/acl2/books/")).
+Type :help for help.
+Type (quit) to quit completely out of ACL2.
+
+ACL2S !> "ACL2S"
+ACL2S !>
+Project-dir-alist:
+((:system . "/Users/lumingqi/acl2-work/acl2/books/")).
+Type :help for help.
+Type (quit) to quit completely out of ACL2.
+
+ACL2S !>> "ACL2S"
+ACL2S !>>
+
+ACL2S !>>>(acl2s-defaults :set testing-enabled t)
+
+
+ACL2S !>>>(value-triple :redundant)
+
+
+ACL2S !>>>(table acl2s-defaults-table
+            ':testing-enabled
+            '(acl2s-param-info% t
+                                (member-eq value *testing-enabled-values*)
+                                set-acl2s-random-testing-enabled))
+
+The event ( table acl2s-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+:redundant
+
+
+ACL2S !>>>(set-defunc-skip-admissibilityp nil)
+
+The event ( table defunc-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-defunc-skip-function-contractp nil)
+
+The event ( table defunc-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-defunc-skip-body-contractsp nil)
+
+The event ( table defunc-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-defunc-termination-strictp t)
+
+The event ( table defunc-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-defunc-function-contract-strictp t)
+
+The event ( table defunc-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-defunc-body-contracts-strictp t)
+
+The event ( table defunc-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-acl2s-property-table-test-contracts? t)
+
+The event ( table acl2s-property-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-acl2s-property-table-check-contracts? t)
+
+The event ( table acl2s-property-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-acl2s-property-table-proofs? t)
+
+The event ( table acl2s-property-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(set-acl2s-property-table-testing? t)
+
+The event ( table acl2s-property-table ...) is redundant.  See :DOC
+redundant-events.
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:redundant
+
+
+ACL2S !>>>(modeling-set-parms 60 15 90 120 60)
+
+
+ACL2S !>>>(acl2s-defaults :set cgen-timeout 60)
+
+
+ACL2S !>>>(table acl2s-defaults-table
+            ':cgen-timeout
+            '(acl2s-param-info% 60 (and (rationalp value) (<= 0 value))
+                                nil))
+
+The event ( table acl2s-defaults-table ...) is redundant.  See :DOC
+redundant-events.
+
+
+ACL2S !>>>(value-triple '60)
+60
+
+
+ACL2S !>>>(acl2s-defaults :set cgen-local-timeout 15)
+
+
+ACL2S !>>>(table acl2s-defaults-table
+            ':cgen-local-timeout
+            '(acl2s-param-info% 15 (and (rationalp value) (<= 0 value))
+                                nil))
+
+
+ACL2S !>>>(value-triple '15)
+15
+
+
+ACL2S !>>>(set-defunc-timeout 90)
+
+Summary
+Form:  ( table defunc-defaults-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+defunc-defaults-table
+
+
+ACL2S !>>>(set-acl2s-property-table-proof-timeout 120)
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+acl2s-property-table
+
+
+ACL2S !>>>(set-acl2s-property-table-testing-timeout 60)
+
+Summary
+Form:  ( table acl2s-property-table ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+acl2s-property-table
+
+Summary
+Form:  ( PROGN (acl2s-defaults :set ...) ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+acl2s-property-table
+
+Summary
+Form:  ( PROGN (acl2s-defaults ... t) ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ acl2s-property-table
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>>Form:  ( defconst *uoper-values* ...)
+ Predicate events...
+Form:  ( defun uoperp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: uoperp relatively complete for Tau.
+Form:  ( defthm def=>uoper ...)
+Form:  ( defthm uoper=>def ...)
+ Enumerator events...
+Form:  ( defun nth-uoper-builtin ...)
+Form:  ( defun nth-uoper/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ Registering type...
+Form:  ( defun nth-uoper ...)
+Form:  ( ENCAPSULATE (((nth-uoper * ...) ...) ...) ...)
+Form:  ( defun nth-uoper/acc ...)
+Form:  ( ENCAPSULATE (((nth-uoper/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-uoper nth-uoper-builtin) ...)
+Form:  ( DEFATTACH (nth-uoper/acc nth-uoper/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ t
+ACL2S !>>Form:  ( defconst *boper-values* ...)
+ Predicate events...
+Form:  ( defun boperp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: boperp relatively complete for Tau.
+Form:  ( defthm def=>boper ...)
+Form:  ( defthm boper=>def ...)
+ Enumerator events...
+Form:  ( defun nth-boper-builtin ...)
+Form:  ( defun nth-boper/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ Registering type...
+Form:  ( defun nth-boper ...)
+Form:  ( ENCAPSULATE (((nth-boper * ...) ...) ...) ...)
+Form:  ( defun nth-boper/acc ...)
+Form:  ( ENCAPSULATE (((nth-boper/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-boper nth-boper-builtin) ...)
+Form:  ( DEFATTACH (nth-boper/acc nth-boper/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+ t
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> Predicate events...
+Form:  ( MUTUAL-RECURSION ( DEFUN saexprp ...) ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: saexprp relatively complete for Tau.
+Form:  ( defthm def=>saexpr ...)
+Form:  ( defthm saexpr=>def ...)
+ (usaexprp acl2::v1) <= body -- not complete. 
+Reasons: 
+("Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+ (usaexprp acl2::v1) => body -- not complete. 
+Reasons: 
+("The formula fails to fit any of the forms for acceptable :TAU-SYSTEM rules."
+ "Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+Form:  ( defthm usaexpr=>def ...)
+ (bsaexprp acl2::v1) <= body -- not complete. 
+Reasons: 
+("Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+ (bsaexprp acl2::v1) => body -- not complete. 
+Reasons: 
+("The formula fails to fit any of the forms for acceptable :TAU-SYSTEM rules."
+ "Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+Form:  ( defthm bsaexpr=>def ...)
+ Enumerator events...
+Form:  ( MUTUAL-RECURSION ( DEFUN nth-saexpr-builtin ...) ...)
+Form:  ( MUTUAL-RECURSION ( DEFUN nth-saexpr/acc-builtin ...) ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.12 seconds (prove: 0.10, print: 0.00, other: 0.02)
+ Registering type...
+Form:  ( defun nth-saexpr ...)
+Form:  ( ENCAPSULATE (((nth-saexpr * ...) ...) ...) ...)
+Form:  ( defun nth-saexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-saexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-saexpr nth-saexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-saexpr/acc nth-saexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( defun nth-usaexpr ...)
+Form:  ( ENCAPSULATE (((nth-usaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-usaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-usaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-usaexpr nth-usaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-usaexpr/acc nth-usaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( defun nth-bsaexpr ...)
+Form:  ( ENCAPSULATE (((nth-bsaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-bsaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-bsaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-bsaexpr nth-bsaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-bsaexpr/acc nth-bsaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.14 seconds (prove: 0.10, print: 0.00, other: 0.04)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.15 seconds (prove: 0.10, print: 0.00, other: 0.04)
+ t
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> Predicate events...
+Form:  ( defun assignmentp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Alistof theory events...
+Form:  ( defthm assignmentp-implies-alistp ...)
+Form:  ( defthm assignmentp-implies-tlp ...)
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: assignmentp relatively complete for Tau.
+Form:  ( defthm def=>assignment ...)
+Form:  ( defthm assignment=>def ...)
+ Polymorphic sig instantiation events...
+Form:  ( defthm append-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm app-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm rev-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm fix-true-list-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm last-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm nthcdr-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm remove-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm remove1-equal-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm remove-duplicates-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm cdr-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm revappend-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm reverse-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm set-difference$-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm first-n-ac-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm take-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm subseq-list-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm subseq-alistof-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+Form:  ( defthm put-assoc-equal-assignmentp-sig ...)
+Form:  ( MAKE-EVENT (quote ...))
+ Enumerator events...
+Form:  ( defun nth-assignment-builtin ...)
+Form:  ( defun nth-assignment/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.10 seconds (prove: 0.07, print: 0.00, other: 0.03)
+ Registering type...
+Form:  ( defun nth-assignment ...)
+Form:  ( ENCAPSULATE (((nth-assignment * ...) ...) ...) ...)
+Form:  ( defun nth-assignment/acc ...)
+Form:  ( ENCAPSULATE (((nth-assignment/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-assignment nth-assignment-builtin) ...)
+Form:  ( DEFATTACH (nth-assignment/acc nth-assignment/acc-builtin)
+...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.11 seconds (prove: 0.07, print: 0.00, other: 0.04)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.11 seconds (prove: 0.07, print: 0.00, other: 0.04)
+ t
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>>
+Form:  ( TEST-DEFINITION lookup ... )
+Form:  ( TEST-BODY-CONTRACTS lookup... ) 
+Form:  ( TEST-FUNCTION-CONTRACT lookup ...) 
+Testing: Done 
+Elapsed Run Time: 0.28 seconds
+Form:  ( ADMIT-DEFINITION lookup ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-FUNCTION-CONTRACT lookup ... )
+Time:  0.03 seconds (prove: 0.02, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS lookup ... )
+Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.02)
+Elapsed Run Time: 0.07 seconds
+Function Name : LOOKUP 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>> Predicate events...
+Form:  ( defun erp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: erp relatively complete for Tau.
+Form:  ( defthm acl2::def=>er ...)
+Form:  ( defthm acl2::er=>def ...)
+ Enumerator events...
+Form:  ( defun nth-er-builtin ...)
+Form:  ( defun nth-er/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ Registering type...
+Form:  ( defun nth-er ...)
+Form:  ( ENCAPSULATE (((nth-er * ...) ...) ...) ...)
+Form:  ( defun nth-er/acc ...)
+Form:  ( ENCAPSULATE (((nth-er/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-er nth-er-builtin) ...)
+Form:  ( DEFATTACH (nth-er/acc nth-er/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ t
+ACL2S !>>
+Summary
+Form:  ( defconst *er* ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ *er*
+ACL2S !>> Predicate events...
+Form:  ( defun rat-errp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: rat-errp relatively complete for Tau.
+Form:  ( defthm def=>rat-err ...)
+Form:  ( defthm rat-err=>def ...)
+ Enumerator events...
+Form:  ( defun nth-rat-err-builtin ...)
+Form:  ( defun nth-rat-err/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ Registering type...
+Form:  ( defun nth-rat-err ...)
+Form:  ( ENCAPSULATE (((nth-rat-err * ...) ...) ...) ...)
+Form:  ( defun nth-rat-err/acc ...)
+Form:  ( ENCAPSULATE (((nth-rat-err/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-rat-err nth-rat-err-builtin) ...)
+Form:  ( DEFATTACH (nth-rat-err/acc nth-rat-err/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION rat-okp ... )
+Form:  ( TEST-BODY-CONTRACTS rat-okp... ) 
+Form:  ( TEST-FUNCTION-CONTRACT rat-okp ...) 
+Testing: Done 
+Elapsed Run Time: 0.02 seconds
+Form:  ( ADMIT-DEFINITION rat-okp ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-FUNCTION-CONTRACT rat-okp ... )
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS rat-okp ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Elapsed Run Time: 0.02 seconds
+Function Name : RAT-OKP 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION rat-nonzerop ... )
+Form:  ( TEST-BODY-CONTRACTS rat-nonzerop... ) 
+Form:  ( TEST-FUNCTION-CONTRACT rat-nonzerop ...) 
+Testing: Done 
+Elapsed Run Time: 0.02 seconds
+Form:  ( ADMIT-DEFINITION rat-nonzerop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVE-FUNCTION-CONTRACT rat-nonzerop ... )
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS rat-nonzerop ... )
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Elapsed Run Time: 0.02 seconds
+Function Name : RAT-NONZEROP 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION saeval ... )
+Form:  ( TEST-BODY-CONTRACTS saeval... ) 
+Form:  ( TEST-FUNCTION-CONTRACT saeval ...) 
+Testing: Done 
+Elapsed Run Time: 1.00 seconds
+Form:  ( ADMIT-DEFINITION saeval ... )
+Time:  0.58 seconds (prove: 0.56, print: 0.00, other: 0.02)
+Form:  ( PROVE-FUNCTION-CONTRACT saeval ... )
+Time:  3.54 seconds (prove: 3.45, print: 0.00, other: 0.09)
+Form:  ( PROVE-BODY-CONTRACTS saeval ... )
+Time:  1.99 seconds (prove: 1.91, print: 0.00, other: 0.07)
+Elapsed Run Time: 6.12 seconds
+Function Name : SAEVAL 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>> :passed
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+
+Q.E.D.
+Rules: ((:fake-rune-for-type-set nil))
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 264 (264 unique)
+satisfied the hypotheses, and found 0 counterexamples and 264 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a '((yxxyx . -1))))
+ -- ((a '((lyy . -1) (x . -1))))
+ -- ((a nil))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+
+Q.E.D.
+Rules: ((:fake-rune-for-type-set nil))
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 244 (244 unique)
+satisfied the hypotheses, and found 0 counterexamples and 244 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a '((yjx . 1/5))))
+ -- ((a '((x . -1/2))))
+ -- ((a nil))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+
+Q.E.D.
+Rules: ((:fake-rune-for-type-set nil))
+Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.01)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 496 (496 unique)
+satisfied the hypotheses, and found 0 counterexamples and 496 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a '((x . -1))) (x 'xniz))
+ -- ((a nil) (x 'gbh))
+ -- ((a nil) (x 'x1))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.01)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.01 seconds (prove: 0.01, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+
+Q.E.D.
+Rules: ((:compound-recognizer assignmentp-implies-tlp)
+        (:compound-recognizer var-symbolp)
+        (:definition saeval-definition-rule)
+        (:definition usaexprp)
+        (:executable-counterpart equal)
+        (:executable-counterpart uoperp)
+        (:fake-rune-for-type-set nil)
+        (:rewrite acl2::|(- (- x))|)
+        (:rewrite car-cons)
+        (:rewrite cdr-cons)
+        (:rewrite def=>saexpr)
+        (:type-prescription lookup-contract-tp)
+        (:type-prescription saexprp))
+Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 480 (480 unique)
+satisfied the hypotheses, and found 0 counterexamples and 480 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a nil) (x 'yxxyx))
+ -- ((a nil) (x 'yyxx))
+ -- ((a '((njy . -1/5) (yyxx . 0) (yx . 0))) (x 'fp))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.03 seconds (prove: 0.01, print: 0.00, other: 0.02)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.05 seconds (prove: 0.02, print: 0.00, other: 0.03)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.01 seconds (prove: 0.01, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+
+Q.E.D.
+Rules: ((:compound-recognizer assignmentp-implies-tlp)
+        (:compound-recognizer var-symbolp)
+        (:definition bsaexprp)
+        (:definition saeval-definition-rule)
+        (:definition uoperp)
+        (:definition usaexprp)
+        (:executable-counterpart boperp)
+        (:executable-counterpart equal)
+        (:executable-counterpart saexprp)
+        (:executable-counterpart uoperp)
+        (:fake-rune-for-type-set nil)
+        (:rewrite car-cons)
+        (:rewrite cdr-cons)
+        (:rewrite def=>saexpr)
+        (:type-prescription lookup-contract-tp)
+        (:type-prescription saexprp))
+Time:  0.04 seconds (prove: 0.01, print: 0.00, other: 0.02)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 497 (497 unique)
+satisfied the hypotheses, and found 0 counterexamples and 497 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a nil) (y 'yjgx) (x 'yyxxy))
+ -- ((a nil) (y 's) (x 'i))
+ -- ((a '((yx . -1))) (y 'xxyxx) (x 'lnxx))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.04 seconds (prove: 0.01, print: 0.00, other: 0.03)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.05 seconds (prove: 0.02, print: 0.00, other: 0.03)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.12 seconds (prove: 0.12, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+Subgoal 106
+Subgoal 106.60
+Subgoal 106.59
+Subgoal 106.58
+Subgoal 106.57
+Subgoal 106.56
+Subgoal 106.55
+Subgoal 106.54
+Subgoal 106.53
+Subgoal 106.52
+Subgoal 106.51
+Subgoal 106.50
+Subgoal 106.49
+Subgoal 106.48
+Subgoal 106.47
+Subgoal 106.46
+Subgoal 106.45
+Subgoal 106.44
+Subgoal 106.43
+Subgoal 106.42
+Subgoal 106.41
+Subgoal 106.40
+Subgoal 106.39
+Subgoal 106.38
+Subgoal 106.37
+Subgoal 106.36
+Subgoal 106.35
+Subgoal 106.34
+Subgoal 106.33
+Subgoal 106.32
+Subgoal 106.31
+Subgoal 106.30
+Subgoal 106.29
+Subgoal 106.28
+Subgoal 106.27
+Subgoal 106.26
+Subgoal 106.25
+Subgoal 106.24
+Subgoal 106.23
+Subgoal 106.22
+Subgoal 106.21
+Subgoal 106.20
+Subgoal 106.19
+Subgoal 106.18
+Subgoal 106.17
+Subgoal 106.16
+Subgoal 106.15
+Subgoal 106.14
+Subgoal 106.13
+Subgoal 106.12
+Subgoal 106.11
+Subgoal 106.10
+Subgoal 106.9
+Subgoal 106.8
+Subgoal 106.7
+Subgoal 106.6
+Subgoal 106.5
+Subgoal 106.4
+Subgoal 106.3
+Subgoal 106.2
+Subgoal 106.1
+Subgoal 105
+Subgoal 105.103
+Subgoal 105.103.20
+Subgoal 105.103.19
+Subgoal 105.103.18
+Subgoal 105.103.17
+Subgoal 105.103.16
+Subgoal 105.103.15
+Subgoal 105.103.14
+Subgoal 105.103.13
+Subgoal 105.103.12
+Subgoal 105.103.11
+Subgoal 105.103.10
+Subgoal 105.103.9
+Subgoal 105.103.8
+Subgoal 105.103.7
+Subgoal 105.103.6
+Subgoal 105.103.5
+Subgoal 105.103.4
+Subgoal 105.103.3
+Subgoal 105.103.2
+Subgoal 105.103.1
+Subgoal 105.102
+Subgoal 105.102.7
+Subgoal 105.102.6
+Subgoal 105.102.5
+Subgoal 105.102.4
+Subgoal 105.102.3
+Subgoal 105.102.2
+Subgoal 105.102.1
+Subgoal 105.101
+Subgoal 105.100
+Subgoal 105.99
+Subgoal 105.98
+Subgoal 105.97
+Subgoal 105.96
+Subgoal 105.95
+Subgoal 105.94
+Subgoal 105.93
+Subgoal 105.92
+Subgoal 105.91
+Subgoal 105.90
+Subgoal 105.89
+Subgoal 105.88
+Subgoal 105.87
+Subgoal 105.86
+Subgoal 105.85
+Subgoal 105.84
+Subgoal 105.83
+Subgoal 105.82
+Subgoal 105.81
+Subgoal 105.80
+Subgoal 105.79
+Subgoal 105.78
+Subgoal 105.77
+Subgoal 105.76
+Subgoal 105.75
+Subgoal 105.74
+Subgoal 105.73
+Subgoal 105.72
+Subgoal 105.71
+Subgoal 105.70
+Subgoal 105.69
+Subgoal 105.68
+Subgoal 105.67
+Subgoal 105.66
+Subgoal 105.65
+Subgoal 105.64
+Subgoal 105.63
+Subgoal 105.62
+Subgoal 105.61
+Subgoal 105.60
+Subgoal 105.59
+Subgoal 105.58
+Subgoal 105.57
+Subgoal 105.56
+Subgoal 105.55
+Subgoal 105.54
+Subgoal 105.53
+Subgoal 105.52
+Subgoal 105.51
+Subgoal 105.50
+Subgoal 105.49
+Subgoal 105.48
+Subgoal 105.47
+Subgoal 105.46
+Subgoal 105.45
+Subgoal 105.44
+Subgoal 105.43
+Subgoal 105.42
+Subgoal 105.41
+Subgoal 105.40
+Subgoal 105.39
+Subgoal 105.38
+Subgoal 105.37
+Subgoal 105.36
+Subgoal 105.35
+Subgoal 105.34
+Subgoal 105.33
+Subgoal 105.32
+Subgoal 105.31
+Subgoal 105.30
+Subgoal 105.29
+Subgoal 105.28
+Subgoal 105.27
+Subgoal 105.26
+Subgoal 105.25
+Subgoal 105.24
+Subgoal 105.23
+Subgoal 105.22
+Subgoal 105.21
+Subgoal 105.20
+Subgoal 105.19
+Subgoal 105.18
+Subgoal 105.17
+Subgoal 105.16
+Subgoal 105.15
+Subgoal 105.14
+Subgoal 105.13
+Subgoal 105.12
+Subgoal 105.11
+Subgoal 105.10
+Subgoal 105.9
+Subgoal 105.8
+Subgoal 105.7
+Subgoal 105.6
+Subgoal 105.5
+Subgoal 105.4
+Subgoal 105.3
+Subgoal 105.2
+Subgoal 105.1
+Subgoal 104
+Subgoal 104.60
+Subgoal 104.59
+Subgoal 104.58
+Subgoal 104.57
+Subgoal 104.56
+Subgoal 104.55
+Subgoal 104.54
+Subgoal 104.53
+Subgoal 104.52
+Subgoal 104.51
+Subgoal 104.50
+Subgoal 104.49
+Subgoal 104.48
+Subgoal 104.47
+Subgoal 104.46
+Subgoal 104.45
+Subgoal 104.44
+Subgoal 104.43
+Subgoal 104.42
+Subgoal 104.41
+Subgoal 104.40
+Subgoal 104.39
+Subgoal 104.38
+Subgoal 104.37
+Subgoal 104.36
+Subgoal 104.35
+Subgoal 104.34
+Subgoal 104.33
+Subgoal 104.32
+Subgoal 104.31
+Subgoal 104.30
+Subgoal 104.29
+Subgoal 104.28
+Subgoal 104.27
+Subgoal 104.26
+Subgoal 104.25
+Subgoal 104.24
+Subgoal 104.23
+Subgoal 104.22
+Subgoal 104.21
+Subgoal 104.20
+Subgoal 104.19
+Subgoal 104.18
+Subgoal 104.17
+Subgoal 104.16
+Subgoal 104.15
+Subgoal 104.14
+Subgoal 104.13
+Subgoal 104.12
+Subgoal 104.11
+Subgoal 104.10
+Subgoal 104.9
+Subgoal 104.8
+Subgoal 104.7
+Subgoal 104.6
+Subgoal 104.5
+Subgoal 104.4
+Subgoal 104.3
+Subgoal 104.2
+Subgoal 104.1
+Subgoal 103
+Subgoal 103.20
+Subgoal 103.19
+Subgoal 103.18
+Subgoal 103.17
+Subgoal 103.16
+Subgoal 103.15
+Subgoal 103.14
+Subgoal 103.13
+Subgoal 103.12
+Subgoal 103.11
+Subgoal 103.10
+Subgoal 103.9
+Subgoal 103.8
+Subgoal 103.7
+Subgoal 103.6
+Subgoal 103.5
+Subgoal 103.4
+Subgoal 103.3
+Subgoal 103.2
+Subgoal 103.1
+Subgoal 102
+Subgoal 102.7
+Subgoal 102.6
+Subgoal 102.5
+Subgoal 102.4
+Subgoal 102.3
+Subgoal 102.2
+Subgoal 102.1
+Subgoal 101
+Subgoal 100
+Subgoal 99
+Subgoal 98
+Subgoal 97
+Subgoal 96
+Subgoal 95
+Subgoal 94
+Subgoal 93
+Subgoal 92
+Subgoal 91
+Subgoal 90
+Subgoal 89
+Subgoal 88
+Subgoal 87
+Subgoal 86
+Subgoal 85
+Subgoal 84
+Subgoal 83
+Subgoal 82
+Subgoal 81
+Subgoal 80
+Subgoal 79
+Subgoal 78
+Subgoal 77
+Subgoal 76
+Subgoal 75
+Subgoal 74
+Subgoal 73
+Subgoal 72
+Subgoal 71
+Subgoal 70
+Subgoal 69
+Subgoal 68
+Subgoal 67
+Subgoal 66
+Subgoal 65
+Subgoal 64
+Subgoal 63
+Subgoal 62
+Subgoal 61
+Subgoal 60
+Subgoal 59
+Subgoal 58
+Subgoal 57
+Subgoal 56
+Subgoal 55
+Subgoal 54
+Subgoal 53
+Subgoal 52
+Subgoal 51
+Subgoal 50
+Subgoal 49
+Subgoal 48
+Subgoal 47
+Subgoal 46
+Subgoal 45
+Subgoal 44
+Subgoal 43
+Subgoal 42
+Subgoal 41
+Subgoal 40
+Subgoal 39
+Subgoal 38
+Subgoal 37
+Subgoal 36
+Subgoal 35
+Subgoal 34
+Subgoal 33
+Subgoal 32
+Subgoal 31
+Subgoal 30
+Subgoal 29
+Subgoal 28
+Subgoal 27
+Subgoal 26
+Subgoal 25
+Subgoal 24
+Subgoal 23
+Subgoal 22
+Subgoal 21
+Subgoal 20
+Subgoal 19
+Subgoal 18
+Subgoal 17
+Subgoal 16
+Subgoal 15
+Subgoal 14
+Subgoal 13
+Subgoal 12
+Subgoal 11
+Subgoal 10
+Subgoal 9
+Subgoal 8
+Subgoal 7
+Subgoal 6
+Subgoal 5
+Subgoal 4
+Subgoal 3
+Subgoal 2
+Subgoal 1
+
+Q.E.D.
+Rules: ((:compound-recognizer assignmentp-implies-tlp)
+        (:compound-recognizer var-symbolp)
+        (:definition bsaexprp)
+        (:definition not)
+        (:definition saeval-definition-rule)
+        (:definition saexprp)
+        (:definition synp)
+        (:definition uoperp)
+        (:definition usaexprp)
+        (:executable-counterpart boperp)
+        (:executable-counterpart equal)
+        (:executable-counterpart saexprp)
+        (:executable-counterpart tau-system)
+        (:fake-rune-for-type-set nil)
+        (:forward-chaining bsaexpr=>def)
+        (:forward-chaining usaexpr=>def)
+        (:rewrite acl2::|(* (+ x y) z)|)
+        (:rewrite acl2::|(* x (+ y z))|)
+        (:rewrite acl2::|(* x (if a b c))|)
+        (:rewrite acl2::|(* y x)|)
+        (:rewrite acl2::|(+ (if a b c) x)|)
+        (:rewrite acl2::|(+ x (if a b c))|)
+        (:rewrite acl2::|(+ x x)|)
+        (:rewrite acl2::|(+ y x)|)
+        (:rewrite acl2::bubble-down-+-match-1)
+        (:rewrite car-cons)
+        (:rewrite cdr-cons)
+        (:rewrite def=>saexpr)
+        (:rewrite acl2::default-plus-1)
+        (:rewrite acl2::default-plus-2)
+        (:rewrite acl2::default-times-2)
+        (:rewrite acl2::normalize-addends)
+        (:type-prescription bsaexprp)
+        (:type-prescription lookup-contract-tp)
+        (:type-prescription saexprp)
+        (:type-prescription usaexprp))
+Time:  3.06 seconds (prove: 3.03, print: 0.00, other: 0.02)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 500 (500 unique)
+satisfied the hypotheses, and found 0 counterexamples and 500 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a '((xyx . -3/14) (xyx . -1/3))) (z '(/ 0)) (y '(- 0)) (x '(- 0)))
+ -- ((a nil) (z 'yx) (y 'yx) (x '(- (0 + 0))))
+ -- ((a '((x . -1))) (z 'ddj) (y '(/ 0)) (x 'co))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  3.06 seconds (prove: 3.03, print: 0.00, other: 0.02)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  3.18 seconds (prove: 3.15, print: 0.00, other: 0.03)
+ :empty-encapsulate
+ACL2S !>> :passed
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.22 seconds (prove: 0.22, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+Goal'
+Subgoal 48
+Subgoal 47
+Subgoal 46
+Subgoal 45
+Subgoal 44
+Subgoal 43
+Subgoal 42
+Subgoal 41
+Subgoal 40
+Subgoal 39
+Subgoal 38
+Subgoal 37
+Subgoal 36
+Subgoal 35
+Subgoal 34
+Subgoal 33
+Subgoal 32
+Subgoal 31
+Subgoal 30
+Subgoal 29
+Subgoal 28
+Subgoal 27
+Subgoal 26
+Subgoal 25
+Subgoal 24
+Subgoal 23
+Subgoal 22
+Subgoal 21
+Subgoal 20
+Subgoal 19
+Subgoal 18
+Subgoal 17
+Subgoal 16
+Subgoal 15
+Subgoal 14
+Subgoal 13
+Subgoal 12
+Subgoal 11
+Subgoal 10
+Subgoal 9
+Subgoal 8
+Subgoal 7
+Subgoal 6
+Subgoal 5
+Subgoal 4
+Subgoal 3
+Subgoal 2
+Subgoal 1
+
+Q.E.D.
+Rules: ((:compound-recognizer assignmentp-implies-tlp)
+        (:compound-recognizer var-symbolp)
+        (:definition bsaexprp)
+        (:definition not)
+        (:definition rat-nonzerop-definition-rule)
+        (:definition saeval-definition-rule)
+        (:definition saexprp)
+        (:definition synp)
+        (:definition uoperp)
+        (:definition usaexprp)
+        (:executable-counterpart binary-*)
+        (:executable-counterpart boperp)
+        (:executable-counterpart equal)
+        (:executable-counterpart if)
+        (:executable-counterpart not)
+        (:executable-counterpart rationalp)
+        (:executable-counterpart saexprp)
+        (:executable-counterpart tau-system)
+        (:executable-counterpart unary-/)
+        (:executable-counterpart uoperp)
+        (:fake-rune-for-type-set nil)
+        (:rewrite acl2::|(* 0 x)|)
+        (:rewrite acl2::|(* 1 x)|)
+        (:rewrite acl2::|(* x (if a b c))|)
+        (:rewrite acl2::|(* y x)|)
+        (:rewrite acl2::|(/ (* x y))|)
+        (:rewrite acl2::|(/ (/ x))|)
+        (:rewrite acl2::|(/ (if a b c))|)
+        (:rewrite car-cons)
+        (:rewrite cdr-cons)
+        (:rewrite def=>rat-err)
+        (:rewrite def=>saexpr)
+        (:rewrite acl2::default-divide)
+        (:rewrite saeval-contract)
+        (:type-prescription bsaexprp)
+        (:type-prescription lookup-contract-tp)
+        (:type-prescription saexprp)
+        (:type-prescription usaexprp))
+Time:  0.36 seconds (prove: 0.34, print: 0.00, other: 0.02)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 500 (500 unique)
+satisfied the hypotheses, and found 0 counterexamples and 500 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a nil) (y 'xyx) (x '((x + 0) ^ (- 0))))
+ -- ((a '((yx . -1))) (y 'bfp) (x '(- 0)))
+ -- ((a nil) (y 'xxyxx) (x '((x + 0) / x)))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.36 seconds (prove: 0.34, print: 0.00, other: 0.02)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.58 seconds (prove: 0.56, print: 0.00, other: 0.03)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.05 seconds (prove: 0.05, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+Goal'
+
+Q.E.D.
+Rules: ((:compound-recognizer assignmentp-implies-tlp)
+        (:compound-recognizer var-symbolp)
+        (:compound-recognizer acl2::zip-compound-recognizer)
+        (:definition bsaexprp)
+        (:definition saeval-definition-rule)
+        (:definition saexprp)
+        (:definition synp)
+        (:definition usaexprp)
+        (:executable-counterpart boperp)
+        (:executable-counterpart equal)
+        (:executable-counterpart not)
+        (:executable-counterpart rationalp)
+        (:executable-counterpart saexprp)
+        (:executable-counterpart uoperp)
+        (:fake-rune-for-type-set nil)
+        (:rewrite acl2::|(expt 0 n)|)
+        (:rewrite car-cons)
+        (:rewrite cdr-cons)
+        (:rewrite def=>saexpr)
+        (:rewrite acl2::zip-open)
+        (:type-prescription bsaexprp)
+        (:type-prescription lookup-contract-tp)
+        (:type-prescription usaexprp))
+Time:  0.04 seconds (prove: 0.02, print: 0.00, other: 0.02)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 495 (495 unique)
+satisfied the hypotheses, and found 0 counterexamples and 495 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a nil) (x '(0 + 0)))
+ -- ((a nil) (x '((0 + x) ^ (0 + 0))))
+ -- ((a nil) (x 'nyl))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.04 seconds (prove: 0.02, print: 0.00, other: 0.02)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.09 seconds (prove: 0.07, print: 0.00, other: 0.03)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.22 seconds (prove: 0.22, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+Goal'
+
+Q.E.D.
+Rules: ((:compound-recognizer assignmentp-implies-tlp)
+        (:compound-recognizer var-symbolp)
+        (:definition bsaexprp)
+        (:definition rat-nonzerop-definition-rule)
+        (:definition saeval-definition-rule)
+        (:definition saexprp)
+        (:definition synp)
+        (:definition uoperp)
+        (:definition usaexprp)
+        (:executable-counterpart <)
+        (:executable-counterpart binary-*)
+        (:executable-counterpart boperp)
+        (:executable-counterpart car)
+        (:executable-counterpart cdr)
+        (:executable-counterpart consp)
+        (:executable-counterpart equal)
+        (:executable-counterpart integerp)
+        (:executable-counterpart not)
+        (:executable-counterpart rationalp)
+        (:executable-counterpart saexprp)
+        (:executable-counterpart uoperp)
+        (:fake-rune-for-type-set nil)
+        (:rewrite acl2::|(* a (/ a))|)
+        (:rewrite acl2::|(* y (* x z))|)
+        (:rewrite acl2::|(* y x)|)
+        (:rewrite acl2::|(expt 0 n)|)
+        (:rewrite car-cons)
+        (:rewrite cdr-cons)
+        (:rewrite def=>rat-err)
+        (:rewrite def=>saexpr)
+        (:rewrite saeval-contract)
+        (:rewrite acl2::zip-open)
+        (:type-prescription bsaexprp)
+        (:type-prescription lookup-contract-tp)
+        (:type-prescription saexprp)
+        (:type-prescription usaexprp))
+Time:  0.44 seconds (prove: 0.42, print: 0.00, other: 0.02)
+
+**Summary of Cgen/testing**
+We tested 500 examples across 1 subgoals, of which 500 (500 unique)
+satisfied the hypotheses, and found 0 counterexamples and 500 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a '((i . 0) (x . 0))) (y '((-1/4 + x) + (/ 0))) (x '(/ x)))
+ -- ((a '((xxyxx . -1/3))) (y 'xxxy) (x 'x))
+ -- ((a '((xn . 1))) (y '((0 + 0) - x)) (x 3))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.44 seconds (prove: 0.42, print: 0.00, other: 0.02)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.67 seconds (prove: 0.64, print: 0.00, other: 0.03)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( table type-alias-table ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( table pred-alias-table ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( defmacro auoperp ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( defmacro nth-auoper ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( defmacro nth-auoper/acc ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( table acl2::macro-aliases-table ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (table type-alias-table ...) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (b* ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ t
+ACL2S !>>Form:  ( defconst *aboper-values* ...)
+ Predicate events...
+Form:  ( defun aboperp ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: aboperp relatively complete for Tau.
+Form:  ( defthm def=>aboper ...)
+Form:  ( defthm aboper=>def ...)
+ Enumerator events...
+Form:  ( defun nth-aboper-builtin ...)
+Form:  ( defun nth-aboper/acc-builtin ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ Registering type...
+Form:  ( defun nth-aboper ...)
+Form:  ( ENCAPSULATE (((nth-aboper * ...) ...) ...) ...)
+Form:  ( defun nth-aboper/acc ...)
+Form:  ( ENCAPSULATE (((nth-aboper/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-aboper nth-aboper-builtin) ...)
+Form:  ( DEFATTACH (nth-aboper/acc nth-aboper/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+ t
+ACL2S !>> Predicate events...
+Form:  ( MUTUAL-RECURSION ( DEFUN aaexprp ...) ...)
+Form:  ( IN-THEORY (disable* ...))
+Form:  ( IN-THEORY (enable ...))
+Form:  ( table acl2::ruleset-table ...)
+Form:  ( MAKE-EVENT (let* ...))
+ Tau characterization events...
+Defdata/Note: aaexprp relatively complete for Tau.
+Form:  ( defthm def=>aaexpr ...)
+Form:  ( defthm aaexpr=>def ...)
+ (uaaexprp acl2::v1) <= body -- not complete. 
+Reasons: 
+("Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+ (uaaexprp acl2::v1) => body -- not complete. 
+Reasons: 
+("The formula fails to fit any of the forms for acceptable :TAU-SYSTEM rules."
+ "Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+Form:  ( defthm uaaexpr=>def ...)
+ (baaexprp acl2::v1) <= body -- not complete. 
+Reasons: 
+("Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+ (baaexprp acl2::v1) => body -- not complete. 
+Reasons: 
+("The formula fails to fit any of the forms for acceptable :TAU-SYSTEM rules."
+ "Nesting i.e. (P (f ... (g x1 ...) ...) not allowed in conclusion of signature rule")
+
+Form:  ( defthm baaexpr=>def ...)
+ Enumerator events...
+Form:  ( MUTUAL-RECURSION ( DEFUN nth-aaexpr-builtin ...) ...)
+Form:  ( MUTUAL-RECURSION ( DEFUN nth-aaexpr/acc-builtin ...) ...)
+Form:  ( PROGN (set-bogus-defun-hints-ok t) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.18 seconds (prove: 0.16, print: 0.00, other: 0.02)
+ Registering type...
+Form:  ( defun nth-aaexpr ...)
+Form:  ( ENCAPSULATE (((nth-aaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-aaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-aaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-aaexpr nth-aaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-aaexpr/acc nth-aaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( defun nth-uaaexpr ...)
+Form:  ( ENCAPSULATE (((nth-uaaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-uaaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-uaaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-uaaexpr nth-uaaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-uaaexpr/acc nth-uaaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( defun nth-baaexpr ...)
+Form:  ( ENCAPSULATE (((nth-baaexpr * ...) ...) ...) ...)
+Form:  ( defun nth-baaexpr/acc ...)
+Form:  ( ENCAPSULATE (((nth-baaexpr/acc * ...) ...) ...) ...)
+Form:  ( DEFATTACH (nth-baaexpr nth-baaexpr-builtin) ...)
+Form:  ( DEFATTACH (nth-baaexpr/acc nth-baaexpr/acc-builtin) ...)
+Form:  ( table type-metadata-table ...)
+Form:  ( PROGN (local ...) ...)
+Form:  ( ENCAPSULATE NIL (logic) ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( MAKE-EVENT (defdata::register-type-fn ...))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( ENCAPSULATE NIL (with-output :on ...) ...)
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Form:  ( PROGN (encapsulate nil ...) ...)
+Time:  0.20 seconds (prove: 0.16, print: 0.00, other: 0.04)
+Form:  ( ENCAPSULATE NIL (with-output :off ...) ...)
+Time:  0.21 seconds (prove: 0.16, print: 0.00, other: 0.05)
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION sael->aa ... )
+Form:  ( TEST-BODY-CONTRACTS sael->aa... ) 
+Form:  ( TEST-FUNCTION-CONTRACT sael->aa ...) 
+Testing: Done 
+Elapsed Run Time: 0.57 seconds
+Form:  ( ADMIT-DEFINITION sael->aa ... )
+Time:  0.15 seconds (prove: 0.14, print: 0.00, other: 0.01)
+Form:  ( PROVE-FUNCTION-CONTRACT sael->aa ... )
+Time:  1.21 seconds (prove: 1.20, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS sael->aa ... )
+Time:  0.17 seconds (prove: 0.13, print: 0.00, other: 0.04)
+Elapsed Run Time: 1.55 seconds
+Function Name : SAEL->AA 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( TEST-DEFINITION aa->sael ... )
+Form:  ( TEST-BODY-CONTRACTS aa->sael... ) 
+Form:  ( TEST-FUNCTION-CONTRACT aa->sael ...) 
+Testing: Done 
+Elapsed Run Time: 0.57 seconds
+Form:  ( ADMIT-DEFINITION aa->sael ... )
+Time:  0.39 seconds (prove: 0.38, print: 0.00, other: 0.02)
+Form:  ( PROVE-FUNCTION-CONTRACT aa->sael ... )
+Time:  1.10 seconds (prove: 1.08, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS aa->sael ... )
+Time:  0.12 seconds (prove: 0.08, print: 0.00, other: 0.04)
+Elapsed Run Time: 1.62 seconds
+Function Name : AA->SAEL 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+Subgoal 2
+
+([ A key checkpoint:
+
+Subgoal 2
+(implies (usaexprp e)
+         (equal (aa->sael (sael->aa e)) e))
+
+*1 (Subgoal 2) is pushed for proof by induction.
+
+])
+Subgoal 1
+
+([ A key checkpoint:
+
+Subgoal 1
+(implies (bsaexprp e)
+         (equal (aa->sael (sael->aa e)) e))
+
+Normally we would attempt to prove Subgoal 1 by induction.  However,
+we prefer in this instance to focus on the original input conjecture
+rather than this simplified special case.  We therefore abandon our
+previous work on this conjecture and reassign the name *1 to the original
+conjecture.  (See :DOC otf-flg.)
+
+])
+
+Perhaps we can prove *1 by induction.  Two induction schemes are suggested
+by this conjecture.  Subsumption reduces that number to one.  
+
+We will induct according to a scheme suggested by (sael->aa e), while
+accommodating (sael->aa e).
+
+These suggestions were produced using the :induction rules sael->aa
+and sael->aa-induction-scheme.  If we let (:p e) denote *1 above then
+the induction scheme we'll use is
+(and (implies (not (saexprp e)) (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (not (bsaexprp e)))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (not (and (consp e)
+                             (consp (cdr e))
+                             (consp (cddr e))
+                             (eq (cdddr e) nil))))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (not (equal (cadr e) '+))
+                   (not (equal (cadr e) '-))
+                   (not (equal (cadr e) '*))
+                   (not (equal (cadr e) '/))
+                   (not (equal (cadr e) '^)))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (cadr e) '^)
+                   (:p (car e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (cadr e) '/)
+                   (:p (car e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (cadr e) '*)
+                   (:p (car e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (cadr e) '-)
+                   (:p (car e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (cadr e) '+)
+                   (:p (car e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (usaexprp e)
+                   (not (and (consp e)
+                             (eq (car e) '-)
+                             (consp (cdr e))
+                             (eq (cddr e) nil)))
+                   (not (and (consp e)
+                             (eq (car e) '/)
+                             (consp (cdr e))
+                             (eq (cddr e) nil))))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (usaexprp e)
+                   (not (and (consp e)
+                             (eq (car e) '-)
+                             (consp (cdr e))
+                             (eq (cddr e) nil)))
+                   (and (consp e)
+                        (eq (car e) '/)
+                        (consp (cdr e))
+                        (eq (cddr e) nil))
+                   (:p (cadr e)))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (usaexprp e)
+                   (and (consp e)
+                        (eq (car e) '-)
+                        (consp (cdr e))
+                        (eq (cddr e) nil))
+                   (:p (cadr e)))
+              (:p e))
+     (implies (and (saexprp e)
+                   (not (rationalp e))
+                   (varp e))
+              (:p e))
+     (implies (and (saexprp e) (rationalp e))
+              (:p e))).
+This induction is justified by the same argument used to admit sael->aa.
+When applied to the goal at hand the above induction scheme produces
+thirteen nontautological subgoals.
+Subgoal *1/13
+Subgoal *1/12
+Subgoal *1/12'
+Subgoal *1/12.2
+Subgoal *1/12.1
+Subgoal *1/11
+Subgoal *1/11'
+Subgoal *1/10
+Subgoal *1/10'
+Subgoal *1/9
+Subgoal *1/9'
+Subgoal *1/8
+Subgoal *1/8'
+Subgoal *1/7
+Subgoal *1/7'
+Subgoal *1/6
+Subgoal *1/6'
+Subgoal *1/5
+Subgoal *1/5'
+Subgoal *1/5.10
+Subgoal *1/5.9
+Subgoal *1/5.8
+Subgoal *1/5.7
+Subgoal *1/5.7'
+Subgoal *1/5.6
+Subgoal *1/5.5
+Subgoal *1/5.4
+Subgoal *1/5.3
+Subgoal *1/5.2
+Subgoal *1/5.1
+Subgoal *1/4
+Subgoal *1/4'
+Subgoal *1/3
+Subgoal *1/3'
+Subgoal *1/2
+Subgoal *1/2'
+Subgoal *1/1
+Subgoal *1/1'
+
+*1 is COMPLETED!
+Thus key checkpoint Goal is COMPLETED!
+
+Q.E.D.
+Rules: ((:compound-recognizer var-symbolp)
+        (:definition aa->sael-definition-rule)
+        (:definition baaexprp)
+        (:definition boperp)
+        (:definition bsaexprp)
+        (:definition eq)
+        (:definition hide)
+        (:definition not)
+        (:definition sael->aa-definition-rule)
+        (:definition saexprp)
+        (:definition uaaexprp)
+        (:definition uoperp)
+        (:definition usaexprp)
+        (:executable-counterpart aa->sael)
+        (:executable-counterpart aboperp)
+        (:executable-counterpart boperp)
+        (:executable-counterpart equal)
+        (:executable-counterpart saexprp)
+        (:executable-counterpart tau-system)
+        (:executable-counterpart uoperp)
+        (:fake-rune-for-type-set nil)
+        (:forward-chaining bsaexpr=>def)
+        (:forward-chaining saexpr=>def)
+        (:forward-chaining uoper=>def)
+        (:forward-chaining usaexpr=>def)
+        (:induction sael->aa)
+        (:induction sael->aa-induction-scheme)
+        (:rewrite car-cons)
+        (:rewrite cdr-cons)
+        (:rewrite def=>aaexpr)
+        (:rewrite def=>saexpr)
+        (:rewrite sael->aa-contract)
+        (:type-prescription bsaexprp)
+        (:type-prescription saexprp)
+        (:type-prescription uoperp)
+        (:type-prescription usaexprp))
+Time:  0.50 seconds (prove: 0.47, print: 0.00, other: 0.03)
+
+**Summary of Cgen/testing**
+We tested 1500 examples across 3 subgoals, of which 1354 (1354 unique)
+satisfied the hypotheses, and found 0 counterexamples and 1354 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((e 0))
+ -- ((e 'yx))
+ -- ((e 177/275))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.50 seconds (prove: 0.47, print: 0.00, other: 0.04)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.51 seconds (prove: 0.47, print: 0.00, other: 0.04)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+Subgoal 2
+
+([ A key checkpoint:
+
+Subgoal 2
+(implies (uaaexprp e)
+         (equal (sael->aa (aa->sael e)) e))
+
+*1 (Subgoal 2) is pushed for proof by induction.
+
+])
+Subgoal 1
+
+([ A key checkpoint:
+
+Subgoal 1
+(implies (baaexprp e)
+         (equal (sael->aa (aa->sael e)) e))
+
+Normally we would attempt to prove Subgoal 1 by induction.  However,
+we prefer in this instance to focus on the original input conjecture
+rather than this simplified special case.  We therefore abandon our
+previous work on this conjecture and reassign the name *1 to the original
+conjecture.  (See :DOC otf-flg.)
+
+])
+
+Perhaps we can prove *1 by induction.  Two induction schemes are suggested
+by this conjecture.  Subsumption reduces that number to one.  
+
+We will induct according to a scheme suggested by (aa->sael e), while
+accommodating (aa->sael e).
+
+These suggestions were produced using the :induction rules aa->sael
+and aa->sael-induction-scheme.  If we let (:p e) denote *1 above then
+the induction scheme we'll use is
+(and (implies (not (aaexprp e)) (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (not (baaexprp e)))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (not (and (consp e)
+                             (consp (cdr e))
+                             (consp (cddr e))
+                             (eq (cdddr e) nil))))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (not (equal (car e) '+))
+                   (not (equal (car e) '-))
+                   (not (equal (car e) '*))
+                   (not (equal (car e) '/))
+                   (not (equal (car e) 'expt)))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) 'expt)
+                   (:p (cadr e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) '/)
+                   (:p (cadr e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) '*)
+                   (:p (cadr e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) '-)
+                   (:p (cadr e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) '+)
+                   (:p (cadr e))
+                   (:p (caddr e)))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (uaaexprp e)
+                   (not (and (consp e)
+                             (eq (car e) '-)
+                             (consp (cdr e))
+                             (eq (cddr e) nil)))
+                   (not (and (consp e)
+                             (eq (car e) '/)
+                             (consp (cdr e))
+                             (eq (cddr e) nil))))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (uaaexprp e)
+                   (not (and (consp e)
+                             (eq (car e) '-)
+                             (consp (cdr e))
+                             (eq (cddr e) nil)))
+                   (and (consp e)
+                        (eq (car e) '/)
+                        (consp (cdr e))
+                        (eq (cddr e) nil))
+                   (:p (cadr e)))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (uaaexprp e)
+                   (and (consp e)
+                        (eq (car e) '-)
+                        (consp (cdr e))
+                        (eq (cddr e) nil))
+                   (:p (cadr e)))
+              (:p e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (varp e))
+              (:p e))
+     (implies (and (aaexprp e) (rationalp e))
+              (:p e))).
+This induction is justified by the same argument used to admit aa->sael.
+When applied to the goal at hand the above induction scheme produces
+thirteen nontautological subgoals.
+Subgoal *1/13
+Subgoal *1/12
+Subgoal *1/12'
+Subgoal *1/12.2
+Subgoal *1/12.1
+Subgoal *1/11
+Subgoal *1/10
+Subgoal *1/10'
+Subgoal *1/9
+Subgoal *1/9'
+Subgoal *1/8
+Subgoal *1/8'
+Subgoal *1/7
+Subgoal *1/7'
+Subgoal *1/6
+Subgoal *1/6'
+Subgoal *1/5
+Subgoal *1/5'
+Subgoal *1/5.13
+Subgoal *1/5.12
+Subgoal *1/5.11
+Subgoal *1/5.10
+Subgoal *1/5.9
+Subgoal *1/5.8
+Subgoal *1/5.7
+Subgoal *1/5.6
+Subgoal *1/5.5
+Subgoal *1/5.4
+Subgoal *1/5.3
+Subgoal *1/5.2
+Subgoal *1/5.1
+Subgoal *1/4
+Subgoal *1/4'
+Subgoal *1/3
+Subgoal *1/3'
+Subgoal *1/2
+Subgoal *1/2'
+Subgoal *1/1
+Subgoal *1/1'
+
+*1 is COMPLETED!
+Thus key checkpoint Goal is COMPLETED!
+
+Q.E.D.
+Rules: ((:compound-recognizer var-symbolp)
+        (:definition aa->sael-definition-rule)
+        (:definition aaexprp)
+        (:definition aboperp)
+        (:definition baaexprp)
+        (:definition bsaexprp)
+        (:definition eq)
+        (:definition hide)
+        (:definition not)
+        (:definition sael->aa-definition-rule)
+        (:definition uaaexprp)
+        (:definition uoperp)
+        (:definition usaexprp)
+        (:executable-counterpart aboperp)
+        (:executable-counterpart boperp)
+        (:executable-counterpart equal)
+        (:executable-counterpart sael->aa)
+        (:executable-counterpart saexprp)
+        (:executable-counterpart tau-system)
+        (:executable-counterpart uoperp)
+        (:fake-rune-for-type-set nil)
+        (:forward-chaining aaexpr=>def)
+        (:forward-chaining aboper=>def)
+        (:forward-chaining baaexpr=>def)
+        (:forward-chaining uaaexpr=>def)
+        (:forward-chaining uoper=>def)
+        (:induction aa->sael)
+        (:induction aa->sael-induction-scheme)
+        (:rewrite aa->sael-contract)
+        (:rewrite car-cons)
+        (:rewrite cdr-cons)
+        (:rewrite def=>aaexpr)
+        (:rewrite def=>saexpr)
+        (:type-prescription aaexprp)
+        (:type-prescription aboperp)
+        (:type-prescription baaexprp)
+        (:type-prescription uaaexprp)
+        (:type-prescription uoperp))
+Time:  0.49 seconds (prove: 0.46, print: 0.00, other: 0.03)
+
+**Summary of Cgen/testing**
+We tested 1500 examples across 3 subgoals, of which 1347 (1347 unique)
+satisfied the hypotheses, and found 0 counterexamples and 1347 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((e 0))
+ -- ((e '(- x)))
+ -- ((e '(+ (+ 0 0) 0)))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  0.49 seconds (prove: 0.46, print: 0.00, other: 0.04)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  0.50 seconds (prove: 0.46, print: 0.00, other: 0.04)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( TEST-DEFINITION aaeval ... )
+Form:  ( TEST-BODY-CONTRACTS aaeval... ) 
+Form:  ( TEST-FUNCTION-CONTRACT aaeval ...) 
+Testing: Done 
+Elapsed Run Time: 7.02 seconds
+Form:  ( ADMIT-DEFINITION aaeval ... )
+Time:  0.21 seconds (prove: 0.19, print: 0.00, other: 0.02)
+Form:  ( PROVE-FUNCTION-CONTRACT aaeval ... )
+Time:  0.24 seconds (prove: 0.22, print: 0.00, other: 0.01)
+Form:  ( PROVE-BODY-CONTRACTS aaeval ... )
+Time:  0.63 seconds (prove: 0.56, print: 0.00, other: 0.06)
+Elapsed Run Time: 1.09 seconds
+Function Name : AAEVAL 
+Termination proven -------- [*] 
+Function Contract proven -- [*] 
+Body Contracts proven ----- [*]
+ t
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+Goal'
+Subgoal 2
+
+([ A key checkpoint:
+
+Subgoal 2
+(implies (and (usaexprp e)
+              (assignmentp a)
+              (rationalp (saeval e a)))
+         (equal (saeval e a)
+                (aaeval (sael->aa e) a)))
+
+*1 (Subgoal 2) is pushed for proof by induction.
+
+])
+Subgoal 1
+
+([ A key checkpoint:
+
+Subgoal 1
+(implies (and (bsaexprp e)
+              (assignmentp a)
+              (rationalp (saeval e a)))
+         (equal (saeval e a)
+                (aaeval (sael->aa e) a)))
+
+Normally we would attempt to prove Subgoal 1 by induction.  However,
+we prefer in this instance to focus on the original input conjecture
+rather than this simplified special case.  We therefore abandon our
+previous work on this conjecture and reassign the name *1 to the original
+conjecture.  (See :DOC otf-flg.)
+
+])
+
+Perhaps we can prove *1 by induction.  Three induction schemes are
+suggested by this conjecture.  Subsumption reduces that number to two.
+However, one of these is flawed and so we are left with one viable
+candidate.  
+
+We will induct according to a scheme suggested by (saeval e a), while
+accommodating (saeval e a).
+
+These suggestions were produced using the :induction rules saeval and
+saeval-induction-scheme.  If we let (:p a e) denote *1 above then the
+induction scheme we'll use is
+(and (implies (not (and (saexprp e) (assignmentp a)))
+              (:p a e))
+     (implies (and (and (saexprp e) (assignmentp a))
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (not (bsaexprp e)))
+              (:p a e))
+     (implies (and (and (saexprp e) (assignmentp a))
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (not (and (consp e)
+                             (consp (cdr e))
+                             (consp (cddr e))
+                             (eq (cdddr e) nil))))
+              (:p a e))
+     (implies (and (and (saexprp e) (assignmentp a))
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (not (rationalp (saeval (car e) a)))
+                   (:p a (car e)))
+              (:p a e))
+     (implies (and (and (saexprp e) (assignmentp a))
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (usaexprp e))
+                   (bsaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (rationalp (saeval (car e) a))
+                   (:p a (car e))
+                   (:p a (caddr e)))
+              (:p a e))
+     (implies (and (and (saexprp e) (assignmentp a))
+                   (not (rationalp e))
+                   (not (varp e))
+                   (usaexprp e)
+                   (not (and (consp e)
+                             (eq (car e) '-)
+                             (consp (cdr e))
+                             (eq (cddr e) nil)))
+                   (not (and (consp e)
+                             (eq (car e) '/)
+                             (consp (cdr e))
+                             (eq (cddr e) nil))))
+              (:p a e))
+     (implies (and (and (saexprp e) (assignmentp a))
+                   (not (rationalp e))
+                   (not (varp e))
+                   (usaexprp e)
+                   (not (and (consp e)
+                             (eq (car e) '-)
+                             (consp (cdr e))
+                             (eq (cddr e) nil)))
+                   (and (consp e)
+                        (eq (car e) '/)
+                        (consp (cdr e))
+                        (eq (cddr e) nil))
+                   (:p a (cadr e)))
+              (:p a e))
+     (implies (and (and (saexprp e) (assignmentp a))
+                   (not (rationalp e))
+                   (not (varp e))
+                   (usaexprp e)
+                   (and (consp e)
+                        (eq (car e) '-)
+                        (consp (cdr e))
+                        (eq (cddr e) nil))
+                   (:p a (cadr e)))
+              (:p a e))
+     (implies (and (and (saexprp e) (assignmentp a))
+                   (not (rationalp e))
+                   (varp e))
+              (:p a e))
+     (implies (and (and (saexprp e) (assignmentp a))
+                   (rationalp e))
+              (:p a e))).
+This induction is justified by the same argument used to admit saeval.
+When applied to the goal at hand the above induction scheme produces
+nine nontautological subgoals.
+Subgoal *1/9
+Subgoal *1/8
+Subgoal *1/8'
+Subgoal *1/8.2
+Subgoal *1/8.1
+Subgoal *1/7
+Subgoal *1/7'
+Subgoal *1/6
+Subgoal *1/6'
+Subgoal *1/6.338
+Subgoal *1/6.338.6
+Subgoal *1/6.338.5
+Subgoal *1/6.338.4
+Subgoal *1/6.338.3
+Subgoal *1/6.338.2
+Subgoal *1/6.338.1
+Subgoal *1/6.337
+Subgoal *1/6.336
+Subgoal *1/6.335
+Subgoal *1/6.334
+Subgoal *1/6.334.6
+Subgoal *1/6.334.5
+Subgoal *1/6.334.4
+Subgoal *1/6.334.3
+Subgoal *1/6.334.2
+Subgoal *1/6.334.1
+Subgoal *1/6.333
+Subgoal *1/6.332
+Subgoal *1/6.331
+Subgoal *1/6.330
+Subgoal *1/6.330.6
+Subgoal *1/6.330.5
+Subgoal *1/6.330.4
+Subgoal *1/6.330.3
+Subgoal *1/6.330.2
+Subgoal *1/6.330.1
+Subgoal *1/6.329
+Subgoal *1/6.328
+Subgoal *1/6.327
+Subgoal *1/6.326
+Subgoal *1/6.326.6
+Subgoal *1/6.326.5
+Subgoal *1/6.326.4
+Subgoal *1/6.326.3
+Subgoal *1/6.326.2
+Subgoal *1/6.326.1
+Subgoal *1/6.325
+Subgoal *1/6.324
+Subgoal *1/6.323
+Subgoal *1/6.322
+Subgoal *1/6.322.38
+Subgoal *1/6.322.37
+Subgoal *1/6.322.36
+Subgoal *1/6.322.35
+Subgoal *1/6.322.34
+Subgoal *1/6.322.33
+Subgoal *1/6.322.32
+Subgoal *1/6.322.32'
+Subgoal *1/6.322.31
+Subgoal *1/6.322.31'
+Subgoal *1/6.322.30
+Subgoal *1/6.322.30'
+Subgoal *1/6.322.29
+Subgoal *1/6.322.29'
+Subgoal *1/6.322.28
+Subgoal *1/6.322.28'
+Subgoal *1/6.322.27
+Subgoal *1/6.322.26
+Subgoal *1/6.322.25
+Subgoal *1/6.322.24
+Subgoal *1/6.322.23
+Subgoal *1/6.322.22
+Subgoal *1/6.322.21
+Subgoal *1/6.322.20
+Subgoal *1/6.322.20'
+Subgoal *1/6.322.19
+Subgoal *1/6.322.19'
+Subgoal *1/6.322.18
+Subgoal *1/6.322.18'
+Subgoal *1/6.322.17
+Subgoal *1/6.322.17'
+Subgoal *1/6.322.16
+Subgoal *1/6.322.16'
+Subgoal *1/6.322.15
+Subgoal *1/6.322.14
+Subgoal *1/6.322.13
+Subgoal *1/6.322.12
+Subgoal *1/6.322.11
+Subgoal *1/6.322.10
+Subgoal *1/6.322.9
+Subgoal *1/6.322.8
+Subgoal *1/6.322.7
+Subgoal *1/6.322.6
+Subgoal *1/6.322.6'
+Subgoal *1/6.322.5
+Subgoal *1/6.322.5'
+Subgoal *1/6.322.4
+Subgoal *1/6.322.3
+Subgoal *1/6.322.2
+Subgoal *1/6.322.1
+Subgoal *1/6.321
+Subgoal *1/6.320
+Subgoal *1/6.319
+Subgoal *1/6.318
+Subgoal *1/6.318.36
+Subgoal *1/6.318.35
+Subgoal *1/6.318.34
+Subgoal *1/6.318.33
+Subgoal *1/6.318.32
+Subgoal *1/6.318.31
+Subgoal *1/6.318.30
+Subgoal *1/6.318.30'
+Subgoal *1/6.318.29
+Subgoal *1/6.318.29'
+Subgoal *1/6.318.28
+Subgoal *1/6.318.28'
+Subgoal *1/6.318.27
+Subgoal *1/6.318.27'
+Subgoal *1/6.318.26
+Subgoal *1/6.318.26'
+Subgoal *1/6.318.25
+Subgoal *1/6.318.24
+Subgoal *1/6.318.23
+Subgoal *1/6.318.22
+Subgoal *1/6.318.21
+Subgoal *1/6.318.20
+Subgoal *1/6.318.19
+Subgoal *1/6.318.18
+Subgoal *1/6.318.18'
+Subgoal *1/6.318.17
+Subgoal *1/6.318.17'
+Subgoal *1/6.318.16
+Subgoal *1/6.318.16'
+Subgoal *1/6.318.15
+Subgoal *1/6.318.15'
+Subgoal *1/6.318.14
+Subgoal *1/6.318.14'
+Subgoal *1/6.318.13
+Subgoal *1/6.318.12
+Subgoal *1/6.318.11
+Subgoal *1/6.318.10
+Subgoal *1/6.318.9
+Subgoal *1/6.318.8
+Subgoal *1/6.318.7
+Subgoal *1/6.318.7'
+Subgoal *1/6.318.6
+Subgoal *1/6.318.6'
+Subgoal *1/6.318.5
+Subgoal *1/6.318.5'
+Subgoal *1/6.318.4
+Subgoal *1/6.318.3
+Subgoal *1/6.318.2
+Subgoal *1/6.318.1
+Subgoal *1/6.317
+Subgoal *1/6.316
+Subgoal *1/6.315
+Subgoal *1/6.314
+Subgoal *1/6.314.39
+Subgoal *1/6.314.38
+Subgoal *1/6.314.37
+Subgoal *1/6.314.36
+Subgoal *1/6.314.35
+Subgoal *1/6.314.34
+Subgoal *1/6.314.33
+Subgoal *1/6.314.33'
+Subgoal *1/6.314.32
+Subgoal *1/6.314.32'
+Subgoal *1/6.314.31
+Subgoal *1/6.314.31'
+Subgoal *1/6.314.30
+Subgoal *1/6.314.30'
+Subgoal *1/6.314.29
+Subgoal *1/6.314.29'
+Subgoal *1/6.314.28
+Subgoal *1/6.314.27
+Subgoal *1/6.314.26
+Subgoal *1/6.314.25
+Subgoal *1/6.314.24
+Subgoal *1/6.314.23
+Subgoal *1/6.314.22
+Subgoal *1/6.314.21
+Subgoal *1/6.314.21'
+Subgoal *1/6.314.20
+Subgoal *1/6.314.20'
+Subgoal *1/6.314.19
+Subgoal *1/6.314.19'
+Subgoal *1/6.314.18
+Subgoal *1/6.314.18'
+Subgoal *1/6.314.17
+Subgoal *1/6.314.17'
+Subgoal *1/6.314.16
+Subgoal *1/6.314.15
+Subgoal *1/6.314.14
+Subgoal *1/6.314.13
+Subgoal *1/6.314.12
+Subgoal *1/6.314.11
+Subgoal *1/6.314.10
+Subgoal *1/6.314.9
+Subgoal *1/6.314.8
+Subgoal *1/6.314.7
+Subgoal *1/6.314.7'
+Subgoal *1/6.314.6
+Subgoal *1/6.314.6'
+Subgoal *1/6.314.5
+Subgoal *1/6.314.5'
+Subgoal *1/6.314.4
+Subgoal *1/6.314.3
+Subgoal *1/6.314.2
+Subgoal *1/6.314.1
+Subgoal *1/6.313
+Subgoal *1/6.312
+Subgoal *1/6.311
+Subgoal *1/6.310
+Subgoal *1/6.310.39
+Subgoal *1/6.310.38
+Subgoal *1/6.310.37
+Subgoal *1/6.310.36
+Subgoal *1/6.310.35
+Subgoal *1/6.310.34
+Subgoal *1/6.310.33
+Subgoal *1/6.310.33'
+Subgoal *1/6.310.32
+Subgoal *1/6.310.32'
+Subgoal *1/6.310.31
+Subgoal *1/6.310.31'
+Subgoal *1/6.310.30
+Subgoal *1/6.310.30'
+Subgoal *1/6.310.29
+Subgoal *1/6.310.29'
+Subgoal *1/6.310.28
+Subgoal *1/6.310.27
+Subgoal *1/6.310.26
+Subgoal *1/6.310.25
+Subgoal *1/6.310.24
+Subgoal *1/6.310.23
+Subgoal *1/6.310.22
+Subgoal *1/6.310.21
+Subgoal *1/6.310.21'
+Subgoal *1/6.310.20
+Subgoal *1/6.310.20'
+Subgoal *1/6.310.19
+Subgoal *1/6.310.19'
+Subgoal *1/6.310.18
+Subgoal *1/6.310.18'
+Subgoal *1/6.310.17
+Subgoal *1/6.310.17'
+Subgoal *1/6.310.16
+Subgoal *1/6.310.15
+Subgoal *1/6.310.14
+Subgoal *1/6.310.13
+Subgoal *1/6.310.12
+Subgoal *1/6.310.11
+Subgoal *1/6.310.10
+Subgoal *1/6.310.9
+Subgoal *1/6.310.8
+Subgoal *1/6.310.7
+Subgoal *1/6.310.7'
+Subgoal *1/6.310.6
+Subgoal *1/6.310.6'
+Subgoal *1/6.310.5
+Subgoal *1/6.310.5'
+Subgoal *1/6.310.4
+Subgoal *1/6.310.3
+Subgoal *1/6.310.2
+Subgoal *1/6.310.1
+Subgoal *1/6.309
+Subgoal *1/6.308
+Subgoal *1/6.307
+Subgoal *1/6.306
+Subgoal *1/6.306.7
+Subgoal *1/6.306.7.2
+Subgoal *1/6.306.7.1
+Subgoal *1/6.306.6
+Subgoal *1/6.306.5
+Subgoal *1/6.306.4
+Subgoal *1/6.306.3
+Subgoal *1/6.306.2
+Subgoal *1/6.306.1
+Subgoal *1/6.305
+Subgoal *1/6.304
+Subgoal *1/6.303
+Subgoal *1/6.302
+Subgoal *1/6.302.7
+Subgoal *1/6.302.7.2
+Subgoal *1/6.302.7.1
+Subgoal *1/6.302.6
+Subgoal *1/6.302.5
+Subgoal *1/6.302.4
+Subgoal *1/6.302.3
+Subgoal *1/6.302.2
+Subgoal *1/6.302.1
+Subgoal *1/6.301
+Subgoal *1/6.300
+Subgoal *1/6.299
+Subgoal *1/6.298
+Subgoal *1/6.298.7
+Subgoal *1/6.298.7.2
+Subgoal *1/6.298.7.1
+Subgoal *1/6.298.6
+Subgoal *1/6.298.5
+Subgoal *1/6.298.4
+Subgoal *1/6.298.3
+Subgoal *1/6.298.2
+Subgoal *1/6.298.1
+Subgoal *1/6.297
+Subgoal *1/6.296
+Subgoal *1/6.295
+Subgoal *1/6.294
+Subgoal *1/6.294.7
+Subgoal *1/6.294.7.2
+Subgoal *1/6.294.7.1
+Subgoal *1/6.294.6
+Subgoal *1/6.294.5
+Subgoal *1/6.294.4
+Subgoal *1/6.294.3
+Subgoal *1/6.294.2
+Subgoal *1/6.294.1
+Subgoal *1/6.293
+Subgoal *1/6.292
+Subgoal *1/6.291
+Subgoal *1/6.290
+Subgoal *1/6.290.6
+Subgoal *1/6.290.5
+Subgoal *1/6.290.4
+Subgoal *1/6.290.3
+Subgoal *1/6.290.2
+Subgoal *1/6.290.1
+Subgoal *1/6.289
+Subgoal *1/6.288
+Subgoal *1/6.287
+Subgoal *1/6.286
+Subgoal *1/6.286.6
+Subgoal *1/6.286.5
+Subgoal *1/6.286.4
+Subgoal *1/6.286.3
+Subgoal *1/6.286.2
+Subgoal *1/6.286.1
+Subgoal *1/6.285
+Subgoal *1/6.284
+Subgoal *1/6.283
+Subgoal *1/6.282
+Subgoal *1/6.282.6
+Subgoal *1/6.282.5
+Subgoal *1/6.282.4
+Subgoal *1/6.282.3
+Subgoal *1/6.282.2
+Subgoal *1/6.282.1
+Subgoal *1/6.281
+Subgoal *1/6.280
+Subgoal *1/6.279
+Subgoal *1/6.278
+Subgoal *1/6.278.6
+Subgoal *1/6.278.5
+Subgoal *1/6.278.4
+Subgoal *1/6.278.3
+Subgoal *1/6.278.2
+Subgoal *1/6.278.1
+Subgoal *1/6.277
+Subgoal *1/6.276
+Subgoal *1/6.275
+Subgoal *1/6.274
+Subgoal *1/6.274.14
+Subgoal *1/6.274.13
+Subgoal *1/6.274.12
+Subgoal *1/6.274.11
+Subgoal *1/6.274.10
+Subgoal *1/6.274.9
+Subgoal *1/6.274.8
+Subgoal *1/6.274.7
+Subgoal *1/6.274.6
+Subgoal *1/6.274.5
+Subgoal *1/6.274.4
+Subgoal *1/6.274.3
+Subgoal *1/6.274.2
+Subgoal *1/6.274.1
+Subgoal *1/6.273
+Subgoal *1/6.272
+Subgoal *1/6.271
+Subgoal *1/6.270
+Subgoal *1/6.270.13
+Subgoal *1/6.270.12
+Subgoal *1/6.270.11
+Subgoal *1/6.270.10
+Subgoal *1/6.270.9
+Subgoal *1/6.270.8
+Subgoal *1/6.270.7
+Subgoal *1/6.270.6
+Subgoal *1/6.270.5
+Subgoal *1/6.270.4
+Subgoal *1/6.270.3
+Subgoal *1/6.270.2
+Subgoal *1/6.270.1
+Subgoal *1/6.269
+Subgoal *1/6.268
+Subgoal *1/6.267
+Subgoal *1/6.266
+Subgoal *1/6.266.14
+Subgoal *1/6.266.13
+Subgoal *1/6.266.12
+Subgoal *1/6.266.11
+Subgoal *1/6.266.10
+Subgoal *1/6.266.9
+Subgoal *1/6.266.8
+Subgoal *1/6.266.7
+Subgoal *1/6.266.6
+Subgoal *1/6.266.5
+Subgoal *1/6.266.4
+Subgoal *1/6.266.3
+Subgoal *1/6.266.2
+Subgoal *1/6.266.1
+Subgoal *1/6.265
+Subgoal *1/6.264
+Subgoal *1/6.263
+Subgoal *1/6.262
+Subgoal *1/6.262.14
+Subgoal *1/6.262.13
+Subgoal *1/6.262.12
+Subgoal *1/6.262.11
+Subgoal *1/6.262.10
+Subgoal *1/6.262.9
+Subgoal *1/6.262.8
+Subgoal *1/6.262.7
+Subgoal *1/6.262.6
+Subgoal *1/6.262.5
+Subgoal *1/6.262.4
+Subgoal *1/6.262.3
+Subgoal *1/6.262.2
+Subgoal *1/6.262.1
+Subgoal *1/6.261
+Subgoal *1/6.260
+Subgoal *1/6.259
+Subgoal *1/6.258
+Subgoal *1/6.258.7
+Subgoal *1/6.258.7.5
+Subgoal *1/6.258.7.4
+Subgoal *1/6.258.7.3
+Subgoal *1/6.258.7.2
+Subgoal *1/6.258.7.1
+Subgoal *1/6.258.6
+Subgoal *1/6.258.5
+Subgoal *1/6.258.4
+Subgoal *1/6.258.3
+Subgoal *1/6.258.2
+Subgoal *1/6.258.1
+Subgoal *1/6.257
+Subgoal *1/6.256
+Subgoal *1/6.255
+Subgoal *1/6.254
+Subgoal *1/6.254.7
+Subgoal *1/6.254.7.5
+Subgoal *1/6.254.7.4
+Subgoal *1/6.254.7.3
+Subgoal *1/6.254.7.2
+Subgoal *1/6.254.7.1
+Subgoal *1/6.254.6
+Subgoal *1/6.254.5
+Subgoal *1/6.254.4
+Subgoal *1/6.254.3
+Subgoal *1/6.254.2
+Subgoal *1/6.254.1
+Subgoal *1/6.253
+Subgoal *1/6.252
+Subgoal *1/6.251
+Subgoal *1/6.250
+Subgoal *1/6.250.7
+Subgoal *1/6.250.7.6
+Subgoal *1/6.250.7.5
+Subgoal *1/6.250.7.4
+Subgoal *1/6.250.7.3
+Subgoal *1/6.250.7.2
+Subgoal *1/6.250.7.1
+Subgoal *1/6.250.6
+Subgoal *1/6.250.5
+Subgoal *1/6.250.4
+Subgoal *1/6.250.3
+Subgoal *1/6.250.2
+Subgoal *1/6.250.1
+Subgoal *1/6.249
+Subgoal *1/6.248
+Subgoal *1/6.247
+Subgoal *1/6.246
+Subgoal *1/6.246.7
+Subgoal *1/6.246.7.6
+Subgoal *1/6.246.7.5
+Subgoal *1/6.246.7.4
+Subgoal *1/6.246.7.3
+Subgoal *1/6.246.7.2
+Subgoal *1/6.246.7.1
+Subgoal *1/6.246.6
+Subgoal *1/6.246.5
+Subgoal *1/6.246.4
+Subgoal *1/6.246.3
+Subgoal *1/6.246.2
+Subgoal *1/6.246.1
+Subgoal *1/6.245
+Subgoal *1/6.244
+Subgoal *1/6.243
+Subgoal *1/6.242
+Subgoal *1/6.242.6
+Subgoal *1/6.242.5
+Subgoal *1/6.242.4
+Subgoal *1/6.242.3
+Subgoal *1/6.242.2
+Subgoal *1/6.242.1
+Subgoal *1/6.241
+Subgoal *1/6.240
+Subgoal *1/6.239
+Subgoal *1/6.238
+Subgoal *1/6.238.6
+Subgoal *1/6.238.5
+Subgoal *1/6.238.4
+Subgoal *1/6.238.3
+Subgoal *1/6.238.2
+Subgoal *1/6.238.1
+Subgoal *1/6.237
+Subgoal *1/6.236
+Subgoal *1/6.235
+Subgoal *1/6.234
+Subgoal *1/6.234.6
+Subgoal *1/6.234.5
+Subgoal *1/6.234.4
+Subgoal *1/6.234.3
+Subgoal *1/6.234.2
+Subgoal *1/6.234.1
+Subgoal *1/6.233
+Subgoal *1/6.232
+Subgoal *1/6.231
+Subgoal *1/6.230
+Subgoal *1/6.230.6
+Subgoal *1/6.230.5
+Subgoal *1/6.230.4
+Subgoal *1/6.230.3
+Subgoal *1/6.230.2
+Subgoal *1/6.230.1
+Subgoal *1/6.229
+Subgoal *1/6.228
+Subgoal *1/6.227
+Subgoal *1/6.226
+Subgoal *1/6.226.6
+Subgoal *1/6.226.5
+Subgoal *1/6.226.4
+Subgoal *1/6.226.3
+Subgoal *1/6.226.2
+Subgoal *1/6.226.1
+Subgoal *1/6.225
+Subgoal *1/6.224
+Subgoal *1/6.223
+Subgoal *1/6.222
+Subgoal *1/6.222.6
+Subgoal *1/6.222.5
+Subgoal *1/6.222.4
+Subgoal *1/6.222.3
+Subgoal *1/6.222.2
+Subgoal *1/6.222.1
+Subgoal *1/6.221
+Subgoal *1/6.220
+Subgoal *1/6.219
+Subgoal *1/6.218
+Subgoal *1/6.218.6
+Subgoal *1/6.218.5
+Subgoal *1/6.218.4
+Subgoal *1/6.218.3
+Subgoal *1/6.218.2
+Subgoal *1/6.218.1
+Subgoal *1/6.217
+Subgoal *1/6.216
+Subgoal *1/6.215
+Subgoal *1/6.214
+Subgoal *1/6.214.6
+Subgoal *1/6.214.5
+Subgoal *1/6.214.4
+Subgoal *1/6.214.3
+Subgoal *1/6.214.2
+Subgoal *1/6.214.1
+Subgoal *1/6.213
+Subgoal *1/6.212
+Subgoal *1/6.211
+Subgoal *1/6.210
+Subgoal *1/6.210.14
+Subgoal *1/6.210.13
+Subgoal *1/6.210.12
+Subgoal *1/6.210.11
+Subgoal *1/6.210.10
+Subgoal *1/6.210.9
+Subgoal *1/6.210.8
+Subgoal *1/6.210.7
+Subgoal *1/6.210.6
+Subgoal *1/6.210.5
+Subgoal *1/6.210.4
+Subgoal *1/6.210.3
+Subgoal *1/6.210.2
+Subgoal *1/6.210.1
+Subgoal *1/6.209
+Subgoal *1/6.208
+Subgoal *1/6.207
+Subgoal *1/6.206
+Subgoal *1/6.206.13
+Subgoal *1/6.206.12
+Subgoal *1/6.206.11
+Subgoal *1/6.206.10
+Subgoal *1/6.206.9
+Subgoal *1/6.206.8
+Subgoal *1/6.206.7
+Subgoal *1/6.206.6
+Subgoal *1/6.206.5
+Subgoal *1/6.206.4
+Subgoal *1/6.206.3
+Subgoal *1/6.206.2
+Subgoal *1/6.206.1
+Subgoal *1/6.205
+Subgoal *1/6.204
+Subgoal *1/6.203
+Subgoal *1/6.202
+Subgoal *1/6.202.14
+Subgoal *1/6.202.13
+Subgoal *1/6.202.12
+Subgoal *1/6.202.11
+Subgoal *1/6.202.10
+Subgoal *1/6.202.9
+Subgoal *1/6.202.8
+Subgoal *1/6.202.7
+Subgoal *1/6.202.6
+Subgoal *1/6.202.5
+Subgoal *1/6.202.4
+Subgoal *1/6.202.3
+Subgoal *1/6.202.2
+Subgoal *1/6.202.1
+Subgoal *1/6.201
+Subgoal *1/6.200
+Subgoal *1/6.199
+Subgoal *1/6.198
+Subgoal *1/6.198.14
+Subgoal *1/6.198.13
+Subgoal *1/6.198.12
+Subgoal *1/6.198.11
+Subgoal *1/6.198.10
+Subgoal *1/6.198.9
+Subgoal *1/6.198.8
+Subgoal *1/6.198.7
+Subgoal *1/6.198.6
+Subgoal *1/6.198.5
+Subgoal *1/6.198.4
+Subgoal *1/6.198.3
+Subgoal *1/6.198.2
+Subgoal *1/6.198.1
+Subgoal *1/6.197
+Subgoal *1/6.196
+Subgoal *1/6.195
+Subgoal *1/6.194
+Subgoal *1/6.194.37
+Subgoal *1/6.194.36
+Subgoal *1/6.194.35
+Subgoal *1/6.194.34
+Subgoal *1/6.194.33
+Subgoal *1/6.194.32
+Subgoal *1/6.194.31
+Subgoal *1/6.194.31'
+Subgoal *1/6.194.30
+Subgoal *1/6.194.30'
+Subgoal *1/6.194.29
+Subgoal *1/6.194.29'
+Subgoal *1/6.194.28
+Subgoal *1/6.194.28'
+Subgoal *1/6.194.27
+Subgoal *1/6.194.27'
+Subgoal *1/6.194.26
+Subgoal *1/6.194.25
+Subgoal *1/6.194.24
+Subgoal *1/6.194.23
+Subgoal *1/6.194.22
+Subgoal *1/6.194.21
+Subgoal *1/6.194.20
+Subgoal *1/6.194.19
+Subgoal *1/6.194.19'
+Subgoal *1/6.194.18
+Subgoal *1/6.194.18'
+Subgoal *1/6.194.17
+Subgoal *1/6.194.17'
+Subgoal *1/6.194.16
+Subgoal *1/6.194.16'
+Subgoal *1/6.194.15
+Subgoal *1/6.194.15'
+Subgoal *1/6.194.14
+Subgoal *1/6.194.13
+Subgoal *1/6.194.12
+Subgoal *1/6.194.11
+Subgoal *1/6.194.10
+Subgoal *1/6.194.9
+Subgoal *1/6.194.8
+Subgoal *1/6.194.7
+Subgoal *1/6.194.7'
+Subgoal *1/6.194.6
+Subgoal *1/6.194.6'
+Subgoal *1/6.194.5
+Subgoal *1/6.194.5'
+Subgoal *1/6.194.4
+Subgoal *1/6.194.3
+Subgoal *1/6.194.2
+Subgoal *1/6.194.1
+Subgoal *1/6.193
+Subgoal *1/6.192
+Subgoal *1/6.191
+Subgoal *1/6.190
+Subgoal *1/6.190.37
+Subgoal *1/6.190.36
+Subgoal *1/6.190.35
+Subgoal *1/6.190.34
+Subgoal *1/6.190.33
+Subgoal *1/6.190.32
+Subgoal *1/6.190.31
+Subgoal *1/6.190.31'
+Subgoal *1/6.190.30
+Subgoal *1/6.190.30'
+Subgoal *1/6.190.29
+Subgoal *1/6.190.29'
+Subgoal *1/6.190.28
+Subgoal *1/6.190.28'
+Subgoal *1/6.190.27
+Subgoal *1/6.190.27'
+Subgoal *1/6.190.26
+Subgoal *1/6.190.25
+Subgoal *1/6.190.24
+Subgoal *1/6.190.23
+Subgoal *1/6.190.22
+Subgoal *1/6.190.21
+Subgoal *1/6.190.20
+Subgoal *1/6.190.19
+Subgoal *1/6.190.19'
+Subgoal *1/6.190.18
+Subgoal *1/6.190.18'
+Subgoal *1/6.190.17
+Subgoal *1/6.190.17'
+Subgoal *1/6.190.16
+Subgoal *1/6.190.16'
+Subgoal *1/6.190.15
+Subgoal *1/6.190.15'
+Subgoal *1/6.190.14
+Subgoal *1/6.190.13
+Subgoal *1/6.190.12
+Subgoal *1/6.190.11
+Subgoal *1/6.190.10
+Subgoal *1/6.190.9
+Subgoal *1/6.190.8
+Subgoal *1/6.190.7
+Subgoal *1/6.190.7'
+Subgoal *1/6.190.6
+Subgoal *1/6.190.6'
+Subgoal *1/6.190.5
+Subgoal *1/6.190.5'
+Subgoal *1/6.190.4
+Subgoal *1/6.190.3
+Subgoal *1/6.190.2
+Subgoal *1/6.190.1
+Subgoal *1/6.189
+Subgoal *1/6.188
+Subgoal *1/6.187
+Subgoal *1/6.186
+Subgoal *1/6.186.36
+Subgoal *1/6.186.35
+Subgoal *1/6.186.34
+Subgoal *1/6.186.33
+Subgoal *1/6.186.32
+Subgoal *1/6.186.31
+Subgoal *1/6.186.30
+Subgoal *1/6.186.30'
+Subgoal *1/6.186.29
+Subgoal *1/6.186.29'
+Subgoal *1/6.186.28
+Subgoal *1/6.186.28'
+Subgoal *1/6.186.27
+Subgoal *1/6.186.27'
+Subgoal *1/6.186.26
+Subgoal *1/6.186.26'
+Subgoal *1/6.186.25
+Subgoal *1/6.186.24
+Subgoal *1/6.186.23
+Subgoal *1/6.186.22
+Subgoal *1/6.186.21
+Subgoal *1/6.186.20
+Subgoal *1/6.186.19
+Subgoal *1/6.186.18
+Subgoal *1/6.186.18'
+Subgoal *1/6.186.17
+Subgoal *1/6.186.17'
+Subgoal *1/6.186.16
+Subgoal *1/6.186.16'
+Subgoal *1/6.186.15
+Subgoal *1/6.186.15'
+Subgoal *1/6.186.14
+Subgoal *1/6.186.14'
+Subgoal *1/6.186.13
+Subgoal *1/6.186.12
+Subgoal *1/6.186.11
+Subgoal *1/6.186.10
+Subgoal *1/6.186.9
+Subgoal *1/6.186.8
+Subgoal *1/6.186.7
+Subgoal *1/6.186.7'
+Subgoal *1/6.186.6
+Subgoal *1/6.186.6'
+Subgoal *1/6.186.5
+Subgoal *1/6.186.5'
+Subgoal *1/6.186.4
+Subgoal *1/6.186.3
+Subgoal *1/6.186.2
+Subgoal *1/6.186.1
+Subgoal *1/6.185
+Subgoal *1/6.184
+Subgoal *1/6.183
+Subgoal *1/6.182
+Subgoal *1/6.182.37
+Subgoal *1/6.182.36
+Subgoal *1/6.182.35
+Subgoal *1/6.182.34
+Subgoal *1/6.182.33
+Subgoal *1/6.182.32
+Subgoal *1/6.182.31
+Subgoal *1/6.182.31'
+Subgoal *1/6.182.30
+Subgoal *1/6.182.30'
+Subgoal *1/6.182.29
+Subgoal *1/6.182.29'
+Subgoal *1/6.182.28
+Subgoal *1/6.182.28'
+Subgoal *1/6.182.27
+Subgoal *1/6.182.27'
+Subgoal *1/6.182.26
+Subgoal *1/6.182.25
+Subgoal *1/6.182.24
+Subgoal *1/6.182.23
+Subgoal *1/6.182.22
+Subgoal *1/6.182.21
+Subgoal *1/6.182.20
+Subgoal *1/6.182.19
+Subgoal *1/6.182.19'
+Subgoal *1/6.182.18
+Subgoal *1/6.182.18'
+Subgoal *1/6.182.17
+Subgoal *1/6.182.17'
+Subgoal *1/6.182.16
+Subgoal *1/6.182.16'
+Subgoal *1/6.182.15
+Subgoal *1/6.182.15'
+Subgoal *1/6.182.14
+Subgoal *1/6.182.13
+Subgoal *1/6.182.12
+Subgoal *1/6.182.11
+Subgoal *1/6.182.10
+Subgoal *1/6.182.9
+Subgoal *1/6.182.8
+Subgoal *1/6.182.7
+Subgoal *1/6.182.7'
+Subgoal *1/6.182.6
+Subgoal *1/6.182.6'
+Subgoal *1/6.182.5
+Subgoal *1/6.182.5'
+Subgoal *1/6.182.4
+Subgoal *1/6.182.3
+Subgoal *1/6.182.2
+Subgoal *1/6.182.1
+Subgoal *1/6.181
+Subgoal *1/6.180
+Subgoal *1/6.179
+Subgoal *1/6.178
+Subgoal *1/6.178.6
+Subgoal *1/6.178.5
+Subgoal *1/6.178.4
+Subgoal *1/6.178.3
+Subgoal *1/6.178.2
+Subgoal *1/6.178.1
+Subgoal *1/6.177
+Subgoal *1/6.176
+Subgoal *1/6.175
+Subgoal *1/6.174
+Subgoal *1/6.174.6
+Subgoal *1/6.174.5
+Subgoal *1/6.174.4
+Subgoal *1/6.174.3
+Subgoal *1/6.174.2
+Subgoal *1/6.174.1
+Subgoal *1/6.173
+Subgoal *1/6.172
+Subgoal *1/6.171
+Subgoal *1/6.170
+Subgoal *1/6.170.6
+Subgoal *1/6.170.5
+Subgoal *1/6.170.4
+Subgoal *1/6.170.3
+Subgoal *1/6.170.2
+Subgoal *1/6.170.1
+Subgoal *1/6.169
+Subgoal *1/6.168
+Subgoal *1/6.167
+Subgoal *1/6.166
+Subgoal *1/6.166.6
+Subgoal *1/6.166.5
+Subgoal *1/6.166.4
+Subgoal *1/6.166.3
+Subgoal *1/6.166.2
+Subgoal *1/6.166.1
+Subgoal *1/6.165
+Subgoal *1/6.164
+Subgoal *1/6.163
+Subgoal *1/6.162
+Subgoal *1/6.162.7
+Subgoal *1/6.162.7.5
+Subgoal *1/6.162.7.5'
+Subgoal *1/6.162.7.4
+Subgoal *1/6.162.7.3
+Subgoal *1/6.162.7.3'
+Subgoal *1/6.162.7.2
+Subgoal *1/6.162.7.1
+Subgoal *1/6.162.6
+Subgoal *1/6.162.5
+Subgoal *1/6.162.4
+Subgoal *1/6.162.3
+Subgoal *1/6.162.2
+Subgoal *1/6.162.1
+Subgoal *1/6.161
+Subgoal *1/6.160
+Subgoal *1/6.159
+Subgoal *1/6.158
+Subgoal *1/6.158.7
+Subgoal *1/6.158.7.5
+Subgoal *1/6.158.7.5'
+Subgoal *1/6.158.7.4
+Subgoal *1/6.158.7.3
+Subgoal *1/6.158.7.3'
+Subgoal *1/6.158.7.2
+Subgoal *1/6.158.7.1
+Subgoal *1/6.158.6
+Subgoal *1/6.158.5
+Subgoal *1/6.158.4
+Subgoal *1/6.158.3
+Subgoal *1/6.158.2
+Subgoal *1/6.158.1
+Subgoal *1/6.157
+Subgoal *1/6.156
+Subgoal *1/6.155
+Subgoal *1/6.154
+Subgoal *1/6.154.7
+Subgoal *1/6.154.7.5
+Subgoal *1/6.154.7.5'
+Subgoal *1/6.154.7.4
+Subgoal *1/6.154.7.3
+Subgoal *1/6.154.7.3'
+Subgoal *1/6.154.7.2
+Subgoal *1/6.154.7.1
+Subgoal *1/6.154.6
+Subgoal *1/6.154.5
+Subgoal *1/6.154.4
+Subgoal *1/6.154.3
+Subgoal *1/6.154.2
+Subgoal *1/6.154.1
+Subgoal *1/6.153
+Subgoal *1/6.152
+Subgoal *1/6.151
+Subgoal *1/6.150
+Subgoal *1/6.150.7
+Subgoal *1/6.150.7.5
+Subgoal *1/6.150.7.5'
+Subgoal *1/6.150.7.4
+Subgoal *1/6.150.7.3
+Subgoal *1/6.150.7.3'
+Subgoal *1/6.150.7.2
+Subgoal *1/6.150.7.1
+Subgoal *1/6.150.6
+Subgoal *1/6.150.5
+Subgoal *1/6.150.4
+Subgoal *1/6.150.3
+Subgoal *1/6.150.2
+Subgoal *1/6.150.1
+Subgoal *1/6.149
+Subgoal *1/6.148
+Subgoal *1/6.147
+Subgoal *1/6.146
+Subgoal *1/6.146.6
+Subgoal *1/6.146.5
+Subgoal *1/6.146.4
+Subgoal *1/6.146.3
+Subgoal *1/6.146.2
+Subgoal *1/6.146.1
+Subgoal *1/6.145
+Subgoal *1/6.144
+Subgoal *1/6.143
+Subgoal *1/6.142
+Subgoal *1/6.142.6
+Subgoal *1/6.142.5
+Subgoal *1/6.142.4
+Subgoal *1/6.142.3
+Subgoal *1/6.142.2
+Subgoal *1/6.142.1
+Subgoal *1/6.141
+Subgoal *1/6.140
+Subgoal *1/6.139
+Subgoal *1/6.138
+Subgoal *1/6.138.6
+Subgoal *1/6.138.5
+Subgoal *1/6.138.4
+Subgoal *1/6.138.3
+Subgoal *1/6.138.2
+Subgoal *1/6.138.1
+Subgoal *1/6.137
+Subgoal *1/6.136
+Subgoal *1/6.135
+Subgoal *1/6.134
+Subgoal *1/6.134.6
+Subgoal *1/6.134.5
+Subgoal *1/6.134.4
+Subgoal *1/6.134.3
+Subgoal *1/6.134.2
+Subgoal *1/6.134.1
+Subgoal *1/6.133
+Subgoal *1/6.132
+Subgoal *1/6.131
+Subgoal *1/6.130
+Subgoal *1/6.130.14
+Subgoal *1/6.130.13
+Subgoal *1/6.130.12
+Subgoal *1/6.130.11
+Subgoal *1/6.130.10
+Subgoal *1/6.130.9
+Subgoal *1/6.130.8
+Subgoal *1/6.130.7
+Subgoal *1/6.130.6
+Subgoal *1/6.130.5
+Subgoal *1/6.130.4
+Subgoal *1/6.130.3
+Subgoal *1/6.130.2
+Subgoal *1/6.130.1
+Subgoal *1/6.129
+Subgoal *1/6.128
+Subgoal *1/6.127
+Subgoal *1/6.126
+Subgoal *1/6.126.14
+Subgoal *1/6.126.13
+Subgoal *1/6.126.12
+Subgoal *1/6.126.11
+Subgoal *1/6.126.10
+Subgoal *1/6.126.9
+Subgoal *1/6.126.8
+Subgoal *1/6.126.7
+Subgoal *1/6.126.6
+Subgoal *1/6.126.5
+Subgoal *1/6.126.4
+Subgoal *1/6.126.3
+Subgoal *1/6.126.2
+Subgoal *1/6.126.1
+Subgoal *1/6.125
+Subgoal *1/6.124
+Subgoal *1/6.123
+Subgoal *1/6.122
+Subgoal *1/6.122.14
+Subgoal *1/6.122.13
+Subgoal *1/6.122.12
+Subgoal *1/6.122.11
+Subgoal *1/6.122.10
+Subgoal *1/6.122.9
+Subgoal *1/6.122.8
+Subgoal *1/6.122.7
+Subgoal *1/6.122.6
+Subgoal *1/6.122.5
+Subgoal *1/6.122.4
+Subgoal *1/6.122.3
+Subgoal *1/6.122.2
+Subgoal *1/6.122.1
+Subgoal *1/6.121
+Subgoal *1/6.120
+Subgoal *1/6.119
+Subgoal *1/6.118
+Subgoal *1/6.118.13
+Subgoal *1/6.118.12
+Subgoal *1/6.118.11
+Subgoal *1/6.118.10
+Subgoal *1/6.118.9
+Subgoal *1/6.118.8
+Subgoal *1/6.118.7
+Subgoal *1/6.118.6
+Subgoal *1/6.118.5
+Subgoal *1/6.118.4
+Subgoal *1/6.118.3
+Subgoal *1/6.118.2
+Subgoal *1/6.118.1
+Subgoal *1/6.117
+Subgoal *1/6.116
+Subgoal *1/6.115
+Subgoal *1/6.114
+Subgoal *1/6.114.39
+Subgoal *1/6.114.38
+Subgoal *1/6.114.37
+Subgoal *1/6.114.36
+Subgoal *1/6.114.35
+Subgoal *1/6.114.34
+Subgoal *1/6.114.33
+Subgoal *1/6.114.33'
+Subgoal *1/6.114.32
+Subgoal *1/6.114.32'
+Subgoal *1/6.114.31
+Subgoal *1/6.114.31'
+Subgoal *1/6.114.30
+Subgoal *1/6.114.30'
+Subgoal *1/6.114.29
+Subgoal *1/6.114.29'
+Subgoal *1/6.114.28
+Subgoal *1/6.114.27
+Subgoal *1/6.114.26
+Subgoal *1/6.114.25
+Subgoal *1/6.114.24
+Subgoal *1/6.114.23
+Subgoal *1/6.114.22
+Subgoal *1/6.114.21
+Subgoal *1/6.114.21'
+Subgoal *1/6.114.20
+Subgoal *1/6.114.20'
+Subgoal *1/6.114.19
+Subgoal *1/6.114.19'
+Subgoal *1/6.114.18
+Subgoal *1/6.114.18'
+Subgoal *1/6.114.17
+Subgoal *1/6.114.17'
+Subgoal *1/6.114.16
+Subgoal *1/6.114.15
+Subgoal *1/6.114.14
+Subgoal *1/6.114.13
+Subgoal *1/6.114.12
+Subgoal *1/6.114.11
+Subgoal *1/6.114.10
+Subgoal *1/6.114.9
+Subgoal *1/6.114.8
+Subgoal *1/6.114.7
+Subgoal *1/6.114.7'
+Subgoal *1/6.114.6
+Subgoal *1/6.114.6'
+Subgoal *1/6.114.5
+Subgoal *1/6.114.5'
+Subgoal *1/6.114.4
+Subgoal *1/6.114.3
+Subgoal *1/6.114.2
+Subgoal *1/6.114.1
+Subgoal *1/6.113
+Subgoal *1/6.112
+Subgoal *1/6.111
+Subgoal *1/6.110
+Subgoal *1/6.110.36
+Subgoal *1/6.110.35
+Subgoal *1/6.110.34
+Subgoal *1/6.110.33
+Subgoal *1/6.110.32
+Subgoal *1/6.110.31
+Subgoal *1/6.110.30
+Subgoal *1/6.110.30'
+Subgoal *1/6.110.29
+Subgoal *1/6.110.29'
+Subgoal *1/6.110.28
+Subgoal *1/6.110.28'
+Subgoal *1/6.110.27
+Subgoal *1/6.110.27'
+Subgoal *1/6.110.26
+Subgoal *1/6.110.26'
+Subgoal *1/6.110.25
+Subgoal *1/6.110.24
+Subgoal *1/6.110.23
+Subgoal *1/6.110.22
+Subgoal *1/6.110.21
+Subgoal *1/6.110.20
+Subgoal *1/6.110.19
+Subgoal *1/6.110.18
+Subgoal *1/6.110.18'
+Subgoal *1/6.110.17
+Subgoal *1/6.110.17'
+Subgoal *1/6.110.16
+Subgoal *1/6.110.16'
+Subgoal *1/6.110.15
+Subgoal *1/6.110.15'
+Subgoal *1/6.110.14
+Subgoal *1/6.110.14'
+Subgoal *1/6.110.13
+Subgoal *1/6.110.12
+Subgoal *1/6.110.11
+Subgoal *1/6.110.10
+Subgoal *1/6.110.9
+Subgoal *1/6.110.8
+Subgoal *1/6.110.7
+Subgoal *1/6.110.7'
+Subgoal *1/6.110.6
+Subgoal *1/6.110.6'
+Subgoal *1/6.110.5
+Subgoal *1/6.110.5'
+Subgoal *1/6.110.4
+Subgoal *1/6.110.3
+Subgoal *1/6.110.2
+Subgoal *1/6.110.1
+Subgoal *1/6.109
+Subgoal *1/6.108
+Subgoal *1/6.107
+Subgoal *1/6.106
+Subgoal *1/6.106.39
+Subgoal *1/6.106.38
+Subgoal *1/6.106.37
+Subgoal *1/6.106.36
+Subgoal *1/6.106.35
+Subgoal *1/6.106.34
+Subgoal *1/6.106.33
+Subgoal *1/6.106.33'
+Subgoal *1/6.106.32
+Subgoal *1/6.106.32'
+Subgoal *1/6.106.31
+Subgoal *1/6.106.31'
+Subgoal *1/6.106.30
+Subgoal *1/6.106.30'
+Subgoal *1/6.106.29
+Subgoal *1/6.106.29'
+Subgoal *1/6.106.28
+Subgoal *1/6.106.27
+Subgoal *1/6.106.26
+Subgoal *1/6.106.25
+Subgoal *1/6.106.24
+Subgoal *1/6.106.23
+Subgoal *1/6.106.22
+Subgoal *1/6.106.21
+Subgoal *1/6.106.21'
+Subgoal *1/6.106.20
+Subgoal *1/6.106.20'
+Subgoal *1/6.106.19
+Subgoal *1/6.106.19'
+Subgoal *1/6.106.18
+Subgoal *1/6.106.18'
+Subgoal *1/6.106.17
+Subgoal *1/6.106.17'
+Subgoal *1/6.106.16
+Subgoal *1/6.106.15
+Subgoal *1/6.106.14
+Subgoal *1/6.106.13
+Subgoal *1/6.106.12
+Subgoal *1/6.106.11
+Subgoal *1/6.106.10
+Subgoal *1/6.106.9
+Subgoal *1/6.106.8
+Subgoal *1/6.106.7
+Subgoal *1/6.106.7'
+Subgoal *1/6.106.6
+Subgoal *1/6.106.6'
+Subgoal *1/6.106.5
+Subgoal *1/6.106.5'
+Subgoal *1/6.106.4
+Subgoal *1/6.106.3
+Subgoal *1/6.106.2
+Subgoal *1/6.106.1
+Subgoal *1/6.105
+Subgoal *1/6.104
+Subgoal *1/6.103
+Subgoal *1/6.102
+Subgoal *1/6.102.39
+Subgoal *1/6.102.38
+Subgoal *1/6.102.37
+Subgoal *1/6.102.36
+Subgoal *1/6.102.35
+Subgoal *1/6.102.34
+Subgoal *1/6.102.33
+Subgoal *1/6.102.33'
+Subgoal *1/6.102.32
+Subgoal *1/6.102.32'
+Subgoal *1/6.102.31
+Subgoal *1/6.102.31'
+Subgoal *1/6.102.30
+Subgoal *1/6.102.30'
+Subgoal *1/6.102.29
+Subgoal *1/6.102.29'
+Subgoal *1/6.102.28
+Subgoal *1/6.102.27
+Subgoal *1/6.102.26
+Subgoal *1/6.102.25
+Subgoal *1/6.102.24
+Subgoal *1/6.102.23
+Subgoal *1/6.102.22
+Subgoal *1/6.102.21
+Subgoal *1/6.102.21'
+Subgoal *1/6.102.20
+Subgoal *1/6.102.20'
+Subgoal *1/6.102.19
+Subgoal *1/6.102.19'
+Subgoal *1/6.102.18
+Subgoal *1/6.102.18'
+Subgoal *1/6.102.17
+Subgoal *1/6.102.17'
+Subgoal *1/6.102.16
+Subgoal *1/6.102.15
+Subgoal *1/6.102.14
+Subgoal *1/6.102.13
+Subgoal *1/6.102.12
+Subgoal *1/6.102.11
+Subgoal *1/6.102.10
+Subgoal *1/6.102.9
+Subgoal *1/6.102.8
+Subgoal *1/6.102.7
+Subgoal *1/6.102.7'
+Subgoal *1/6.102.6
+Subgoal *1/6.102.6'
+Subgoal *1/6.102.5
+Subgoal *1/6.102.5'
+Subgoal *1/6.102.4
+Subgoal *1/6.102.3
+Subgoal *1/6.102.2
+Subgoal *1/6.102.1
+Subgoal *1/6.101
+Subgoal *1/6.100
+Subgoal *1/6.99
+Subgoal *1/6.98
+Subgoal *1/6.98.7
+Subgoal *1/6.98.7.5
+Subgoal *1/6.98.7.5'
+Subgoal *1/6.98.7.4
+Subgoal *1/6.98.7.3
+Subgoal *1/6.98.7.3'
+Subgoal *1/6.98.7.2
+Subgoal *1/6.98.7.1
+Subgoal *1/6.98.6
+Subgoal *1/6.98.5
+Subgoal *1/6.98.4
+Subgoal *1/6.98.3
+Subgoal *1/6.98.2
+Subgoal *1/6.98.1
+Subgoal *1/6.97
+Subgoal *1/6.96
+Subgoal *1/6.95
+Subgoal *1/6.94
+Subgoal *1/6.94.7
+Subgoal *1/6.94.7.5
+Subgoal *1/6.94.7.5'
+Subgoal *1/6.94.7.4
+Subgoal *1/6.94.7.3
+Subgoal *1/6.94.7.3'
+Subgoal *1/6.94.7.2
+Subgoal *1/6.94.7.1
+Subgoal *1/6.94.6
+Subgoal *1/6.94.5
+Subgoal *1/6.94.4
+Subgoal *1/6.94.3
+Subgoal *1/6.94.2
+Subgoal *1/6.94.1
+Subgoal *1/6.93
+Subgoal *1/6.92
+Subgoal *1/6.91
+Subgoal *1/6.90
+Subgoal *1/6.90.7
+Subgoal *1/6.90.7.5
+Subgoal *1/6.90.7.5'
+Subgoal *1/6.90.7.4
+Subgoal *1/6.90.7.3
+Subgoal *1/6.90.7.3'
+Subgoal *1/6.90.7.2
+Subgoal *1/6.90.7.1
+Subgoal *1/6.90.6
+Subgoal *1/6.90.5
+Subgoal *1/6.90.4
+Subgoal *1/6.90.3
+Subgoal *1/6.90.2
+Subgoal *1/6.90.1
+Subgoal *1/6.89
+Subgoal *1/6.88
+Subgoal *1/6.87
+Subgoal *1/6.86
+Subgoal *1/6.86.7
+Subgoal *1/6.86.7.5
+Subgoal *1/6.86.7.5'
+Subgoal *1/6.86.7.4
+Subgoal *1/6.86.7.3
+Subgoal *1/6.86.7.3'
+Subgoal *1/6.86.7.2
+Subgoal *1/6.86.7.1
+Subgoal *1/6.86.6
+Subgoal *1/6.86.5
+Subgoal *1/6.86.4
+Subgoal *1/6.86.3
+Subgoal *1/6.86.2
+Subgoal *1/6.86.1
+Subgoal *1/6.85
+Subgoal *1/6.84
+Subgoal *1/6.83
+Subgoal *1/6.82
+Subgoal *1/6.82.6
+Subgoal *1/6.82.5
+Subgoal *1/6.82.4
+Subgoal *1/6.82.3
+Subgoal *1/6.82.2
+Subgoal *1/6.82.1
+Subgoal *1/6.81
+Subgoal *1/6.80
+Subgoal *1/6.79
+Subgoal *1/6.78
+Subgoal *1/6.78.6
+Subgoal *1/6.78.5
+Subgoal *1/6.78.4
+Subgoal *1/6.78.3
+Subgoal *1/6.78.2
+Subgoal *1/6.78.1
+Subgoal *1/6.77
+Subgoal *1/6.76
+Subgoal *1/6.75
+Subgoal *1/6.74
+Subgoal *1/6.74.6
+Subgoal *1/6.74.5
+Subgoal *1/6.74.4
+Subgoal *1/6.74.3
+Subgoal *1/6.74.2
+Subgoal *1/6.74.1
+Subgoal *1/6.73
+Subgoal *1/6.72
+Subgoal *1/6.71
+Subgoal *1/6.70
+Subgoal *1/6.70.6
+Subgoal *1/6.70.5
+Subgoal *1/6.70.4
+Subgoal *1/6.70.3
+Subgoal *1/6.70.2
+Subgoal *1/6.70.1
+Subgoal *1/6.69
+Subgoal *1/6.68
+Subgoal *1/6.67
+Subgoal *1/6.66
+Subgoal *1/6.66.6
+Subgoal *1/6.66.5
+Subgoal *1/6.66.4
+Subgoal *1/6.66.3
+Subgoal *1/6.66.2
+Subgoal *1/6.66.1
+Subgoal *1/6.65
+Subgoal *1/6.64
+Subgoal *1/6.63
+Subgoal *1/6.62
+Subgoal *1/6.62.6
+Subgoal *1/6.62.5
+Subgoal *1/6.62.4
+Subgoal *1/6.62.3
+Subgoal *1/6.62.2
+Subgoal *1/6.62.1
+Subgoal *1/6.61
+Subgoal *1/6.60
+Subgoal *1/6.59
+Subgoal *1/6.58
+Subgoal *1/6.58.6
+Subgoal *1/6.58.5
+Subgoal *1/6.58.4
+Subgoal *1/6.58.3
+Subgoal *1/6.58.2
+Subgoal *1/6.58.1
+Subgoal *1/6.57
+Subgoal *1/6.56
+Subgoal *1/6.55
+Subgoal *1/6.54
+Subgoal *1/6.54.6
+Subgoal *1/6.54.5
+Subgoal *1/6.54.4
+Subgoal *1/6.54.3
+Subgoal *1/6.54.2
+Subgoal *1/6.54.1
+Subgoal *1/6.53
+Subgoal *1/6.52
+Subgoal *1/6.51
+Subgoal *1/6.50
+Subgoal *1/6.50.39
+Subgoal *1/6.50.38
+Subgoal *1/6.50.37
+Subgoal *1/6.50.36
+Subgoal *1/6.50.35
+Subgoal *1/6.50.34
+Subgoal *1/6.50.33
+Subgoal *1/6.50.33'
+Subgoal *1/6.50.32
+Subgoal *1/6.50.32'
+Subgoal *1/6.50.31
+Subgoal *1/6.50.31'
+Subgoal *1/6.50.30
+Subgoal *1/6.50.30'
+Subgoal *1/6.50.29
+Subgoal *1/6.50.29'
+Subgoal *1/6.50.28
+Subgoal *1/6.50.27
+Subgoal *1/6.50.26
+Subgoal *1/6.50.25
+Subgoal *1/6.50.24
+Subgoal *1/6.50.23
+Subgoal *1/6.50.22
+Subgoal *1/6.50.21
+Subgoal *1/6.50.21'
+Subgoal *1/6.50.20
+Subgoal *1/6.50.20'
+Subgoal *1/6.50.19
+Subgoal *1/6.50.19'
+Subgoal *1/6.50.18
+Subgoal *1/6.50.18'
+Subgoal *1/6.50.17
+Subgoal *1/6.50.17'
+Subgoal *1/6.50.16
+Subgoal *1/6.50.15
+Subgoal *1/6.50.14
+Subgoal *1/6.50.13
+Subgoal *1/6.50.12
+Subgoal *1/6.50.11
+Subgoal *1/6.50.10
+Subgoal *1/6.50.9
+Subgoal *1/6.50.8
+Subgoal *1/6.50.7
+Subgoal *1/6.50.7'
+Subgoal *1/6.50.6
+Subgoal *1/6.50.6'
+Subgoal *1/6.50.5
+Subgoal *1/6.50.5'
+Subgoal *1/6.50.4
+Subgoal *1/6.50.3
+Subgoal *1/6.50.2
+Subgoal *1/6.50.1
+Subgoal *1/6.49
+Subgoal *1/6.48
+Subgoal *1/6.47
+Subgoal *1/6.46
+Subgoal *1/6.46.36
+Subgoal *1/6.46.35
+Subgoal *1/6.46.34
+Subgoal *1/6.46.33
+Subgoal *1/6.46.32
+Subgoal *1/6.46.31
+Subgoal *1/6.46.30
+Subgoal *1/6.46.30'
+Subgoal *1/6.46.29
+Subgoal *1/6.46.29'
+Subgoal *1/6.46.28
+Subgoal *1/6.46.28'
+Subgoal *1/6.46.27
+Subgoal *1/6.46.27'
+Subgoal *1/6.46.26
+Subgoal *1/6.46.26'
+Subgoal *1/6.46.25
+Subgoal *1/6.46.24
+Subgoal *1/6.46.23
+Subgoal *1/6.46.22
+Subgoal *1/6.46.21
+Subgoal *1/6.46.20
+Subgoal *1/6.46.19
+Subgoal *1/6.46.18
+Subgoal *1/6.46.18'
+Subgoal *1/6.46.17
+Subgoal *1/6.46.17'
+Subgoal *1/6.46.16
+Subgoal *1/6.46.16'
+Subgoal *1/6.46.15
+Subgoal *1/6.46.15'
+Subgoal *1/6.46.14
+Subgoal *1/6.46.14'
+Subgoal *1/6.46.13
+Subgoal *1/6.46.12
+Subgoal *1/6.46.11
+Subgoal *1/6.46.10
+Subgoal *1/6.46.9
+Subgoal *1/6.46.8
+Subgoal *1/6.46.7
+Subgoal *1/6.46.7'
+Subgoal *1/6.46.6
+Subgoal *1/6.46.6'
+Subgoal *1/6.46.5
+Subgoal *1/6.46.5'
+Subgoal *1/6.46.4
+Subgoal *1/6.46.3
+Subgoal *1/6.46.2
+Subgoal *1/6.46.1
+Subgoal *1/6.45
+Subgoal *1/6.44
+Subgoal *1/6.43
+Subgoal *1/6.42
+Subgoal *1/6.42.39
+Subgoal *1/6.42.38
+Subgoal *1/6.42.37
+Subgoal *1/6.42.36
+Subgoal *1/6.42.35
+Subgoal *1/6.42.34
+Subgoal *1/6.42.33
+Subgoal *1/6.42.33'
+Subgoal *1/6.42.32
+Subgoal *1/6.42.32'
+Subgoal *1/6.42.31
+Subgoal *1/6.42.31'
+Subgoal *1/6.42.30
+Subgoal *1/6.42.30'
+Subgoal *1/6.42.29
+Subgoal *1/6.42.29'
+Subgoal *1/6.42.28
+Subgoal *1/6.42.27
+Subgoal *1/6.42.26
+Subgoal *1/6.42.25
+Subgoal *1/6.42.24
+Subgoal *1/6.42.23
+Subgoal *1/6.42.22
+Subgoal *1/6.42.21
+Subgoal *1/6.42.21'
+Subgoal *1/6.42.20
+Subgoal *1/6.42.20'
+Subgoal *1/6.42.19
+Subgoal *1/6.42.19'
+Subgoal *1/6.42.18
+Subgoal *1/6.42.18'
+Subgoal *1/6.42.17
+Subgoal *1/6.42.17'
+Subgoal *1/6.42.16
+Subgoal *1/6.42.15
+Subgoal *1/6.42.14
+Subgoal *1/6.42.13
+Subgoal *1/6.42.12
+Subgoal *1/6.42.11
+Subgoal *1/6.42.10
+Subgoal *1/6.42.9
+Subgoal *1/6.42.8
+Subgoal *1/6.42.7
+Subgoal *1/6.42.7'
+Subgoal *1/6.42.6
+Subgoal *1/6.42.6'
+Subgoal *1/6.42.5
+Subgoal *1/6.42.5'
+Subgoal *1/6.42.4
+Subgoal *1/6.42.3
+Subgoal *1/6.42.2
+Subgoal *1/6.42.1
+Subgoal *1/6.41
+Subgoal *1/6.40
+Subgoal *1/6.39
+Subgoal *1/6.38
+Subgoal *1/6.38.39
+Subgoal *1/6.38.38
+Subgoal *1/6.38.37
+Subgoal *1/6.38.36
+Subgoal *1/6.38.35
+Subgoal *1/6.38.34
+Subgoal *1/6.38.33
+Subgoal *1/6.38.33'
+Subgoal *1/6.38.32
+Subgoal *1/6.38.32'
+Subgoal *1/6.38.31
+Subgoal *1/6.38.31'
+Subgoal *1/6.38.30
+Subgoal *1/6.38.30'
+Subgoal *1/6.38.29
+Subgoal *1/6.38.29'
+Subgoal *1/6.38.28
+Subgoal *1/6.38.27
+Subgoal *1/6.38.26
+Subgoal *1/6.38.25
+Subgoal *1/6.38.24
+Subgoal *1/6.38.23
+Subgoal *1/6.38.22
+Subgoal *1/6.38.21
+Subgoal *1/6.38.21'
+Subgoal *1/6.38.20
+Subgoal *1/6.38.20'
+Subgoal *1/6.38.19
+Subgoal *1/6.38.19'
+Subgoal *1/6.38.18
+Subgoal *1/6.38.18'
+Subgoal *1/6.38.17
+Subgoal *1/6.38.17'
+Subgoal *1/6.38.16
+Subgoal *1/6.38.15
+Subgoal *1/6.38.14
+Subgoal *1/6.38.13
+Subgoal *1/6.38.12
+Subgoal *1/6.38.11
+Subgoal *1/6.38.10
+Subgoal *1/6.38.9
+Subgoal *1/6.38.8
+Subgoal *1/6.38.7
+Subgoal *1/6.38.7'
+Subgoal *1/6.38.6
+Subgoal *1/6.38.6'
+Subgoal *1/6.38.5
+Subgoal *1/6.38.5'
+Subgoal *1/6.38.4
+Subgoal *1/6.38.3
+Subgoal *1/6.38.2
+Subgoal *1/6.38.1
+Subgoal *1/6.37
+Subgoal *1/6.36
+Subgoal *1/6.35
+Subgoal *1/6.34
+Subgoal *1/6.34.14
+Subgoal *1/6.34.13
+Subgoal *1/6.34.12
+Subgoal *1/6.34.11
+Subgoal *1/6.34.10
+Subgoal *1/6.34.9
+Subgoal *1/6.34.8
+Subgoal *1/6.34.7
+Subgoal *1/6.34.6
+Subgoal *1/6.34.5
+Subgoal *1/6.34.4
+Subgoal *1/6.34.3
+Subgoal *1/6.34.2
+Subgoal *1/6.34.1
+Subgoal *1/6.33
+Subgoal *1/6.32
+Subgoal *1/6.31
+Subgoal *1/6.30
+Subgoal *1/6.30.13
+Subgoal *1/6.30.12
+Subgoal *1/6.30.11
+Subgoal *1/6.30.10
+Subgoal *1/6.30.9
+Subgoal *1/6.30.8
+Subgoal *1/6.30.7
+Subgoal *1/6.30.6
+Subgoal *1/6.30.5
+Subgoal *1/6.30.4
+Subgoal *1/6.30.3
+Subgoal *1/6.30.2
+Subgoal *1/6.30.1
+Subgoal *1/6.29
+Subgoal *1/6.28
+Subgoal *1/6.27
+Subgoal *1/6.26
+Subgoal *1/6.25
+Subgoal *1/6.24
+Subgoal *1/6.23
+Subgoal *1/6.22
+Subgoal *1/6.22'
+Subgoal *1/6.21
+Subgoal *1/6.20
+Subgoal *1/6.19
+Subgoal *1/6.18
+Subgoal *1/6.17
+Subgoal *1/6.16
+Subgoal *1/6.15
+Subgoal *1/6.14
+Subgoal *1/6.13
+Subgoal *1/6.12
+Subgoal *1/6.11
+Subgoal *1/6.10
+Subgoal *1/6.9
+Subgoal *1/6.8
+Subgoal *1/6.7
+Subgoal *1/6.6
+Subgoal *1/6.5
+Subgoal *1/6.4
+Subgoal *1/6.3
+Subgoal *1/6.2
+Subgoal *1/6.1
+Subgoal *1/5
+Subgoal *1/5'
+Subgoal *1/5.35
+Subgoal *1/5.34
+Subgoal *1/5.33
+Subgoal *1/5.32
+Subgoal *1/5.31
+Subgoal *1/5.30
+Subgoal *1/5.29
+Subgoal *1/5.28
+Subgoal *1/5.27
+Subgoal *1/5.26
+Subgoal *1/5.25
+Subgoal *1/5.24
+Subgoal *1/5.23
+Subgoal *1/5.22
+Subgoal *1/5.21
+Subgoal *1/5.20
+Subgoal *1/5.19
+Subgoal *1/5.18
+Subgoal *1/5.17
+Subgoal *1/5.16
+Subgoal *1/5.15
+Subgoal *1/5.14
+Subgoal *1/5.13
+Subgoal *1/5.12
+Subgoal *1/5.11
+Subgoal *1/5.10
+Subgoal *1/5.9
+Subgoal *1/5.8
+Subgoal *1/5.7
+Subgoal *1/5.6
+Subgoal *1/5.5
+Subgoal *1/5.4
+Subgoal *1/5.3
+Subgoal *1/5.2
+Subgoal *1/5.1
+Subgoal *1/4
+Subgoal *1/4'
+Subgoal *1/4.42
+Subgoal *1/4.41
+Subgoal *1/4.40
+Subgoal *1/4.39
+Subgoal *1/4.38
+Subgoal *1/4.37
+Subgoal *1/4.36
+Subgoal *1/4.35
+Subgoal *1/4.34
+Subgoal *1/4.33
+Subgoal *1/4.32
+Subgoal *1/4.31
+Subgoal *1/4.30
+Subgoal *1/4.29
+Subgoal *1/4.28
+Subgoal *1/4.27
+Subgoal *1/4.26
+Subgoal *1/4.25
+Subgoal *1/4.24
+Subgoal *1/4.23
+Subgoal *1/4.22
+Subgoal *1/4.21
+Subgoal *1/4.20
+Subgoal *1/4.19
+Subgoal *1/4.18
+Subgoal *1/4.17
+Subgoal *1/4.16
+Subgoal *1/4.15
+Subgoal *1/4.14
+Subgoal *1/4.13
+Subgoal *1/4.12
+Subgoal *1/4.11
+Subgoal *1/4.10
+Subgoal *1/4.9
+Subgoal *1/4.8
+Subgoal *1/4.7
+Subgoal *1/4.6
+Subgoal *1/4.5
+Subgoal *1/4.4
+Subgoal *1/4.3
+Subgoal *1/4.2
+Subgoal *1/4.1
+Subgoal *1/3
+Subgoal *1/3'
+Subgoal *1/3.19
+Subgoal *1/3.18
+Subgoal *1/3.17
+Subgoal *1/3.16
+Subgoal *1/3.15
+Subgoal *1/3.14
+Subgoal *1/3.13
+Subgoal *1/3.12
+Subgoal *1/3.11
+Subgoal *1/3.10
+Subgoal *1/3.9
+Subgoal *1/3.8
+Subgoal *1/3.7
+Subgoal *1/3.6
+Subgoal *1/3.5
+Subgoal *1/3.4
+Subgoal *1/3.3
+Subgoal *1/3.2
+Subgoal *1/3.1
+Subgoal *1/2
+Subgoal *1/2'
+Subgoal *1/1
+Subgoal *1/1'
+
+*1 is COMPLETED!
+Thus key checkpoint Goal is COMPLETED!
+
+Q.E.D.
+Rules: ((:compound-recognizer alistp-implies-tlp)
+        (:compound-recognizer assignmentp-implies-tlp)
+        (:compound-recognizer var-symbolp)
+        (:compound-recognizer acl2::zip-compound-recognizer)
+        (:definition aaeval-definition-rule)
+        (:definition acons-caar)
+        (:definition acons-cdar)
+        (:definition acons-cdr)
+        (:definition aconsp)
+        (:definition assignmentp)
+        (:definition baaexprp)
+        (:definition boperp)
+        (:definition bsaexprp)
+        (:definition eq)
+        (:definition hide)
+        (:definition lookup-definition-rule)
+        (:definition not)
+        (:definition rat-okp-definition-rule)
+        (:definition sael->aa-definition-rule)
+        (:definition saeval-definition-rule)
+        (:definition saexprp)
+        (:definition synp)
+        (:definition uaaexprp)
+        (:definition uoperp)
+        (:definition usaexprp)
+        (:executable-counterpart <)
+        (:executable-counterpart aaeval)
+        (:executable-counterpart aaexprp)
+        (:executable-counterpart aboperp)
+        (:executable-counterpart assignmentp)
+        (:executable-counterpart baaexprp)
+        (:executable-counterpart binary-*)
+        (:executable-counterpart binary-+)
+        (:executable-counterpart boperp)
+        (:executable-counterpart car)
+        (:executable-counterpart cdr)
+        (:executable-counterpart cons)
+        (:executable-counterpart consp)
+        (:executable-counterpart equal)
+        (:executable-counterpart expt)
+        (:executable-counterpart force)
+        (:executable-counterpart if)
+        (:executable-counterpart integerp)
+        (:executable-counterpart not)
+        (:executable-counterpart rat-okp)
+        (:executable-counterpart rationalp)
+        (:executable-counterpart sael->aa)
+        (:executable-counterpart saeval)
+        (:executable-counterpart saexprp)
+        (:executable-counterpart tau-system)
+        (:executable-counterpart uaaexprp)
+        (:executable-counterpart unary--)
+        (:executable-counterpart unary-/)
+        (:executable-counterpart uoperp)
+        (:executable-counterpart varp)
+        (:fake-rune-for-type-set nil)
+        (:forward-chaining alist=>def)
+        (:forward-chaining assignmentp-implies-alistp)
+        (:forward-chaining bsaexpr=>def)
+        (:forward-chaining acl2::er=>def)
+        (:forward-chaining rat-err=>def)
+        (:forward-chaining saeval-contract)
+        (:forward-chaining saexpr=>def)
+        (:forward-chaining uoper=>def)
+        (:forward-chaining usaexpr=>def)
+        (:induction saeval)
+        (:induction saeval-induction-scheme)
+        (:rewrite acl2::|(* 0 x)|)
+        (:rewrite acl2::|(* 1 x)|)
+        (:rewrite acl2::|(* a (/ a) b)|)
+        (:rewrite acl2::|(* a (/ a))|)
+        (:rewrite acl2::|(* x (if a b c))|)
+        (:rewrite acl2::|(* y (* x z))|)
+        (:rewrite acl2::|(* y x)|)
+        (:rewrite acl2::|(+ 0 x)|)
+        (:rewrite acl2::|(+ x (- x))|)
+        (:rewrite acl2::|(+ x x)|)
+        (:rewrite acl2::|(+ y (+ x z))|)
+        (:rewrite acl2::|(+ y x)|)
+        (:rewrite acl2::|(- (- x))|)
+        (:rewrite acl2::|(/ (/ x))|)
+        (:rewrite acl2::|(equal (- x) (- y))|)
+        (:rewrite acl2::|(equal (- x) c)|)
+        (:rewrite acl2::|(equal (/ x) c)|)
+        (:rewrite acl2::|(expt 0 n)|)
+        (:rewrite acl2::|(expt 1 n)|)
+        (:rewrite acl2::|(expt x 0)|)
+        (:rewrite acl2::|(expt x 1)|)
+        (:rewrite acl2s-prefer-positive-addends-equal)
+        (:rewrite acl2::bubble-down-+-match-1)
+        (:rewrite acl2::bubble-down-+-match-3)
+        (:rewrite car-cons)
+        (:rewrite cdr-alistof-assignmentp-sig)
+        (:rewrite cdr-cons)
+        (:rewrite acl2::consp-of-car-when-alistp)
+        (:rewrite def=>aaexpr)
+        (:rewrite def=>rat-err)
+        (:rewrite def=>saexpr)
+        (:rewrite acl2::normalize-addends)
+        (:rewrite sael->aa-contract)
+        (:rewrite saeval-contract)
+        (:rewrite acl2::simplify-products-gather-exponents-equal)
+        (:rewrite acl2::simplify-sums-equal)
+        (:rewrite acl2::zip-open)
+        (:type-prescription aaeval-contract-tp)
+        (:type-prescription bsaexprp)
+        (:type-prescription erp)
+        (:type-prescription acl2::expt-type-prescription-non-0-base)
+        (:type-prescription acl2::expt-type-prescription-rationalp-base)
+        (:type-prescription lookup-contract-tp)
+        (:type-prescription rat-errp)
+        (:type-prescription saeval-contract-tp)
+        (:type-prescription saexprp)
+        (:type-prescription uoperp)
+        (:type-prescription usaexprp)
+        (:type-prescription varp))
+Time:  11.00 seconds (prove: 10.93, print: 0.01, other: 0.06)
+
+**Summary of Cgen/testing**
+We tested 1500 examples across 3 subgoals, of which 1204 (1204 unique)
+satisfied the hypotheses, and found 0 counterexamples and 1204 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a nil) (e 0))
+ -- ((a nil) (e 43/6))
+ -- ((a '((x . 0) (x . 0))) (e 'v4))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  11.01 seconds (prove: 10.93, print: 0.01, other: 0.06)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  11.02 seconds (prove: 10.93, print: 0.01, other: 0.07)
+ :empty-encapsulate
+ACL2S !>>
+Form:  ( CONTRACT-CHECKING PROPERTY ...)
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Form:  ( PROVING PROPERTY )
+Goal'
+Subgoal 2
+
+([ A key checkpoint:
+
+Subgoal 2
+(implies (and (uaaexprp e)
+              (assignmentp a)
+              (rationalp (saeval (aa->sael e) a)))
+         (equal (saeval (aa->sael e) a)
+                (aaeval e a)))
+
+*1 (Subgoal 2) is pushed for proof by induction.
+
+])
+Subgoal 1
+
+([ A key checkpoint:
+
+Subgoal 1
+(implies (and (baaexprp e)
+              (assignmentp a)
+              (rationalp (saeval (aa->sael e) a)))
+         (equal (saeval (aa->sael e) a)
+                (aaeval e a)))
+
+Normally we would attempt to prove Subgoal 1 by induction.  However,
+we prefer in this instance to focus on the original input conjecture
+rather than this simplified special case.  We therefore abandon our
+previous work on this conjecture and reassign the name *1 to the original
+conjecture.  (See :DOC otf-flg.)
+
+])
+
+Perhaps we can prove *1 by induction.  Three induction schemes are
+suggested by this conjecture.  Subsumption reduces that number to two.
+One of these has a score higher than the other.  
+
+We will induct according to a scheme suggested by (aa->sael e), while
+accommodating (aa->sael e).
+
+These suggestions were produced using the :induction rules aa->sael
+and aa->sael-induction-scheme.  If we let (:p a e) denote *1 above
+then the induction scheme we'll use is
+(and (implies (not (aaexprp e)) (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (not (baaexprp e)))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (not (and (consp e)
+                             (consp (cdr e))
+                             (consp (cddr e))
+                             (eq (cdddr e) nil))))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (not (equal (car e) '+))
+                   (not (equal (car e) '-))
+                   (not (equal (car e) '*))
+                   (not (equal (car e) '/))
+                   (not (equal (car e) 'expt)))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) 'expt)
+                   (:p a (cadr e))
+                   (:p a (caddr e)))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) '/)
+                   (:p a (cadr e))
+                   (:p a (caddr e)))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) '*)
+                   (:p a (cadr e))
+                   (:p a (caddr e)))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) '-)
+                   (:p a (cadr e))
+                   (:p a (caddr e)))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (not (uaaexprp e))
+                   (baaexprp e)
+                   (and (consp e)
+                        (consp (cdr e))
+                        (consp (cddr e))
+                        (eq (cdddr e) nil))
+                   (equal (car e) '+)
+                   (:p a (cadr e))
+                   (:p a (caddr e)))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (uaaexprp e)
+                   (not (and (consp e)
+                             (eq (car e) '-)
+                             (consp (cdr e))
+                             (eq (cddr e) nil)))
+                   (not (and (consp e)
+                             (eq (car e) '/)
+                             (consp (cdr e))
+                             (eq (cddr e) nil))))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (uaaexprp e)
+                   (not (and (consp e)
+                             (eq (car e) '-)
+                             (consp (cdr e))
+                             (eq (cddr e) nil)))
+                   (and (consp e)
+                        (eq (car e) '/)
+                        (consp (cdr e))
+                        (eq (cddr e) nil))
+                   (:p a (cadr e)))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (not (varp e))
+                   (uaaexprp e)
+                   (and (consp e)
+                        (eq (car e) '-)
+                        (consp (cdr e))
+                        (eq (cddr e) nil))
+                   (:p a (cadr e)))
+              (:p a e))
+     (implies (and (aaexprp e)
+                   (not (rationalp e))
+                   (varp e))
+              (:p a e))
+     (implies (and (aaexprp e) (rationalp e))
+              (:p a e))).
+This induction is justified by the same argument used to admit aa->sael.
+When applied to the goal at hand the above induction scheme produces
+thirteen nontautological subgoals.
+Subgoal *1/13
+Subgoal *1/12
+Subgoal *1/12'
+Subgoal *1/12.2
+Subgoal *1/12.1
+Subgoal *1/11
+Subgoal *1/10
+Subgoal *1/10'
+Subgoal *1/10.123
+Subgoal *1/10.123.11
+Subgoal *1/10.123.10
+Subgoal *1/10.123.10'
+Subgoal *1/10.123.9
+Subgoal *1/10.123.8
+Subgoal *1/10.123.8'
+Subgoal *1/10.123.7
+Subgoal *1/10.123.7'
+Subgoal *1/10.123.6
+Subgoal *1/10.123.5
+Subgoal *1/10.123.4
+Subgoal *1/10.123.3
+Subgoal *1/10.123.3'
+Subgoal *1/10.123.2
+Subgoal *1/10.123.2'
+Subgoal *1/10.123.1
+Subgoal *1/10.122
+Subgoal *1/10.121
+Subgoal *1/10.120
+Subgoal *1/10.119
+Subgoal *1/10.119.12
+Subgoal *1/10.119.11
+Subgoal *1/10.119.10
+Subgoal *1/10.119.9
+Subgoal *1/10.119.8
+Subgoal *1/10.119.8'
+Subgoal *1/10.119.7
+Subgoal *1/10.119.7'
+Subgoal *1/10.119.6
+Subgoal *1/10.119.5
+Subgoal *1/10.119.4
+Subgoal *1/10.119.3
+Subgoal *1/10.119.3'
+Subgoal *1/10.119.2
+Subgoal *1/10.119.2'
+Subgoal *1/10.119.1
+Subgoal *1/10.118
+Subgoal *1/10.117
+Subgoal *1/10.116
+Subgoal *1/10.115
+Subgoal *1/10.115.9
+Subgoal *1/10.115.8
+Subgoal *1/10.115.8'
+Subgoal *1/10.115.7
+Subgoal *1/10.115.6
+Subgoal *1/10.115.6'
+Subgoal *1/10.115.5
+Subgoal *1/10.115.4
+Subgoal *1/10.115.3
+Subgoal *1/10.115.2
+Subgoal *1/10.115.2'
+Subgoal *1/10.115.1
+Subgoal *1/10.114
+Subgoal *1/10.113
+Subgoal *1/10.112
+Subgoal *1/10.111
+Subgoal *1/10.111.9
+Subgoal *1/10.111.8
+Subgoal *1/10.111.8'
+Subgoal *1/10.111.7
+Subgoal *1/10.111.6
+Subgoal *1/10.111.6'
+Subgoal *1/10.111.5
+Subgoal *1/10.111.4
+Subgoal *1/10.111.3
+Subgoal *1/10.111.2
+Subgoal *1/10.111.2'
+Subgoal *1/10.111.1
+Subgoal *1/10.110
+Subgoal *1/10.109
+Subgoal *1/10.108
+Subgoal *1/10.107
+Subgoal *1/10.107.12
+Subgoal *1/10.107.11
+Subgoal *1/10.107.10
+Subgoal *1/10.107.10'
+Subgoal *1/10.107.9
+Subgoal *1/10.107.8
+Subgoal *1/10.107.7
+Subgoal *1/10.107.6
+Subgoal *1/10.107.6'
+Subgoal *1/10.107.5
+Subgoal *1/10.107.4
+Subgoal *1/10.107.3
+Subgoal *1/10.107.2
+Subgoal *1/10.107.2'
+Subgoal *1/10.107.1
+Subgoal *1/10.106
+Subgoal *1/10.105
+Subgoal *1/10.104
+Subgoal *1/10.103
+Subgoal *1/10.103.10
+Subgoal *1/10.103.9
+Subgoal *1/10.103.8
+Subgoal *1/10.103.7
+Subgoal *1/10.103.6
+Subgoal *1/10.103.6'
+Subgoal *1/10.103.5
+Subgoal *1/10.103.5'
+Subgoal *1/10.103.4
+Subgoal *1/10.103.3
+Subgoal *1/10.103.2
+Subgoal *1/10.103.1
+Subgoal *1/10.102
+Subgoal *1/10.101
+Subgoal *1/10.100
+Subgoal *1/10.99
+Subgoal *1/10.98
+Subgoal *1/10.97
+Subgoal *1/10.96
+Subgoal *1/10.95
+Subgoal *1/10.95'
+Subgoal *1/10.94
+Subgoal *1/10.93
+Subgoal *1/10.92
+Subgoal *1/10.91
+Subgoal *1/10.90
+Subgoal *1/10.89
+Subgoal *1/10.89'
+Subgoal *1/10.88
+Subgoal *1/10.87
+Subgoal *1/10.87.3
+Subgoal *1/10.87.2
+Subgoal *1/10.87.1
+Subgoal *1/10.86
+Subgoal *1/10.85
+Subgoal *1/10.84
+Subgoal *1/10.83
+Subgoal *1/10.82
+Subgoal *1/10.82'
+Subgoal *1/10.81
+Subgoal *1/10.80
+Subgoal *1/10.79
+Subgoal *1/10.78
+Subgoal *1/10.77
+Subgoal *1/10.77'
+Subgoal *1/10.76
+Subgoal *1/10.75
+Subgoal *1/10.74
+Subgoal *1/10.73
+Subgoal *1/10.72
+Subgoal *1/10.71
+Subgoal *1/10.70
+Subgoal *1/10.69
+Subgoal *1/10.68
+Subgoal *1/10.67
+Subgoal *1/10.66
+Subgoal *1/10.65
+Subgoal *1/10.64
+Subgoal *1/10.64'
+Subgoal *1/10.63
+Subgoal *1/10.62
+Subgoal *1/10.61
+Subgoal *1/10.60
+Subgoal *1/10.59
+Subgoal *1/10.59'
+Subgoal *1/10.58
+Subgoal *1/10.57
+Subgoal *1/10.56
+Subgoal *1/10.55
+Subgoal *1/10.54
+Subgoal *1/10.53
+Subgoal *1/10.52
+Subgoal *1/10.51
+Subgoal *1/10.50
+Subgoal *1/10.49
+Subgoal *1/10.48
+Subgoal *1/10.47
+Subgoal *1/10.46
+Subgoal *1/10.45
+Subgoal *1/10.44
+Subgoal *1/10.43
+Subgoal *1/10.42
+Subgoal *1/10.41
+Subgoal *1/10.40
+Subgoal *1/10.39
+Subgoal *1/10.38
+Subgoal *1/10.37
+Subgoal *1/10.36
+Subgoal *1/10.35
+Subgoal *1/10.34
+Subgoal *1/10.33
+Subgoal *1/10.32
+Subgoal *1/10.31
+Subgoal *1/10.30
+Subgoal *1/10.29
+Subgoal *1/10.28
+Subgoal *1/10.28'
+Subgoal *1/10.27
+Subgoal *1/10.26
+Subgoal *1/10.25
+Subgoal *1/10.24
+Subgoal *1/10.23
+Subgoal *1/10.23'
+Subgoal *1/10.22
+Subgoal *1/10.21
+Subgoal *1/10.20
+Subgoal *1/10.19
+Subgoal *1/10.18
+Subgoal *1/10.17
+Subgoal *1/10.16
+Subgoal *1/10.15
+Subgoal *1/10.14
+Subgoal *1/10.13
+Subgoal *1/10.12
+Subgoal *1/10.11
+Subgoal *1/10.10
+Subgoal *1/10.9
+Subgoal *1/10.8
+Subgoal *1/10.7
+Subgoal *1/10.6
+Subgoal *1/10.5
+Subgoal *1/10.4
+Subgoal *1/10.3
+Subgoal *1/10.2
+Subgoal *1/10.1
+Subgoal *1/9
+Subgoal *1/9'
+Subgoal *1/9.55
+Subgoal *1/9.54
+Subgoal *1/9.53
+Subgoal *1/9.52
+Subgoal *1/9.51
+Subgoal *1/9.50
+Subgoal *1/9.49
+Subgoal *1/9.48
+Subgoal *1/9.47
+Subgoal *1/9.46
+Subgoal *1/9.45
+Subgoal *1/9.44
+Subgoal *1/9.43
+Subgoal *1/9.42
+Subgoal *1/9.41
+Subgoal *1/9.40
+Subgoal *1/9.39
+Subgoal *1/9.38
+Subgoal *1/9.37
+Subgoal *1/9.36
+Subgoal *1/9.35
+Subgoal *1/9.34
+Subgoal *1/9.33
+Subgoal *1/9.32
+Subgoal *1/9.31
+Subgoal *1/9.30
+Subgoal *1/9.29
+Subgoal *1/9.28
+Subgoal *1/9.27
+Subgoal *1/9.26
+Subgoal *1/9.25
+Subgoal *1/9.24
+Subgoal *1/9.23
+Subgoal *1/9.22
+Subgoal *1/9.21
+Subgoal *1/9.20
+Subgoal *1/9.19
+Subgoal *1/9.18
+Subgoal *1/9.17
+Subgoal *1/9.16
+Subgoal *1/9.15
+Subgoal *1/9.14
+Subgoal *1/9.13
+Subgoal *1/9.12
+Subgoal *1/9.11
+Subgoal *1/9.10
+Subgoal *1/9.9
+Subgoal *1/9.8
+Subgoal *1/9.7
+Subgoal *1/9.6
+Subgoal *1/9.5
+Subgoal *1/9.4
+Subgoal *1/9.3
+Subgoal *1/9.2
+Subgoal *1/9.1
+Subgoal *1/8
+Subgoal *1/8'
+Subgoal *1/8.11
+Subgoal *1/8.10
+Subgoal *1/8.9
+Subgoal *1/8.8
+Subgoal *1/8.7
+Subgoal *1/8.6
+Subgoal *1/8.5
+Subgoal *1/8.4
+Subgoal *1/8.3
+Subgoal *1/8.2
+Subgoal *1/8.1
+Subgoal *1/7
+Subgoal *1/7'
+Subgoal *1/7.11
+Subgoal *1/7.10
+Subgoal *1/7.9
+Subgoal *1/7.8
+Subgoal *1/7.7
+Subgoal *1/7.6
+Subgoal *1/7.5
+Subgoal *1/7.4
+Subgoal *1/7.3
+Subgoal *1/7.2
+Subgoal *1/7.1
+Subgoal *1/6
+Subgoal *1/6'
+Subgoal *1/6.11
+Subgoal *1/6.10
+Subgoal *1/6.9
+Subgoal *1/6.8
+Subgoal *1/6.7
+Subgoal *1/6.6
+Subgoal *1/6.5
+Subgoal *1/6.4
+Subgoal *1/6.3
+Subgoal *1/6.2
+Subgoal *1/6.1
+Subgoal *1/5
+Subgoal *1/5'
+Subgoal *1/5.17
+Subgoal *1/5.16
+Subgoal *1/5.15
+Subgoal *1/5.14
+Subgoal *1/5.13
+Subgoal *1/5.12
+Subgoal *1/5.11
+Subgoal *1/5.10
+Subgoal *1/5.9
+Subgoal *1/5.8
+Subgoal *1/5.7
+Subgoal *1/5.6
+Subgoal *1/5.5
+Subgoal *1/5.4
+Subgoal *1/5.3
+Subgoal *1/5.2
+Subgoal *1/5.1
+Subgoal *1/4
+Subgoal *1/4'
+Subgoal *1/4.9
+Subgoal *1/4.8
+Subgoal *1/4.7
+Subgoal *1/4.6
+Subgoal *1/4.5
+Subgoal *1/4.4
+Subgoal *1/4.3
+Subgoal *1/4.2
+Subgoal *1/4.1
+Subgoal *1/3
+Subgoal *1/3'
+Subgoal *1/3''
+Subgoal *1/2
+Subgoal *1/2'
+Subgoal *1/1
+Subgoal *1/1'
+
+*1 is COMPLETED!
+Thus key checkpoint Goal is COMPLETED!
+
+Q.E.D.
+Rules: ((:compound-recognizer alistp-implies-tlp)
+        (:compound-recognizer assignmentp-implies-tlp)
+        (:compound-recognizer var-symbolp)
+        (:compound-recognizer acl2::zip-compound-recognizer)
+        (:definition aa->sael-definition-rule)
+        (:definition aaeval-definition-rule)
+        (:definition aaexprp)
+        (:definition aboperp)
+        (:definition acons-caar)
+        (:definition acons-cdar)
+        (:definition acons-cdr)
+        (:definition aconsp)
+        (:definition assignmentp)
+        (:definition baaexprp)
+        (:definition bsaexprp)
+        (:definition eq)
+        (:definition evenp)
+        (:definition lookup-definition-rule)
+        (:definition not)
+        (:definition rat-okp-definition-rule)
+        (:definition saeval-definition-rule)
+        (:definition synp)
+        (:definition uaaexprp)
+        (:definition uoperp)
+        (:definition usaexprp)
+        (:executable-counterpart <)
+        (:executable-counterpart aa->sael)
+        (:executable-counterpart aaeval)
+        (:executable-counterpart aaexprp)
+        (:executable-counterpart aboperp)
+        (:executable-counterpart assignmentp)
+        (:executable-counterpart binary-*)
+        (:executable-counterpart binary-+)
+        (:executable-counterpart boperp)
+        (:executable-counterpart bsaexprp)
+        (:executable-counterpart car)
+        (:executable-counterpart cdr)
+        (:executable-counterpart cons)
+        (:executable-counterpart consp)
+        (:executable-counterpart equal)
+        (:executable-counterpart expt)
+        (:executable-counterpart floor)
+        (:executable-counterpart if)
+        (:executable-counterpart integerp)
+        (:executable-counterpart not)
+        (:executable-counterpart rat-okp)
+        (:executable-counterpart rationalp)
+        (:executable-counterpart saeval)
+        (:executable-counterpart saexprp)
+        (:executable-counterpart tau-system)
+        (:executable-counterpart unary--)
+        (:executable-counterpart unary-/)
+        (:executable-counterpart uoperp)
+        (:executable-counterpart usaexprp)
+        (:executable-counterpart varp)
+        (:fake-rune-for-type-set nil)
+        (:forward-chaining aaexpr=>def)
+        (:forward-chaining aboper=>def)
+        (:forward-chaining alist=>def)
+        (:forward-chaining assignmentp-implies-alistp)
+        (:forward-chaining baaexpr=>def)
+        (:forward-chaining acl2::er=>def)
+        (:forward-chaining rat-err=>def)
+        (:forward-chaining saeval-contract)
+        (:forward-chaining uaaexpr=>def)
+        (:forward-chaining uoper=>def)
+        (:induction aa->sael)
+        (:induction aa->sael-induction-scheme)
+        (:rewrite acl2::|(* (/ x) (expt x n))|)
+        (:rewrite acl2::|(* 1 x)|)
+        (:rewrite acl2::|(* a (/ a) b)|)
+        (:rewrite acl2::|(* a (/ a))|)
+        (:rewrite acl2::|(* x (+ y z))|)
+        (:rewrite acl2::|(* y (* x z))|)
+        (:rewrite acl2::|(* y x)|)
+        (:rewrite acl2::|(+ 0 x)|)
+        (:rewrite acl2::|(+ x (- x))|)
+        (:rewrite acl2::|(+ y (+ x z))|)
+        (:rewrite acl2::|(+ y x)|)
+        (:rewrite acl2::|(- (- x))|)
+        (:rewrite acl2::|(equal (- x) c)|)
+        (:rewrite acl2::|(equal (expt x n) 1)|)
+        (:rewrite acl2::|(expt 0 n)|)
+        (:rewrite acl2::|(expt 1 n)|)
+        (:rewrite acl2::|(expt x 0)|)
+        (:rewrite acl2::|(expt x 1)|)
+        (:rewrite aa->sael-contract)
+        (:rewrite acl2s-prefer-positive-addends-equal)
+        (:rewrite acl2::bubble-down-*-match-1)
+        (:rewrite acl2::bubble-down-+-match-1)
+        (:rewrite acl2::bubble-down-+-match-3)
+        (:rewrite car-cons)
+        (:rewrite cdr-alistof-assignmentp-sig)
+        (:rewrite cdr-cons)
+        (:rewrite acl2::consp-of-car-when-alistp)
+        (:rewrite def=>aaexpr)
+        (:rewrite def=>rat-err)
+        (:rewrite def=>saexpr)
+        (:rewrite acl2::even-and-odd-alternate)
+        (:rewrite acl2::integerp-+-reduce-constant)
+        (:rewrite acl2::normalize-addends)
+        (:rewrite acl2::normalize-factors-gather-exponents)
+        (:rewrite acl2::simplify-products-gather-exponents-equal)
+        (:rewrite acl2::simplify-sums-equal)
+        (:rewrite acl2::zip-open)
+        (:type-prescription aa->sael-contract-tp)
+        (:type-prescription aaeval-contract-tp)
+        (:type-prescription aaexprp)
+        (:type-prescription aboperp)
+        (:type-prescription baaexprp)
+        (:type-prescription erp)
+        (:type-prescription acl2::expt-type-prescription-non-0-base)
+        (:type-prescription acl2::expt-type-prescription-rationalp-base)
+        (:type-prescription lookup-contract-tp)
+        (:type-prescription rat-errp)
+        (:type-prescription saeval-contract-tp)
+        (:type-prescription saexprp)
+        (:type-prescription uaaexprp)
+        (:type-prescription uoperp))
+Time:  5.39 seconds (prove: 5.32, print: 0.00, other: 0.06)
+
+**Summary of Cgen/testing**
+We tested 1500 examples across 3 subgoals, of which 1253 (1253 unique)
+satisfied the hypotheses, and found 0 counterexamples and 1253 witnesses.
+
+Cases in which the conjecture is true include:
+ [found in : "Goal"]
+ -- ((a nil) (e '(- 0)))
+ -- ((a '((ny . 0))) (e 0))
+ -- ((a '((yyy . 0) (x . -1))) (e '(- 0 0)))
+
+Proof succeeded.
+Form:  ( ACCEPTED PROPERTY AS THEOREM )
+Time:  5.39 seconds (prove: 5.32, print: 0.00, other: 0.07)
+Form:  ( PROPERTY CHECKING SUCCESSFUL )
+Time:  5.39 seconds (prove: 5.32, print: 0.00, other: 0.07)
+ :empty-encapsulate
+ACL2S !>>Bye.
+ :eof
+ACL2S !>
+Project-dir-alist:
+((:system . "/Users/lumingqi/acl2-work/acl2/books/")).
+Type :help for help.
+Type (quit) to quit completely out of ACL2.
+
+ACL2S !>> "ACL2S"
+ACL2S !>>
+Summary
+Form:  ( defmacro check-er ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ check-er
+ACL2S !>>
+Summary
+Form:  ( defmacro check-rat ...)
+Rules: nil
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ check-rat
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>> :passed
+ACL2S !>>
+
+ACL2 Error in acl2::acl2-interface:  A floating-point input, which
+CLTL displays as 0.5, has been encountered.  To permit floating-point
+input, which ACL2 treats as a rational number, use the prefix #d or
+#D; see :DOC df).
+
+***********************************************
+************ ABORTING from raw Lisp ***********
+********** (see :DOC raw-lisp-error) **********
+Error:  ACL2 Halted
+***********************************************
+
+The message above might explain the error.  If not, and
+if you didn't cause an explicit interrupt (Control-C),
+then it may help to see :DOC raw-lisp-error.
+
+To enable breaks into the debugger (also see :DOC acl2-customization):
+(SET-DEBUGGER-ENABLE T)
+ (:stop-ld 1)
+ACL2S !>

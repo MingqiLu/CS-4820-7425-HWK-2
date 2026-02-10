@@ -1,0 +1,5 @@
+[https://github.com/ltmquan/CS-4820](https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fltmquan%2FCS-4820&data=05%7C02%7Clu.mingqi%40northeastern.edu%7Cb1be46e6a175437b29a708de5d4d36d1%7Ca8eec281aaa34daeac9b9a398b9215e7%7C0%7C0%7C639050783311416884%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=TIAIZJTJ34AGuvNuc508MCdItvDQSEbkGgNZL8rw4S0%3D&reserved=0 "Original URL: https://github.com/ltmquan/CS-4820. Click or tap if you trust this link.")
+
+100
+
+In `4. (1 / (x / y)) = (y / x), for saexpr's x, y`, we do not need the hypothesis not error. This is because when any of them is error, the whole term will be error. The hypothesis can be `(not (and (!= 0 (saeval x a)) (== 0 (saeval y a))))`.
