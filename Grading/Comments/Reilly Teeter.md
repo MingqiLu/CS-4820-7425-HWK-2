@@ -2,6 +2,6 @@
 
 98
 
-Please use at least (modeling-validate-defs) instead of (modeling-start).
+Please use at least (modeling-validate-defs) instead of (modeling-start). I changed the setting when grading and it passed the test.
 
 In `4. (1 / (x / y)) = (y / x), for saexpr's x, y`, we do not need the hypothesis not error. This is because when any of them is error, the whole term will be error. The hypothesis can be `(not (and (!= 0 (saeval x a)) (== 0 (saeval y a))))`.
